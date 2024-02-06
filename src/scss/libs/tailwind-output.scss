@@ -1200,10 +1200,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-right: 1rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -1560,6 +1556,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .w-5 {
@@ -2582,10 +2582,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .rounded-\[16px\] {
   border-radius: 16px;
-}
-
-.rounded-\[20px\] {
-  border-radius: 20px;
 }
 
 .rounded-\[50\%\] {

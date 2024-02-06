@@ -15,7 +15,7 @@ footer {
 }
 
 .body {
-  font-family: $fontFamily;
+  font-family: $fontFamily !important;
   font-size: $fontSize;
   font-weight: $fontWeight;
   line-height: 1.2;

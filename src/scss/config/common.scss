@@ -42,3 +42,8 @@ footer {
   color: $blackColor;
   background: $accentColor;
 }
+
+.group[data-te-input-focused]
+  .group-data-\[te-input-focused\]\:shadow-\[0_1px_0_0_\#3b71ca\] {
+  --tw-shadow: unset;
+}

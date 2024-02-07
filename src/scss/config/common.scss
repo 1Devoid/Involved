@@ -43,7 +43,61 @@ footer {
   background: $accentColor;
 }
 
+// Style fix for input
 .group[data-te-input-focused]
   .group-data-\[te-input-focused\]\:shadow-\[0_1px_0_0_\#3b71ca\] {
   --tw-shadow: unset;
+}
+
+// Styles for input error validation
+.group[data-te-input-focused].error
+  .group-data-\[te-input-focused\]\:border-primary {
+  --tw-border-opacity: 1;
+  border-color: #f53e3e;
+}
+
+.peer:focus ~ .peer-focus\:text-primary.error {
+  --tw-text-opacity: 1;
+  color: #f53e3e;
+}
+
+// Custom scrollbar
+
+/*width*/
+body::-webkit-scrollbar {
+  width: 10px;
+}
+/*track*/
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+/*thumb*/
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 20px;
+}
+/*thumb hover*/
+body::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+  border-radius: 20px;
+}
+/*thumb pressed*/
+body::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+  border-radius: 20px;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #d0d0d0;
 }

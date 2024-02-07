@@ -56,6 +56,10 @@ footer {
   border-color: #f53e3e;
 }
 
+.group[data-te-input-focused].error
+  .group-data-\[te-input-focused\]\:border-t-transparent {
+  border-top-color: transparent;
+}
 .peer:focus ~ .peer-focus\:text-primary.error {
   --tw-text-opacity: 1;
   color: #f53e3e;

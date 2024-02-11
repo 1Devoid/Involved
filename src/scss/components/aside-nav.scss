@@ -1,0 +1,21 @@
+.aside-nav.expand {
+  .aside-nav__collapsed {
+    display: none;
+  }
+
+  .aside-nav__expandede {
+    display: block;
+  }
+}
+
+.aside-nav__menu {
+  height: calc(100vh - 77px);
+}
+
+.aside-nav__collapsed {
+  display: block;
+}
+
+.aside-nav__expandede {
+  display: none;
+}

@@ -8,6 +8,11 @@ header {
 
 main {
   flex: 1 0 auto;
+  margin-left: 108px;
+
+  &.expand {
+    margin-left: 220px;
+  }
 }
 
 footer {
@@ -26,7 +31,7 @@ footer {
   background: $whiteColor;
   // font-variant-numeric: lining-nums;
   display: grid;
-  grid-template-columns: 220px 10fr;
+  grid-template-columns: fit-content(220px) 10fr;
   grid-template-rows: 100%;
 }
 

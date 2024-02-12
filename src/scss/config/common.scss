@@ -176,3 +176,7 @@ header {
   position: relative;
   z-index: 50 !important;
 }
+
+.dd-animation-rotate > span {
+  transform: rotateX(180deg);
+}

@@ -180,3 +180,36 @@ header {
 .dd-animation-rotate > span {
   transform: rotateX(180deg);
 }
+
+#dropdownNotification {
+  transform: translate(calc(100vw - 415px), 75px) !important;
+}
+
+.notification-decor {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 47px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f2f2f2;
+  }
+}
+:is(.dark .notification-decor) {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 47px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #323d4b;
+  }
+}

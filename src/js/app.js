@@ -12,4 +12,7 @@ inputInit();
 inputError();
 asideNavToggler();
 darkThemeToggler();
-arrowRotateInput();
+arrowRotateInput('#dropdownButton-1', '#dropdown-1');
+arrowRotateInput('#dropdownButton-2', '#dropdown-2');
+arrowRotateInput('#dropdownButton-3', '#dropdown-3');
+arrowRotateInput('#dropdownFontButton', '#dropdown-font');

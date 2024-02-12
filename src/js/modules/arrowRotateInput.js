@@ -1,20 +1,19 @@
-function arrowRotateInput() {
-  const ddAnimationBtn = document.querySelectorAll('.dd-animation');
+function arrowRotateInput(triggerSelector, dropdownSelector) {
+  const ddAnimationBtn = document.querySelector(triggerSelector);
+
   if (ddAnimationBtn) {
-    ddAnimationBtn.forEach((btn) => {
-      btn.addEventListener('click', (e) => {
-        btn.classList.toggle('dd-animation-rotate');
-      });
+    ddAnimationBtn.addEventListener('click', () => {
+      ddAnimationBtn.classList.toggle('dd-animation-rotate');
+    });
+
+    document.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      if (e.target !== ddAnimationBtn && !e.target.closest(dropdownSelector)) {
+        ddAnimationBtn.classList.remove('dd-animation-rotate');
+      }
     });
   }
 }
 
 export default arrowRotateInput;
-
-// if (
-//   e.target !== headerBurgerMenu &&
-//   e.target !== headerBurger &&
-//   e.target !== labelBurger
-// ) {
-//   headerBurger.checked = false;
-// }

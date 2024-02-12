@@ -54,16 +54,40 @@ footer {
 }
 
 // Styles for input error validation
+
+.group[data-te-input-notch-ref] div[data-te-input-notch-leading-ref] {
+  border-radius: 8px 0 0 8px;
+}
+
+.group[data-te-input-notch-ref] div[data-te-input-notch-trailing-ref] {
+  border-radius: 0 8px 8px 0;
+}
+
+.group[data-te-input-notch-ref] div {
+  border-color: #e5e7eb;
+}
+
+:is(.dark .dark\:border-neutral-600) {
+  --tw-border-opacity: 1;
+  border-color: #4b5563 !important;
+}
+
+.group[data-te-input-focused] div[data-te-input-notch-middle-ref] {
+  border-top-color: transparent !important;
+  border-bottom-color: #3b71ca !important;
+}
+
 .group[data-te-input-focused].error
   .group-data-\[te-input-focused\]\:border-primary {
   --tw-border-opacity: 1;
-  border-color: #f53e3e;
+  border-color: #f53e3e !important;
 }
 
 .group[data-te-input-focused].error
   .group-data-\[te-input-focused\]\:border-t-transparent {
-  border-top-color: transparent;
+  border-top-color: transparent !important;
 }
+
 .peer:focus ~ .peer-focus\:text-primary.error {
   --tw-text-opacity: 1;
   color: #f53e3e;
@@ -75,25 +99,30 @@ footer {
 body::-webkit-scrollbar {
   width: 10px;
 }
+
 /*track*/
 body::-webkit-scrollbar-track {
   background: transparent;
 }
+
 /*thumb*/
 body::-webkit-scrollbar-thumb {
   background: #d0d0d0;
   border-radius: 20px;
 }
+
 /*thumb hover*/
 body::-webkit-scrollbar-thumb:hover {
   background: transparent;
   border-radius: 20px;
 }
+
 /*thumb pressed*/
 body::-webkit-scrollbar-thumb:active {
   background: transparent;
   border-radius: 20px;
 }
+
 *::-webkit-scrollbar {
   width: 8px;
 }
@@ -113,4 +142,22 @@ body::-webkit-scrollbar-thumb:active {
 :is(.dark .dark\:border-neutral-600) {
   --tw-border-opacity: 1;
   border-color: rgb(153 167 183 / var(--tw-border-opacity));
+}
+
+.popup-textarea {
+  border-color: red !important;
+}
+
+a.active {
+  color: #0f0f0f;
+  background-color: rgb(243 244 246);
+
+  svg {
+    color: rgb(17 24 39);
+  }
+}
+
+:is(.dark a.active) {
+  color: rgb(255 255 255);
+  background-color: rgb(55 65 81);
 }

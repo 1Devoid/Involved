@@ -76,6 +76,16 @@ footer {
   border-top-color: transparent !important;
   border-bottom-color: #3b71ca !important;
 }
+.group[data-te-input-focused] div[data-te-input-notch-leading-ref] {
+  border-top-color: #3b71ca !important;
+  border-left-color: #3b71ca !important;
+  border-bottom-color: #3b71ca !important;
+}
+.group[data-te-input-focused] div[data-te-input-notch-trailing-ref] {
+  border-top: #3b71ca !important;
+  border-right: #3b71ca !important;
+  border-bottom: #3b71ca !important;
+}
 
 .group[data-te-input-focused].error
   .group-data-\[te-input-focused\]\:border-primary {

@@ -1268,10 +1268,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-right: 2rem;
 }
 
-.mr-\[13px\] {
-  margin-right: 13px;
-}
-
 .mr-\[6px\] {
   margin-right: 6px;
 }
@@ -1878,10 +1874,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-\[108px\] {
   max-width: 108px;
-}
-
-.max-w-\[1440px\] {
-  max-width: 1440px;
 }
 
 .max-w-\[165px\] {
@@ -2735,10 +2727,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-radius: 10px;
 }
 
-.rounded-\[160px\] {
-  border-radius: 160px;
-}
-
 .rounded-\[16px\] {
   border-radius: 16px;
 }
@@ -2769,14 +2757,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-b-lg {
@@ -2949,14 +2929,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(231 231 231 / var(--tw-border-opacity));
 }
 
-.border-\[\#d4d4d4\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(212 212 212 / var(--tw-border-opacity));
-}
-
 .border-\[\#dc4c64\] {
   --tw-border-opacity: 1;
   border-color: rgb(220 76 100 / var(--tw-border-opacity));
+}
+
+.border-\[\#e5e7eb\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-\[\#eee\] {
@@ -3010,11 +2990,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#e5e7eb\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-r-transparent {
@@ -3096,11 +3071,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(214 240 224 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#E3EBF7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 235 247 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#F2F2F2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
@@ -3111,19 +3081,9 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FFFFFF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#aaa\] {
   --tw-bg-opacity: 1;
   background-color: rgb(170 170 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e3ebf7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 235 247 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#eceff1\] {
@@ -3956,11 +3916,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .\!text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
-.text-\[\#080808\] {
-  --tw-text-opacity: 1;
-  color: rgb(8 8 8 / var(--tw-text-opacity));
 }
 
 .text-\[\#0D6832\] {
@@ -6155,6 +6110,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:border-\[\#4b5563\]) {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:border-\[\#4f4f4f\]) {
   --tw-border-opacity: 1;
   border-color: rgb(79 79 79 / var(--tw-border-opacity));
@@ -6213,21 +6173,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:border-primary-400) {
   --tw-border-opacity: 1;
   border-color: rgb(143 174 224 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-\[\#e5e7eb\]) {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-\[\#99A7B7\]) {
-  --tw-border-opacity: 1;
-  border-color: rgb(153 167 183 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-\[\#4b5563\]) {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-b-\[\#5B6776\]) {
@@ -6450,11 +6395,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:bg-zinc-800) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-\[\#4b5563\]) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:fill-gray-400) {

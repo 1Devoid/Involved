@@ -991,6 +991,22 @@ input[type="range"]:active::-webkit-slider-thumb {
   top: 100%;
 }
 
+.top-14 {
+  top: 3.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-\[6rem\] {
+  top: 6rem;
+}
+
+.top-\[5rem\] {
+  top: 5rem;
+}
+
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -1264,10 +1280,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-right: 1.5rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
-}
-
 .mr-\[6px\] {
   margin-right: 6px;
 }
@@ -1331,10 +1343,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mt-\[6px\] {
   margin-top: 6px;
-}
-
-.mt-\[80px\] {
-  margin-top: 80px;
 }
 
 .mt-px {
@@ -1708,10 +1716,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-\[100\%\] {
   width: 100%;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
 }
 
 .w-\[150px\] {
@@ -2799,11 +2803,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-bottom-left-radius: 0.25rem;
 }
 
-.rounded-l-lg {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-
 .rounded-r-\[0\.25rem\] {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -3544,11 +3543,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 1rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -3715,10 +3709,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-top: 1.5rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pt-\[0\.37rem\] {
   padding-top: 0.37rem;
 }
@@ -3729,14 +3719,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
-}
-
-.pt-\[5vh\] {
-  padding-top: 5vh;
-}
-
-.pt-\[15vh\] {
-  padding-top: 15vh;
 }
 
 .text-left {
@@ -3817,10 +3799,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .text-\[24px\] {
   font-size: 24px;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
 }
 
 .text-\[3\.75rem\] {
@@ -6916,10 +6894,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 
   .sm\:w-auto {

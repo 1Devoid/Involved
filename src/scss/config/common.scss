@@ -236,5 +236,11 @@ header {
   }
 }
 
+.info-popup__wrap {
+  @media (max-height: 390px) {
+    top: 70vh !important;
+  }
+}
+
 @media (min-width: 1024px) {
 }

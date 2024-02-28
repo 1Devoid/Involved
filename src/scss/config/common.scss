@@ -241,6 +241,32 @@ header {
     top: 70vh !important;
   }
 }
+.hint {
+  display: none;
+  width: 142px;
+  text-align: center;
 
-@media (min-width: 1024px) {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    right: 110px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #e0edf9;
+  }
+}
+.user-icon:hover ~ .hint {
+  display: block;
+}
+
+button[aria-selected] {
+  border-bottom-width: 1px;
+}
+button[aria-selected='true'] {
+  color: #1a56db;
+  border-color: #1a56db;
 }

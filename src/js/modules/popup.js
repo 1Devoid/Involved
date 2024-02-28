@@ -1,8 +1,8 @@
 function popupInit() {
-  const modalBtn = document.getElementById('popup');
+  const modalEl = document.getElementById('info-popup');
 
-  if (modalBtn) {
-    const modalEl = document.getElementById('info-popup');
+  if (modalEl) {
+    const modalBtn = document.getElementById('popup');
     const closeModalEl = document.getElementById('close-modal');
     const acceptPrivacyEl = document.getElementById('confirm-button');
 

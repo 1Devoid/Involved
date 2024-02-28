@@ -175,7 +175,10 @@ body::-webkit-scrollbar-thumb:active {
   --tw-border-opacity: 1;
   border-color: rgb(153 167 183 / var(--tw-border-opacity));
 }
-
+.group[data-te-input-state-active]
+  .group-data-\[te-input-state-active\]\:border-t-transparent {
+  border-top-color: transparent !important;
+}
 .popup-textarea {
   border-color: red !important;
 }
@@ -305,4 +308,49 @@ textarea:focus {
 
 :is(.dark .dark\:checked\:after\:bg-primary:checked)::after {
   background-color: transparent;
+}
+
+.checked\:after\:content-\[\'\'\]:checked::after {
+  display: none;
+}
+
+.tooltip-icon:hover ~ .tooltip {
+  display: block;
+}
+.tooltip {
+  display: none;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    right: 26px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #e7e7e7;
+  }
+}
+:is(.dark .tooltip) {
+  &:before {
+    border-top: 7px solid #323d4b;
+  }
+}
+
+:is(.dark input:-webkit-autofill) {
+  -webkit-box-shadow: 0 0 0px 1000px #1f2a37 inset;
+  -webkit-text-fill-color: rgb(190 204 221 / var(--tw-text-opacity)) !important;
+}
+
+[data-te-datepicker-toggle-button-ref] {
+  svg {
+    fill: #4f4f4f;
+  }
+}
+
+:is(.dark [data-te-datepicker-toggle-button-ref]) {
+  svg {
+    fill: #beccdd;
+  }
 }

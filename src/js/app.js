@@ -6,7 +6,9 @@ import asideNavToggler from './modules/asideNav.js';
 import darkThemeToggler from './modules/darkTheme.js';
 import arrowRotateInput from './modules/arrowRotateInput.js';
 import trimString from './modules/trimString.js';
+import { Datepicker, Input, initTE } from 'tw-elements';
 
+initTE({ Datepicker, Input });
 dropdownInit();
 popupInit();
 inputInit();

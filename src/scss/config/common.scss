@@ -354,3 +354,9 @@ textarea:focus {
     fill: #beccdd;
   }
 }
+:is(.dark [data-te-datepicker-header]) {
+  background-color: #4b5563 !important;
+}
+:is(.dark .dark\:bg-zinc-700) {
+  background-color: #374151 !important;
+}

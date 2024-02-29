@@ -53,3 +53,15 @@ checkboxFilterLabel(
   '[data-checkbox="idrm-node-label"]',
   '[data-checkbox="idrm-node"]'
 );
+checkboxFilterLabel(
+  '[data-checkbox="role-manager-label"]',
+  '[data-checkbox="role-manager"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="entitlement-label"]',
+  '[data-checkbox="entitlement"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="status-label"]',
+  '[data-checkbox="status"]'
+);

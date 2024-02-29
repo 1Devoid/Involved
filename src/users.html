@@ -1734,7 +1734,7 @@
                     </ul>
                   </div>
                   <button id="dropdownButton-entitlement" data-dropdown-toggle="dropdown-entitlement"
-                    class="h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
+                    class="relative h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
                     type="button">Entitlement
                     <span class="dark:hidden mr-2 ml-2 w-2">
                       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1748,6 +1748,9 @@
                           stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </span>
+                    <div data-checkbox="entitlement-label"
+                      class="text-[#1A56DB] dark:text-[#111928] absolute top-[-10px] right-[-7px] bg-[#C8DFF5] dark:bg-[#F3F4F6] w-[20px] h-[20px] rounded-[50%]">
+                      0 </div>
                   </button>
                   <!-- Dropdown menu -->
                   <div id="dropdown-entitlement"
@@ -1760,7 +1763,7 @@
                         placeholder="Search" />
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s]  focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-1" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1771,7 +1774,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-2" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1782,7 +1785,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-3" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1793,7 +1796,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-4" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1804,7 +1807,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-5" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1815,7 +1818,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-6" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1826,7 +1829,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="entitlement"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s]  focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxEntitlement-7" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1839,7 +1842,7 @@
                   </div>
 
                   <button id="dropdownButton-status" data-dropdown-toggle="dropdown-status"
-                    class="h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
+                    class="relative h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
                     type="button">Status
                     <span class="dark:hidden mr-2 ml-2 w-2">
                       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1853,6 +1856,9 @@
                           stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </span>
+                    <div data-checkbox="status-label"
+                      class="text-[#1A56DB] dark:text-[#111928] absolute top-[-10px] right-[-7px] bg-[#C8DFF5] dark:bg-[#F3F4F6] w-[20px] h-[20px] rounded-[50%]">
+                      1 </div>
                   </button>
                   <!-- Dropdown menu -->
                   <div id="dropdown-status"
@@ -1862,7 +1868,7 @@
                       <div class="py-4 px-4 text-[16px] text-[#4F4F4F] dark:text-[#F5F9FF]">Status</div>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="status"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxStatus-1" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1873,7 +1879,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="status"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxStatus-2" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1884,7 +1890,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="status"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxStatus-3" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1895,7 +1901,7 @@
                       </li>
                       <li class="py-1 px-4">
                         <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
+                          <input data-checkbox="status"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkboxStatus-4" />
                           <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
@@ -1907,7 +1913,7 @@
                     </ul>
                   </div>
 
-                  <button type="button"
+                  <button type="button" id="resetButton"
                     class="min-w-[190px] mb-4 xl:mb-0 h-[40px] md:min-w-[100px] md:mr-[12px] xl:mr-0 lg:ml-[12px] rounded-lg border border-[#E5E7EB] flex items-center justify-center dark:border-[#FFFFFF] dark:hover:bg-[#5a687d66] dark:bg-[#1F2A37] whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#1F2A37] dark:text-[#F5F9FF] transition duration-150 ease-in-out hover:bg-primary-accent-100 hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none">
                     <span class="dark:hidden mr-2">
                       <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2044,11 +2050,11 @@
                       </td>
                       <td
                         class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
-                        <div
-                          class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
-                          SS
-                        </div>
-                        <a href="user-details.html">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
                           <div class="flex flex-col">
                             <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
                               Delegated user
@@ -2196,11 +2202,11 @@
                       </td>
                       <td
                         class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
-                        <div
-                          class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
-                          SS
-                        </div>
-                        <a href="user-details.html">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
                           <div class="flex flex-col">
                             <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
                               Delegated user
@@ -2348,11 +2354,11 @@
                       </td>
                       <td
                         class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
-                        <div
-                          class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
-                          DM
-                        </div>
-                        <a href="user-details.html">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
                           <div class="flex flex-col">
                             <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
                               Delegated user
@@ -2499,18 +2505,1386 @@
                         </div>
                       </td>
                       <td
-                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal items-center align-top xl:align-middle">
-                        <div
-                          class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
-                          DM
-                        </div>
-                        <a href="user-details.html">
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            DM
+                          </div>
                           <div class="flex flex-col">
                             <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
                               Owner
                             </div>
                             <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
-                              dmpr.user@idrm.info
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        dm_auditor_user1@icsynergy.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Franchises
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Marketing, Operations, San Antonio Demo Motors
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        1h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#FBF0DA] text-[#723B13] dark:bg-[#ac9a324f] dark:text-[#DDBE45] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Expired
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-4" data-dropdown-toggle="actions-4"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-4"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-4">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Delegated Users
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Delegated user
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        sspr_user@identityrm.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Demo Motors
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Company Owned
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        6h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#EBEDEF] text-[#40464F] dark:bg-[#465260] dark:text-[#BECCDD] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Disabled
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-2" data-dropdown-toggle="actions-2"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-2"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-2">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Delegated Users
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Delegated user
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        dm_auditor_user1@icsynergy.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Dallas Reliable
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Houston Reliable, Austin Demo Motors, test Node
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        3h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#DEF1F7] text-[#1C657D] dark:bg-[#3A3C61] dark:text-[#5DADE8] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Pending
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-3" data-dropdown-toggle="actions-3"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-3"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-3">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Owned
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            DM
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Owner
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        dm_auditor_user1@icsynergy.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Franchises
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Marketing, Operations, San Antonio Demo Motors
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        1h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#FBF0DA] text-[#723B13] dark:bg-[#ac9a324f] dark:text-[#DDBE45] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Expired
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-4" data-dropdown-toggle="actions-4"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-4"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-4">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Delegated Users
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Delegated user
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        sspr_user@identityrm.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Demo Motors
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Company Owned
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        6h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#EBEDEF] text-[#40464F] dark:bg-[#465260] dark:text-[#BECCDD] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Disabled
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-2" data-dropdown-toggle="actions-2"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-2"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-2">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Delegated Users
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Delegated user
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        dm_auditor_user1@icsynergy.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Dallas Reliable
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Houston Reliable, Austin Demo Motors, test Node
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        3h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#DEF1F7] text-[#1C657D] dark:bg-[#3A3C61] dark:text-[#5DADE8] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Pending
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-3" data-dropdown-toggle="actions-3"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-3"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-3">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Owned
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            DM
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Owner
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        dm_auditor_user1@icsynergy.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Franchises
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Marketing, Operations, San Antonio Demo Motors
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        1h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#FBF0DA] text-[#723B13] dark:bg-[#ac9a324f] dark:text-[#DDBE45] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Expired
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-4" data-dropdown-toggle="actions-4"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-4"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-4">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Delegated Users
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Delegated user
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        sspr_user@identityrm.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Demo Motors
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Company Owned
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        6h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#EBEDEF] text-[#40464F] dark:bg-[#465260] dark:text-[#BECCDD] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Disabled
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-2" data-dropdown-toggle="actions-2"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-2"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-2">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Delegated Users
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            SS
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Delegated user
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
+                            </div>
+                          </div>
+                        </a>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle"
+                        data-trim20>
+                        dm_auditor_user1@icsynergy.info
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        <div class="flex flex-col">
+                          <div class="mb-2 text-[14px] text-[#0F0F0F] dark:text-[#D9E5F6] font-normal">
+                            Dallas Reliable
+                          </div>
+                          <div class="text-[14px] text-[#757575] dark:text-[#D9E5F6] font-normal" data-trim34>
+                            Houston Reliable, Austin Demo Motors, test Node
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        Okta Employee Directory
+                      </td>
+                      <td
+                        class="py-4 px-[22px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal align-top xl:align-middle">
+                        3h
+                      </td>
+                      <td class="py-4 px-[22px] text-center align-top xl:align-middle">
+                        <span
+                          class="bg-[#DEF1F7] text-[#1C657D] dark:bg-[#3A3C61] dark:text-[#5DADE8] font-normal py-[5px] px-[10px] rounded-full text-[15px] whitespace-nowrap">
+                          Pending
+                        </span>
+                      </td>
+                      <td class="py-4 px-[22px] align-top xl:align-middle">
+                        <button type="button" id="actionsButton-3" data-dropdown-toggle="actions-3"
+                          class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px] mr-5">
+                          <span class="dark:hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          <span class="hidden dark:block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
+                              <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="actions-3"
+                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-3">
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
+                                Details</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
+                                Password</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
+                                Recovery Question</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Change Access
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Impersonate User
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
+                                User</a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
+                                User</a>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                Remove from organization
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-b-[#5B6776]">
+                      <td class="w-[40px] py-1 px-[22px] align-top xl:align-middle relative">
+                        <div class="ml-3">
+                          <input data-checkbox="users"
+                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] mt-[10px] lg:mt-[5px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                            type="checkbox" value="" />
+                          <div class="xl:hidden user-icon absolute bottom-4 left-2 lg:bottom-2">
+                            <a href="user-details.html">
+                              <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.3375 11.2368C10.7606 11.2368 12.725 9.1691 12.725 6.61842C12.725 4.06774 10.7606 2 8.3375 2C5.91435 2 3.95 4.06774 3.95 6.61842C3.95 9.1691 5.91435 11.2368 8.3375 11.2368Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M9.8 12.2632H6.875C5.58254 12.2648 4.34347 12.806 3.42956 13.768C2.51566 14.73 2.00155 16.0343 2 17.3947V20.4737C2 20.7459 2.10272 21.0069 2.28557 21.1994C2.46842 21.3919 2.71641 21.5 2.975 21.5H13.7C13.9586 21.5 14.2066 21.3919 14.3894 21.1994C14.5723 21.0069 14.675 20.7459 14.675 20.4737V17.3947C14.6735 16.0343 14.1593 14.73 13.2454 13.768C12.3315 12.806 11.0925 12.2648 9.8 12.2632Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M11.9148 9.27452C12.4406 8.49937 12.7239 7.57093 12.725 6.61842C12.7229 6.28023 12.6856 5.9433 12.6138 5.61365C12.2168 6.11423 11.9448 6.71132 11.8227 7.35066C11.7007 7.99 11.7323 8.65132 11.9148 9.27452Z"
+                                  fill="#1A56DB" />
+                                <path
+                                  d="M15.6062 4C15.1392 4.00376 14.6767 4.0966 14.2412 4.27403C14.6422 5.41027 14.7386 6.64076 14.5196 7.83078C14.3007 9.02081 13.775 10.1245 13 11.021C13.4373 11.2762 13.847 11.5808 14.2217 11.9293C14.6629 12.1117 15.1322 12.2071 15.6062 12.2105C16.6405 12.2105 17.6325 11.778 18.3639 11.0081C19.0953 10.2382 19.5062 9.19405 19.5062 8.10526C19.5062 7.01648 19.0953 5.97229 18.3639 5.2024C17.6325 4.43252 16.6405 4 15.6062 4Z"
+                                  fill="#75AEE5" />
+                                <path
+                                  d="M16.5812 13.2368H15.3361C16.1439 14.4371 16.5788 15.8712 16.5812 17.3421V20.4211C16.578 20.7715 16.5173 21.1187 16.4018 21.4474H20.4812C20.7398 21.4474 20.9878 21.3392 21.1706 21.1468C21.3535 20.9543 21.4562 20.6932 21.4562 20.4211V18.3684C21.4546 17.0079 20.9405 15.7037 20.0266 14.7416C19.1127 13.7796 17.8736 13.2385 16.5812 13.2368Z"
+                                  fill="#75AEE5" />
+                              </svg>
+                            </a>
+                          </div>
+                          <div
+                            class="xl:hidden hint absolute bottom-[50px] left-0 py-[6px] px-3 bg-[#E0EDF9] text-[#1A56DB] font-medium rounded whitespace-nowrap">
+                            Owned
+                          </div>
+                        </div>
+                      </td>
+                      <td
+                        class="hidden xl:flex py-4 px-2 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal flex items-center align-top xl:align-middle">
+                        <a href="user-details.html" class="flex items-center">
+                          <div
+                            class="mr-4 w-[32px] h-[32px] bg-[#A1CBEF] rounded text-[#1F2D4C] font-medium text-xs uppercase flex justify-center items-center">
+                            DM
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="mb-2 text-[14px] text-[#717171] dark:text-[#8593A3] font-normal">
+                              Owner
+                            </div>
+                            <div class="text-[14px] text-[#424242] dark:text-[#D9E5F6] font-bold" data-trim16>
+                              sspr.user@idrm.info
                             </div>
                           </div>
                         </a>

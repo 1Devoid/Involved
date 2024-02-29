@@ -3,6 +3,7 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
 
   if (checkboxesLabel) {
     const checkboxes = document.querySelectorAll(checkboxesSelecto);
+    var resetButton = document.getElementById('resetButton');
 
     checkboxesLabel.style.display = 'none';
 
@@ -25,6 +26,13 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
           checkboxesLabel.style.display = 'block';
         }
       });
+    });
+
+    resetButton.addEventListener('click', function () {
+      checkboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+      checkboxesLabel.style.display = 'none';
     });
   }
 }

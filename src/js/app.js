@@ -7,6 +7,7 @@ import darkThemeToggler from './modules/darkTheme.js';
 import arrowRotateInput from './modules/arrowRotateInput.js';
 import trimString from './modules/trimString.js';
 import checkboxesChecker from './modules/checkboxesChecker.js';
+import checkboxesCheckerManage from './modules/checkboxesCheckerManage.js';
 import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
 import { Datepicker, Input, initTE } from 'tw-elements';
 
@@ -39,6 +40,7 @@ trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
 trimString('[data-trim34]', 34);
 checkboxesChecker();
+checkboxesCheckerManage();
 checkboxFilterLabel(
   '[data-checkbox="role-application-label"]',
   '[data-checkbox="role-application"]'

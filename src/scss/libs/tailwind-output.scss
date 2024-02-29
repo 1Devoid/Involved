@@ -5535,6 +5535,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   --tw-ring-color: rgb(171 194 232 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-transparent:focus {
+  --tw-ring-color: transparent;
+}
+
 .focus\:transition-\[border-color_0\.2s\]:focus {
   -webkit-transition-property: border-color 0.2s;
   transition-property: border-color 0.2s;

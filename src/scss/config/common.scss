@@ -376,3 +376,17 @@ input[type='checkbox']:focus {
 [type='radio']:focus {
   --tw-ring-shadow: unset;
 }
+
+// .checked-tr {
+//   background: #f9fafb;
+// }
+// :is(.dark .checked-tr) {
+//   background: #374151;
+// }
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+:is(.dark tbody tr:hover) {
+  background: #374151;
+}

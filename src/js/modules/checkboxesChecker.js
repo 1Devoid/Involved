@@ -13,13 +13,24 @@ function checkboxesChecker() {
       });
       if (!masterCheckbox.checked) {
         deleteBtn.style.display = 'none';
+        checkboxes.forEach((checkbox) => {
+          checkbox.closest('tr').classList.remove('checked-tr');
+        });
       } else {
         deleteBtn.style.display = 'flex';
+        checkboxes.forEach((checkbox) => {
+          checkbox.closest('tr').classList.add('checked-tr');
+        });
       }
     });
 
     checkboxes.forEach((checkbox) => {
       checkbox.addEventListener('click', function () {
+        if (checkbox.checked) {
+          checkbox.closest('tr').classList.add('checked-tr');
+        } else {
+          checkbox.closest('tr').classList.remove('checked-tr');
+        }
         masterCheckbox.checked = [...checkboxes].every(
           (checkbox) => checkbox.checked
         );

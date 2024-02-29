@@ -6,6 +6,8 @@ import asideNavToggler from './modules/asideNav.js';
 import darkThemeToggler from './modules/darkTheme.js';
 import arrowRotateInput from './modules/arrowRotateInput.js';
 import trimString from './modules/trimString.js';
+import checkboxesChecker from './modules/checkboxesChecker.js';
+import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
 import { Datepicker, Input, initTE } from 'tw-elements';
 
 initTE({ Datepicker, Input });
@@ -36,3 +38,16 @@ arrowRotateInput(
 trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
 trimString('[data-trim34]', 34);
+checkboxesChecker();
+checkboxFilterLabel(
+  '[data-checkbox="role-application-label"]',
+  '[data-checkbox="role-application"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="role-node-label"]',
+  '[data-checkbox="role-node"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="idrm-node-label"]',
+  '[data-checkbox="idrm-node"]'
+);

@@ -175,10 +175,12 @@ body::-webkit-scrollbar-thumb:active {
   --tw-border-opacity: 1;
   border-color: rgb(153 167 183 / var(--tw-border-opacity));
 }
+
 .group[data-te-input-state-active]
   .group-data-\[te-input-state-active\]\:border-t-transparent {
   border-top-color: transparent !important;
 }
+
 .popup-textarea {
   border-color: red !important;
 }
@@ -317,8 +319,10 @@ textarea:focus {
 .tooltip-icon:hover ~ .tooltip {
   display: block;
 }
+
 .tooltip {
   display: none;
+
   &:before {
     content: '';
     display: block;
@@ -332,6 +336,7 @@ textarea:focus {
     border-top: 7px solid #e7e7e7;
   }
 }
+
 :is(.dark .tooltip) {
   &:before {
     border-top: 7px solid #323d4b;
@@ -354,9 +359,20 @@ textarea:focus {
     fill: #beccdd;
   }
 }
+
 :is(.dark [data-te-datepicker-header]) {
   background-color: #4b5563 !important;
 }
+
 :is(.dark .dark\:bg-zinc-700) {
   background-color: #374151 !important;
+}
+
+input[type='checkbox']:focus {
+  outline: none;
+}
+
+[type='checkbox']:focus,
+[type='radio']:focus {
+  --tw-ring-shadow: unset;
 }

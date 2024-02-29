@@ -1521,9 +1521,9 @@
           <div>
             <div class="content__wrapper py-6 px-6 bg-white dark:bg-[#1F2A37] rounded-[8px]">
               <!-- Top row -->
-              <div class="flex justify-between mb-6">
+              <div class="flex flex-col md:flex-row items-center justify-between mb-6">
                 <a href="users.html"
-                  class="mr-3 whitespace-nowrap text-[#1F2A37] dark:text-[#9CA3AF] text-[14px] leading-normal font-medium py-2 px-3 rounded-lg border border-[#E5E7EB] dark:border-[#4B5563] flex items-center hover:bg-[#1c22301e] dark:hover:bg-[#bcbcbd1e] transition-all">
+                  class="mb-3 md:mb-0 md:mr-3 min-w-[190px] md:min-w-[unset] whitespace-nowrap text-[#1F2A37] dark:text-[#9CA3AF] text-[14px] leading-normal font-medium py-2 px-3 rounded-lg border border-[#E5E7EB] dark:border-[#4B5563] flex items-center justify-center hover:bg-[#1c22301e] dark:hover:bg-[#bcbcbd1e] transition-all">
                   <span class="dark:hidden mr-2">
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9.99998 13.1673L5.33331 8.50065L9.99998 3.83398" stroke="#111928" stroke-width="2"
@@ -1587,7 +1587,7 @@
               </div>
               <!-- User details  -->
               <div class="flex flex-col md:flex-row items-center mb-6">
-                <img class="mr-[10px] rounded mb-3 md:mb-0" src="images/user-img.jpg" alt="User image.">
+                <img class="md:mr-[10px] rounded mb-3 md:mb-0" src="images/user-img.jpg" alt="User image.">
                 <div class="">
                   <h2 class="text-[#080808] dark:text-[#F5F9FF] font-medium mb-[20px] text-[18px] md:text-[24px]">
                     dm_franchise_manader@icsynergy.info
@@ -1608,27 +1608,32 @@
                 </div>
               </div>
               <!-- Tabs -->
-              <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                <ul class="flex flex-nowrap -mb-px text-sm font-medium text-center" id="default-tab"
-                  data-tabs-toggle="#default-tab-content" role="tablist">
-                  <li class="me-2" role="presentation">
-                    <button class="whitespace-nowrap inline-block p-4 border-b rounded-t-lg" id="profile-tab"
-                      data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+              <div class="mb-10 md:mb-4 md:border-b md:border-gray-200 md:dark:border-gray-700">
+                <ul class="flex flex-col md:flex-row md:flex-nowrap -mb-px text-sm font-medium text-center"
+                  id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                  <li class="md:me-2 " role="presentation">
+                    <button
+                      class="min-w-[316px] md:min-w-[unset] whitespace-nowrap inline-block p-4 border-b rounded-t-lg"
+                      id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
                       aria-selected="false">Profile</button>
                   </li>
-                  <li class="me-2" role="presentation">
-                    <button class="whitespace-nowrap inline-block p-4 border-b rounded-t-lg" id="applicationsAccess-tab"
-                      data-tabs-target="#applicationsAccess" type="button" role="tab" aria-controls="applicationsAccess"
-                      aria-selected="false">Application Access</button>
+                  <li class="md:me-2" role="presentation">
+                    <button
+                      class="min-w-[316px] md:min-w-[unset] whitespace-nowrap inline-block p-4 border-b rounded-t-lg"
+                      id="applicationsAccess-tab" data-tabs-target="#applicationsAccess" type="button" role="tab"
+                      aria-controls="applicationsAccess" aria-selected="false">Application Access</button>
                   </li>
-                  <li class="me-2" role="presentation">
-                    <button class="whitespace-nowrap inline-block p-4 border-b rounded-t-lg" id="applicationsRole-tab"
-                      data-tabs-target="#applicationsRole" type="button" role="tab" aria-controls="applicationsRole"
-                      aria-selected="false">Application Role</button>
+                  <li class="md:me-2" role="presentation">
+                    <button
+                      class="min-w-[316px] md:min-w-[unset] whitespace-nowrap inline-block p-4 border-b rounded-t-lg"
+                      id="applicationsRole-tab" data-tabs-target="#applicationsRole" type="button" role="tab"
+                      aria-controls="applicationsRole" aria-selected="false">Application Role</button>
                   </li>
                   <li role="presentation">
-                    <button class="whitespace-nowrap inline-block p-4 border-b rounded-t-lg" id="role-tab"
-                      data-tabs-target="#role" type="button" role="tab" aria-controls="role" aria-selected="false">IDRM
+                    <button
+                      class="min-w-[316px] md:min-w-[unset] whitespace-nowrap inline-block p-4 border-b rounded-t-lg"
+                      id="role-tab" data-tabs-target="#role" type="button" role="tab" aria-controls="role"
+                      aria-selected="false">IDRM
                       Role</button>
                   </li>
                 </ul>
@@ -1638,7 +1643,8 @@
                 <!-- Tab1 -->
                 <div class="hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="max-w-[728px]">
-                    <div class="flex items-center space-x-6 mb-[24px]">
+                    <div
+                      class="flex flex-col md:flex-row items-center items-center space-y-4 md:space-y-[unset] md:space-x-6 mb-[24px]">
                       <div class="w-[100%]">
                         <label for="dropdownButton-profileNode"
                           class="text-[#424242] dark:text-[#BECCDD] block mb-1">Node*</label>
@@ -2027,7 +2033,6 @@
                       </label>
                     </div>
                   </div>
-
                 </div>
                 <!-- Tab2 -->
                 <div class="hidden rounded-lg" id="applicationsAccess" role="tabpanel"

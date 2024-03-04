@@ -30,7 +30,9 @@ arrowRotateInput('#dropdownButton-entitlement', '#dropdown-entitlement');
 arrowRotateInput('#dropdownButton-deatailsAction', '#dropdown-deatailsAction');
 arrowRotateInput('#dropdownButton-node', '#dropdown-node');
 arrowRotateInput('#dropdownButton-node2', '#dropdown-node2');
+arrowRotateInput('#dropdownButton-node-access', '#dropdown-node-access');
 arrowRotateInput('#dropdownButton-appRole', '#dropdown-appRole');
+arrowRotateInput('#dropdownButton-appRole-2', '#dropdown-appRole-2');
 arrowRotateInput('#dropdownButton-profileNode', '#dropdown-profileNode');
 arrowRotateInput(
   '#dropdownButton-profileHomeNode',
@@ -46,6 +48,10 @@ checkboxFilterLabel(
   '[data-checkbox="role-application"]'
 );
 checkboxFilterLabel(
+  '[data-checkbox="role-application-label-2"]',
+  '[data-checkbox="role-application-2"]'
+);
+checkboxFilterLabel(
   '[data-checkbox="role-node-label"]',
   '[data-checkbox="role-node"]'
 );
@@ -56,6 +62,10 @@ checkboxFilterLabel(
 checkboxFilterLabel(
   '[data-checkbox="role-manager-label"]',
   '[data-checkbox="role-manager"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="role-node-label-2"]',
+  '[data-checkbox="role-node-2"]'
 );
 checkboxFilterLabel(
   '[data-checkbox="entitlement-label"]',

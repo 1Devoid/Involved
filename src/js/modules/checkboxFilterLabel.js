@@ -3,7 +3,8 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
 
   if (checkboxesLabel) {
     const checkboxes = document.querySelectorAll(checkboxesSelecto);
-    var resetButton = document.getElementById('resetButton');
+    const resetButton = document.getElementById('resetButton');
+    const resetButton2 = document.getElementById('resetButton-2');
 
     checkboxesLabel.style.display = 'none';
 
@@ -28,12 +29,18 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
       });
     });
 
-    resetButton.addEventListener('click', function () {
-      checkboxes.forEach(function (checkbox) {
-        checkbox.checked = false;
-      });
-      checkboxesLabel.style.display = 'none';
-    });
+    function reset(resetButton) {
+      if (resetButton) {
+        resetButton.addEventListener('click', function () {
+          checkboxes.forEach(function (checkbox) {
+            checkbox.checked = false;
+          });
+          checkboxesLabel.style.display = 'none';
+        });
+      }
+    }
+    reset(resetButton);
+    reset(resetButton2);
   }
 }
 

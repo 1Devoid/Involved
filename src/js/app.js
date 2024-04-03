@@ -1,3 +1,5 @@
+'use strict';
+
 import dropdownInit from './modules/dropdown.js';
 import popupInit from './modules/popup.js';
 import inputInit from './modules/input.js';
@@ -9,11 +11,24 @@ import trimString from './modules/trimString.js';
 import checkboxesChecker from './modules/checkboxesChecker.js';
 import checkboxesCheckerManage from './modules/checkboxesCheckerManage.js';
 import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
+import toggleEdit from './modules/toggleEdit.js';
 import { Datepicker, Input, initTE } from 'tw-elements';
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   window.onload = function () {
+//     setTimeout(() => {
+//       let preloader = document.querySelector('#preloader');
+//       if (!preloader.classList.contains('done')) {
+//         preloader.classList.add('done');
+//       }
+//     }, 1000);
+//   };
+// });
 
 initTE({ Datepicker, Input });
 dropdownInit();
-popupInit();
+popupInit('info-popup', 'popup');
+popupInit('assign-roles-popup', 'assign-roles-btn');
 inputInit();
 inputError();
 asideNavToggler();
@@ -32,8 +47,12 @@ arrowRotateInput('#dropdownButton-node', '#dropdown-node');
 arrowRotateInput('#dropdownButton-node2', '#dropdown-node2');
 arrowRotateInput('#dropdownButton-node-access', '#dropdown-node-access');
 arrowRotateInput('#dropdownButton-appRole', '#dropdown-appRole');
+arrowRotateInput('#dropdownButton-role-1', '#dropdown-role-1');
+arrowRotateInput('#dropdownButton-role-2', '#dropdown-role-2');
+arrowRotateInput('#dropdownButton-add-type', '#dropdown-add-type');
 arrowRotateInput('#dropdownButton-appRole-2', '#dropdown-appRole-2');
 arrowRotateInput('#dropdownButton-profileNode', '#dropdown-profileNode');
+arrowRotateInput('#dropdownButton-select-popup', '#dropdown-select-popup');
 arrowRotateInput(
   '#dropdownButton-profileHomeNode',
   '#dropdown-profileHomeNode'
@@ -41,6 +60,7 @@ arrowRotateInput(
 trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
 trimString('[data-trim34]', 34);
+trimString('[data-trim60]', 60);
 checkboxesChecker();
 checkboxesCheckerManage();
 checkboxFilterLabel(
@@ -68,6 +88,10 @@ checkboxFilterLabel(
   '[data-checkbox="role-node-2"]'
 );
 checkboxFilterLabel(
+  '[data-checkbox="role-node-label-3"]',
+  '[data-checkbox="role-node-3"]'
+);
+checkboxFilterLabel(
   '[data-checkbox="entitlement-label"]',
   '[data-checkbox="entitlement"]'
 );
@@ -75,3 +99,42 @@ checkboxFilterLabel(
   '[data-checkbox="status-label"]',
   '[data-checkbox="status"]'
 );
+checkboxFilterLabel(
+  '[data-checkbox="role-select-label"]',
+  '[data-checkbox="role-select"]'
+);
+
+if (document.getElementById('edit-node')) {
+  document.getElementById('edit-node').addEventListener('click', toggleEdit);
+
+  document
+    .getElementById('cancel-node-btn')
+    .addEventListener('click', toggleEdit);
+}
+
+function addNodePopup() {
+  const modalEl = document.getElementById('add-node-popup');
+
+  if (modalEl) {
+    const modalBtn = document.getElementById('addNode');
+    const closeModalEl = document.getElementById('close-addNode-modal');
+    const acceptPrivacyEl = document.getElementById('confirm-button');
+
+    const roleModal = new Modal(modalEl, {
+      placement: 'center',
+    });
+
+    modalBtn.addEventListener('click', function () {
+      roleModal.show();
+    });
+
+    closeModalEl.addEventListener('click', function () {
+      roleModal.hide();
+    });
+
+    acceptPrivacyEl.addEventListener('click', function () {
+      roleModal.hide();
+    });
+  }
+}
+addNodePopup();

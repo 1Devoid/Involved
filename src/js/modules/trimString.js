@@ -6,6 +6,8 @@ function trimString(selector, num) {
 
       if (text.length > num) {
         element.innerText = text.substring(0, num) + '...';
+      } else {
+        return text;
       }
     });
   }

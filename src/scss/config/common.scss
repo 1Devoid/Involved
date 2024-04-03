@@ -390,3 +390,42 @@ tbody tr:hover {
 :is(.dark tbody tr:hover) {
   background: #374151;
 }
+
+// .preloader {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: #fff;
+//   z-index: 999;
+//   opacity: 1;
+//   visibility: visible;
+
+//   .loader {
+//     height: 40px;
+//     width: 40px;
+//     border: 3px solid #fff;
+//     border-radius: 50%;
+//     border-top-color: #4076d0;
+//     border-right-color: #4076d0;
+//     left: 50%;
+//     top: 50%;
+//     position: absolute;
+//     transform: translate(-50%, -50%);
+//     animation: spin 1s linear infinite;
+//   }
+// }
+// .done {
+//   opacity: 0;
+//   visibility: hidden;
+// }
+
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }

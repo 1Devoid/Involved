@@ -5,6 +5,7 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
     const checkboxes = document.querySelectorAll(checkboxesSelecto);
     const resetButton = document.getElementById('resetButton');
     const resetButton2 = document.getElementById('resetButton-2');
+    const resetButton3 = document.getElementById('resetButton-3');
 
     checkboxesLabel.style.display = 'none';
 
@@ -41,6 +42,7 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
     }
     reset(resetButton);
     reset(resetButton2);
+    reset(resetButton3);
   }
 }
 

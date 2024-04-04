@@ -5,7 +5,7 @@ function trimString(selector, num) {
       let text = element.innerText;
 
       if (text.length > num) {
-        element.innerText = text.substring(0, num) + '...';
+        element.innerText = text.trim().substring(0, num) + '...';
       } else {
         return text;
       }

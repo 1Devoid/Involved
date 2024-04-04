@@ -1,7 +1,8 @@
 'use strict';
 
+import { Datepicker, Input, initTE } from 'tw-elements';
 import dropdownInit from './modules/dropdown.js';
-import popupInit from './modules/popup.js';
+import { popupInit, addNodePopup } from './modules/popup.js';
 import inputInit from './modules/input.js';
 import inputError from './modules/inputError.js';
 import asideNavToggler from './modules/asideNav.js';
@@ -12,7 +13,8 @@ import checkboxesChecker from './modules/checkboxesChecker.js';
 import checkboxesCheckerManage from './modules/checkboxesCheckerManage.js';
 import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
 import toggleEdit from './modules/toggleEdit.js';
-import { Datepicker, Input, initTE } from 'tw-elements';
+import asideNodeClickHandler from './modules/asideNodeClickHandler.js';
+import handkerExpandBtn from './modules/handkerExpandBtn.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -53,6 +55,10 @@ arrowRotateInput('#dropdownButton-add-type', '#dropdown-add-type');
 arrowRotateInput('#dropdownButton-appRole-2', '#dropdown-appRole-2');
 arrowRotateInput('#dropdownButton-profileNode', '#dropdown-profileNode');
 arrowRotateInput('#dropdownButton-select-popup', '#dropdown-select-popup');
+arrowRotateInput('#dropdownColorButton-2', '#dropdown-color-2');
+arrowRotateInput('#dropdownColorButton-3', '#dropdown-color-3');
+arrowRotateInput('#dropdownButton-select-role', '#dropdown-select-role');
+arrowRotateInput('#dropdownButton-add-node-popup', '#dropdown-add-node-popup');
 arrowRotateInput(
   '#dropdownButton-profileHomeNode',
   '#dropdown-profileHomeNode'
@@ -103,6 +109,10 @@ checkboxFilterLabel(
   '[data-checkbox="role-select-label"]',
   '[data-checkbox="role-select"]'
 );
+checkboxFilterLabel(
+  '[data-checkbox="select-role-label"]',
+  '[data-checkbox="select-role"]'
+);
 
 if (document.getElementById('edit-node')) {
   document.getElementById('edit-node').addEventListener('click', toggleEdit);
@@ -112,29 +122,8 @@ if (document.getElementById('edit-node')) {
     .addEventListener('click', toggleEdit);
 }
 
-function addNodePopup() {
-  const modalEl = document.getElementById('add-node-popup');
-
-  if (modalEl) {
-    const modalBtn = document.getElementById('addNode');
-    const closeModalEl = document.getElementById('close-addNode-modal');
-    const acceptPrivacyEl = document.getElementById('confirm-button');
-
-    const roleModal = new Modal(modalEl, {
-      placement: 'center',
-    });
-
-    modalBtn.addEventListener('click', function () {
-      roleModal.show();
-    });
-
-    closeModalEl.addEventListener('click', function () {
-      roleModal.hide();
-    });
-
-    acceptPrivacyEl.addEventListener('click', function () {
-      roleModal.hide();
-    });
-  }
-}
 addNodePopup();
+
+asideNodeClickHandler();
+
+handkerExpandBtn();

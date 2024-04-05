@@ -15,6 +15,8 @@ import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
 import toggleEdit from './modules/toggleEdit.js';
 import asideNodeClickHandler from './modules/asideNodeClickHandler.js';
 import handkerExpandBtn from './modules/handkerExpandBtn.js';
+import quotaExpire from './modules/quotaExpire.js';
+import manageQuotasPopup from './modules/manageQuotasPopup.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -127,3 +129,7 @@ addNodePopup();
 asideNodeClickHandler();
 
 handkerExpandBtn();
+
+quotaExpire();
+
+manageQuotasPopup();

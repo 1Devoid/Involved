@@ -391,6 +391,27 @@ tbody tr:hover {
   background: #374151;
 }
 
+.hint-block {
+  font-family: $fontFamilyInter;
+}
+.hint-icon:hover ~ .hint-block {
+  display: block;
+}
+
+.hint-block::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #e7e7e7;
+  top: -5px;
+  left: 3px;
+  rotate: 45deg;
+}
+:is(.dark .hint-block)::before {
+  background: #465260;
+}
 // .preloader {
 //   position: fixed;
 //   top: 0;

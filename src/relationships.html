@@ -2361,7 +2361,29 @@
                 <div class="hidden" id="details" role="tabpanel" aria-labelledby="details-tab">
                   <div class="p-4 border border-[#E5E7EB] dark:border-[#5B6776] rounded-lg">
                     <div class="flex justify-between items-center mb-6 min-h-[32px]">
-                      <div class="text-[#2B2B2B] dark:text-[#ffffff] mr-4 text-[20px] font-medium">Relationship Details
+                      <div class="relative flex items-center">
+                        <svg class="hint-icon mr-2 fill-[#424242] dark:fill-[#ffffff]" width="14" height="14"
+                          viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_911_82571)">
+                            <path
+                              d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM5.90625 9.1875H6.5625V7.4375H5.90625C5.54258 7.4375 5.25 7.14492 5.25 6.78125C5.25 6.41758 5.54258 6.125 5.90625 6.125H7.21875C7.58242 6.125 7.875 6.41758 7.875 6.78125V9.1875H8.09375C8.45742 9.1875 8.75 9.48008 8.75 9.84375C8.75 10.2074 8.45742 10.5 8.09375 10.5H5.90625C5.54258 10.5 5.25 10.2074 5.25 9.84375C5.25 9.48008 5.54258 9.1875 5.90625 9.1875ZM7 3.5C7.23206 3.5 7.45462 3.59219 7.61872 3.75628C7.78281 3.92038 7.875 4.14294 7.875 4.375C7.875 4.60706 7.78281 4.82962 7.61872 4.99372C7.45462 5.15781 7.23206 5.25 7 5.25C6.76794 5.25 6.54538 5.15781 6.38128 4.99372C6.21719 4.82962 6.125 4.60706 6.125 4.375C6.125 4.14294 6.21719 3.92038 6.38128 3.75628C6.54538 3.59219 6.76794 3.5 7 3.5Z" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_911_82571">
+                              <rect width="14" height="14" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <div
+                          class="hint-block hidden absolute z-[1] top-[35px] left-[-10px] w-[355px] bg-[#E7E7E7] dark:bg-[#465260] text-[#2B2B2B] dark:text-[#ffffff] text-[14px] font-medium p-2 pt-0 rounded">
+                          Used to edit the selected node configuration settings. These include configurations settings
+                          such as Identity Provide, Node type, Name, Dashboard theme and more.
+                        </div>
+                        <div class="text-[#2B2B2B] text-[20px] font-medium dark:text-[#FFFFFF]">Relationship Nodes</div>
+                        <div
+                          class="ml-2 text-[#111928] dark:text-[#BECCDD] text-[12px] font-medium leading-[150%] py-[2px] px-[10px] text-center bg-[#E5E7EB] dark:bg-[#323D4B] rounded-[6px]">
+                          Standard Attributes
+                        </div>
                       </div>
                       <button id="edit-node"
                         class="ml-4 w-[32px] h-[32px] border border-[#E5E7EB] dark:border-[#4B5563] rounded-[100%] bg-transparent flex justify-center items-center">
@@ -2373,9 +2395,334 @@
                       </button>
                     </div>
                     <div class="">
-
+                      <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                        <input type="text" id="id-input"
+                          class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                          id="exampleFormControlInput1" placeholder="Example label" />
+                        <label for="exampleFormControlInput1"
+                          class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                          Unique ID</label>
+                        <span class="absolute right-[12px] top-[10px]">
+                          <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2021_702)">
+                              <path
+                                d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2021_702">
+                                <rect width="14" height="14" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="name-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            Name
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="label-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            Label
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="description-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            Description
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="address-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            Address
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="flex gap-4 mb-4">
+                        <div class="w-[100%]">
+                          <div class="h-[20px] dark:text-[#ffffff] mb-1">User Source</div>
+                          <button id="dropdownButton-user-service" data-dropdown-toggle="dropdown-user-service"
+                            class="relative p-4 h-[36px] w-[100%] rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-transparent dark:text-[#9CA3AF]"
+                            type="button">Okta External Directory
+                            <span class="dark:hidden mr-2  ml-[41px] w-2 pointer-events-none">
+                              <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span class="hidden dark:block mr-2  ml-[41px] w-2 pointer-events-none">
+                              <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                          </button>
+                          <!-- Dropdown menu -->
+                          <div id="dropdown-user-service"
+                            class="min-w-[232px] z-10 hidden bg-white dark:bg-[#323D4B] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="min-w-[232px] text-sm text-gray-700 dark:text-gray-200"
+                              aria-labelledby="dropdownButton-user-service">
+                              <li
+                                class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
+                                <button class="flex items-center">
+                                  <span class="leading-[160%] text-sm">Okta External Directory</span>
+                                </button>
+                              </li>
+                              <li
+                                class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
+                                <button class="flex items-center">
+                                  <span class="leading-[160%] text-sm">Okta External Directory</span>
+                                </button>
+                              </li>
+                              <li
+                                class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
+                                <button class="flex items-center">
+                                  <span class="leading-[160%] text-sm">Okta External Directory</span>
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="w-[100%]">
+                          <div class="h-[20px] dark:text-[#ffffff] mb-1">Dashboard service</div>
+                          <button id="dropdownButton-dashboard-service"
+                            data-dropdown-toggle="dropdown-dashboard-service"
+                            class="relative p-4 h-[36px] w-[100%] rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-transparent dark:text-[#9CA3AF]"
+                            type="button">Okta External Directory
+                            <span class="dark:hidden mr-2  ml-[41px] w-2 pointer-events-none">
+                              <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span class="hidden dark:block mr-2  ml-[41px] w-2 pointer-events-none">
+                              <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                          </button>
+                          <!-- Dropdown menu -->
+                          <div id="dropdown-dashboard-service"
+                            class="min-w-[232px] z-10 hidden bg-white dark:bg-[#323D4B] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="min-w-[232px] text-sm text-gray-700 dark:text-gray-200"
+                              aria-labelledby="dropdownButton-dashboard-service">
+                              <li
+                                class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
+                                <button class="flex items-center">
+                                  <span class="leading-[160%] text-sm">Okta External Directory</span>
+                                </button>
+                              </li>
+                              <li
+                                class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
+                                <button class="flex items-center">
+                                  <span class="leading-[160%] text-sm">Okta External Directory</span>
+                                </button>
+                              </li>
+                              <li
+                                class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
+                                <button class="flex items-center">
+                                  <span class="leading-[160%] text-sm">Okta External Directory</span>
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                        <input type="text" id="domain-input"
+                          class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                          id="exampleFormControlInput1" placeholder="Example label" />
+                        <label for="exampleFormControlInput1"
+                          class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                          Domain</label>
+                        <span class="absolute right-[12px] top-[10px]">
+                          <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2021_702)">
+                              <path
+                                d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2021_702">
+                                <rect width="14" height="14" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="relative w-[100%] mb-4" data-te-datepicker-init data-te-input-wrapper-init>
+                          <input type="text"
+                            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-[#00000099] dark:text-[#BECCDD] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            placeholder="Select a date" />
+                          <label for="floatingInput"
+                            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-[#00000099] dark:text-[#97a2b0] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:peer-focus:text-primary">
+                            Creation Date
+                          </label>
+                        </div>
+                        <div class="relative w-[100%] mb-4" data-te-datepicker-init data-te-input-wrapper-init>
+                          <input type="text"
+                            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-[#00000099] dark:text-[#BECCDD] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            placeholder="Select a date" />
+                          <label for="floatingInput"
+                            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-[#00000099] dark:text-[#97a2b0] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:peer-focus:text-primary">
+                            Expiration Date
+                          </label>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="quota-calculated-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            User Quota Calculated
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="sser-count-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            User Count
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="relative mb-4 w-[100%]" data-te-input-wrapper-init>
+                          <input type="text" id="quota-remaining-input"
+                            class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            id="exampleFormControlInput1" placeholder="Example label" />
+                          <label for="exampleFormControlInput1"
+                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                            User Quota Remaining
+                          </label>
+                          <span class="absolute right-[12px] top-[10px]">
+                            <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_2021_702)">
+                                <path
+                                  d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM7 3.5C7.36367 3.5 7.65625 3.79258 7.65625 4.15625V7.21875C7.65625 7.58242 7.36367 7.875 7 7.875C6.63633 7.875 6.34375 7.58242 6.34375 7.21875V4.15625C6.34375 3.79258 6.63633 3.5 7 3.5ZM6.125 9.625C6.125 9.39294 6.21719 9.17038 6.38128 9.00628C6.54538 8.84219 6.76794 8.75 7 8.75C7.23206 8.75 7.45462 8.84219 7.61872 9.00628C7.78281 9.17038 7.875 9.39294 7.875 9.625C7.875 9.85706 7.78281 10.0796 7.61872 10.2437C7.45462 10.4078 7.23206 10.5 7 10.5C6.76794 10.5 6.54538 10.4078 6.38128 10.2437C6.21719 10.0796 6.125 9.85706 6.125 9.625Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_2021_702">
+                                  <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="flex items-center justify-end mt-6 hidden" id="edit-btns">
+                    <div class="items-center justify-end mt-6 hidden" id="edit-btns">
                       <button id="cancel-node-btn" type="button"
                         class="min-w-[120px] h-[40px] py-2.5 px-5 text-sm font-medium text-[#1F2A37] focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-transparent dark:text-[#FFFFFF] dark:border-[#FFFFFF] dark:hover:text-white dark:hover:bg-gray-700">Cancel</button>
                       <button id="add-node-btn" type="submit"
@@ -3397,6 +3744,7 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

@@ -17,6 +17,7 @@ import asideNodeClickHandler from './modules/asideNodeClickHandler.js';
 import handkerExpandBtn from './modules/handkerExpandBtn.js';
 import quotaExpire from './modules/quotaExpire.js';
 import manageQuotasPopup from './modules/manageQuotasPopup.js';
+import addDelegatePopup from './modules/addDelegatePopup.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -149,3 +150,5 @@ handkerExpandBtn();
 quotaExpire();
 
 manageQuotasPopup();
+
+addDelegatePopup();

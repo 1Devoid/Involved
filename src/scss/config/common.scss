@@ -110,17 +110,21 @@ footer {
 }
 
 .group[data-te-input-focused].error
-  .group-data-\[te-input-focused\]\:border-primary {
-  --tw-border-opacity: 1;
-  border-color: #f53e3e !important;
-}
-
-.group[data-te-input-focused].error
   .group-data-\[te-input-focused\]\:border-t-transparent {
   border-top-color: transparent !important;
 }
 
 .peer:focus ~ .peer-focus\:text-primary.error {
+  --tw-text-opacity: 1;
+  color: #f53e3e;
+}
+
+.group.error .group-data-\[te-input-focused\]\:border-primary {
+  --tw-border-opacity: 1;
+  border-color: #f53e3e !important;
+}
+
+.peer ~ .peer-focus\:text-primary.error {
   --tw-text-opacity: 1;
   color: #f53e3e;
 }

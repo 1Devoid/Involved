@@ -66,6 +66,10 @@ arrowRotateInput('#dropdownButton-roles-type', '#dropdown-roles-type');
 arrowRotateInput('#dropdownButton-add-delegate', '#dropdown-add-delegate');
 arrowRotateInput('#dropdownButton-delegates-role', '#dropdown-delegates-role');
 arrowRotateInput(
+  '#dropdownButton-select-username',
+  '#dropdown-select-username'
+);
+arrowRotateInput(
   '#dropdownButton-profileHomeNode',
   '#dropdown-profileHomeNode'
 );

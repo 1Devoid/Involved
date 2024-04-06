@@ -33,6 +33,7 @@ initTE({ Datepicker, Input });
 dropdownInit();
 popupInit('info-popup', 'popup');
 popupInit('assign-roles-popup', 'assign-roles-btn');
+popupInit('add-roles-popup', 'add-roles-btn');
 inputInit();
 inputError();
 asideNavToggler();
@@ -61,6 +62,9 @@ arrowRotateInput('#dropdownColorButton-2', '#dropdown-color-2');
 arrowRotateInput('#dropdownColorButton-3', '#dropdown-color-3');
 arrowRotateInput('#dropdownButton-select-role', '#dropdown-select-role');
 arrowRotateInput('#dropdownButton-add-node-popup', '#dropdown-add-node-popup');
+arrowRotateInput('#dropdownButton-roles-type', '#dropdown-roles-type');
+arrowRotateInput('#dropdownButton-add-delegate', '#dropdown-add-delegate');
+arrowRotateInput('#dropdownButton-delegates-role', '#dropdown-delegates-role');
 arrowRotateInput(
   '#dropdownButton-profileHomeNode',
   '#dropdown-profileHomeNode'
@@ -114,6 +118,14 @@ checkboxFilterLabel(
 checkboxFilterLabel(
   '[data-checkbox="select-role-label"]',
   '[data-checkbox="select-role"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="select-roles-type-label"]',
+  '[data-checkbox="select-roles-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="delegates-role-label"]',
+  '[data-checkbox="delegates-role"]'
 );
 
 if (document.getElementById('edit-node')) {

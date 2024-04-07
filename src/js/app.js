@@ -2,7 +2,7 @@
 
 import { Datepicker, Input, initTE } from 'tw-elements';
 import dropdownInit from './modules/dropdown.js';
-import { popupInit, addNodePopup } from './modules/popup.js';
+import { popupInit, addNodePopup, showDelegatePopup } from './modules/popup.js';
 import inputInit from './modules/input.js';
 import inputError from './modules/inputError.js';
 import asideNavToggler from './modules/asideNav.js';
@@ -152,3 +152,5 @@ quotaExpire();
 manageQuotasPopup();
 
 addDelegatePopup();
+
+showDelegatePopup();

@@ -49,5 +49,30 @@ function addNodePopup() {
     });
   }
 }
+function showDelegatePopup() {
+  const modalEl = document.getElementById('add-delegate-popup');
 
-export { popupInit, addNodePopup };
+  if (modalEl) {
+    const modalBtn = document.getElementById('add-delegate');
+    const closeModalEl = document.getElementById('add-delegate-close');
+    // const acceptPrivacyEl = document.getElementById('confirm-button');
+
+    const roleModal = new Modal(modalEl, {
+      placement: 'center',
+    });
+
+    modalBtn.addEventListener('click', function () {
+      roleModal.show();
+    });
+
+    closeModalEl.addEventListener('click', function () {
+      roleModal.hide();
+    });
+
+    // acceptPrivacyEl.addEventListener('click', function () {
+    //   roleModal.hide();
+    // });
+  }
+}
+
+export { popupInit, addNodePopup, showDelegatePopup };

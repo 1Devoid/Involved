@@ -10,16 +10,16 @@ function asideNodeClickHandler() {
     otherButtons.forEach((otherButton) => {
       const otherSvg = otherButton.querySelector('svg');
       if (otherSvg) {
-        otherSvg.classList.remove('-rotate-90');
+        otherSvg.classList.remove('rotate-90');
       }
       otherButton.classList.remove('svg-rotate');
     });
 
     if (!button.classList.contains('svg-rotate')) {
-      svg.classList.add('-rotate-90');
+      svg.classList.add('rotate-90');
       button.classList.add('svg-rotate');
     } else {
-      svg.classList.remove('-rotate-90');
+      svg.classList.remove('rotate-90');
       button.classList.remove('svg-rotate');
     }
   }

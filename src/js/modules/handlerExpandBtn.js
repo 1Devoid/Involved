@@ -13,7 +13,7 @@ function handlerExpandBtn() {
         } else {
           node.click();
           let svg = node.querySelector('svg:first-child');
-          svg.classList.add('-rotate-90');
+          svg.classList.add('rotate-90');
         }
       });
     });
@@ -28,7 +28,7 @@ function handlerExpandBtn() {
         } else {
           node.click();
           let svg = node.querySelector('svg:first-child');
-          svg.classList.remove('-rotate-90');
+          svg.classList.remove('rotate-90');
         }
       });
     });

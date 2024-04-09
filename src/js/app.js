@@ -17,7 +17,7 @@ import trimString from './modules/trimString.js';
 import checkboxesChecker from './modules/checkboxesChecker.js';
 import checkboxesCheckerManage from './modules/checkboxesCheckerManage.js';
 import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
-import toggleEdit from './modules/toggleEdit.js';
+import { toggleEdit, toggleRelationshipsEdit } from './modules/toggleEdit.js';
 import asideNodeClickHandler from './modules/asideNodeClickHandler.js';
 import handlerExpandBtn from './modules/handlerExpandBtn.js';
 import quotaExpire from './modules/quotaExpire.js';
@@ -141,7 +141,7 @@ checkboxFilterLabel(
 );
 
 toggleEdit('edit-detail-msg');
-toggleEdit('edit-relationship-msg');
+toggleRelationshipsEdit('edit-relationship-msg');
 
 addNodePopup();
 

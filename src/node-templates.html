@@ -1746,14 +1746,18 @@
                 <div class="text-[#2B2B2B] text-[20px] font-medium dark:text-[#FFFFFF]">Node Types</div>
                 <button
                   class="w-[40px] h-[40px] border border-[#E5E7EB] dark:border-[#4B5563] rounded-[100%] bg-transparent p-2 flex justify-center items-center"
-                  id="expand-nodes">
-                  <svg id="icon-expand" class="stroke-[#111928] dark:stroke-[#FFFFFF] pointer-events-none" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  id="btn-expand">
+                  <svg class="stroke-[#111928] dark:stroke-[#FFFFFF] pointer-events-none" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 15L12 20L17 15M7 9L12 4L17 9" stroke="" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
-                  <svg id="icon-collapse" class="stroke-[#111928] dark:stroke-[#FFFFFF] hidden pointer-events-none"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </button>
+                <button
+                  class="hidden w-[40px] h-[40px] border border-[#E5E7EB] dark:border-[#4B5563] rounded-[100%] bg-transparent p-2 flex justify-center items-center"
+                  id="btn-collapse">
+                  <svg class="stroke-[#111928] dark:stroke-[#FFFFFF] pointer-events-none" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 20L12 15L7 20" stroke="" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
                     <path d="M7 5L12 10L17 5" stroke="" stroke-width="2" stroke-linecap="round"
@@ -1775,7 +1779,7 @@
                 <div class="flex items-center">
                   <button id="dropdownButton-role-1" data-dropdown-toggle="dropdown-role-1"
                     class="relative h-[40px] w-[100%] min-w-[150px] xl:min-w-[unset] max-w-[221px] lg:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
-                    type="button">Role
+                    type="button">Role type
                     <span class="dark:hidden mr-2  ml-[41px] w-2 pointer-events-none">
                       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
@@ -1794,86 +1798,168 @@
                   </button>
                   <!-- Dropdown menu -->
                   <div id="dropdown-role-1"
-                    class="min-w-[221px] py-2 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="min-w-[221px] max-h-[250px] overflow-y-auto text-sm text-gray-700 dark:text-gray-200"
+                    class="min-w-[230px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="min-w-[230px] text-sm text-gray-700 dark:text-gray-200 py-2"
                       aria-labelledby="dropdownButton-role-1">
-                      <input type="search"
-                        class="h-[40px] w-[186px] ml-4 mb-3 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[16px] font-normal leading-normal placeholder:text-[#717171] dark:placeholder:text-[#ffffff] dark:text-[#ffffff] text-[#717171] transition duration-150 ease-in-out dark:hover:bg-[#5a687d66] focus:outline-none focus:ring-0 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1f2a375e] dark:text-[#9CA3AF]"
-                        placeholder="Search" />
                       <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
                           <input data-checkbox="role-manager"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
                             type="checkbox" value="" id="checkbox-role-1-1" />
-                          <label
-                            class="leading-[180%] text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-role-1-1">
-                            Salesforce User
-                          </label>
+                          <div class="flex items-center ml-2">
+                            <svg class="mr-1" width="18" height="16" viewBox="0 0 18 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_925_78506)">
+                                <path
+                                  d="M7.1608 5.98342V4.35326V2.63218L7.16729 0C6.17886 0.167678 5.22741 0.507122 4.35604 1.00296L4.31801 1.0243L4.26234 1.05677L4.25399 4.30409V6.02609L2.83816 6.83792L0 8.46622C0 8.4922 0 8.51911 0 8.54509C0.00426221 9.55502 0.187719 10.5562 0.541838 11.502L2.82981 10.1892L4.24935 9.37362L5.73384 8.52004L7.15338 7.70542L7.1608 5.98342Z"
+                                  fill="#001E61" />
+                                <path
+                                  d="M17.2257 8.62072C17.2257 8.57155 17.2257 8.52238 17.2257 8.4732L14.4553 6.86346L12.9829 6.00339V4.35932L12.9912 1.07303L12.9346 1.03963C12.0544 0.532387 11.0918 0.183797 10.0909 0.00976562L10.0835 2.67906V4.3222V6.03029V7.67436L11.5615 8.53258L12.9829 9.3574L14.46 10.2156L16.6923 11.5145C17.0337 10.5874 17.2141 9.60869 17.2257 8.62072Z"
+                                  fill="#0071CE" />
+                                <path
+                                  d="M12.9532 15.9304C13.812 15.43 14.5779 14.785 15.217 14.0237L12.9606 12.7137L11.5346 11.8851L10.0621 11.0306L8.63517 10.2012L7.15069 11.0557L5.73114 11.8703L4.24666 12.7239L1.99951 14.0126C2.62898 14.7691 3.38452 15.411 4.23274 15.91L4.3784 15.9944L7.1377 14.4097L8.62219 13.5552L10.0491 14.3837L12.8326 16L12.8975 15.9628L12.9532 15.9304Z"
+                                  fill="#9A9D97" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_925_78506">
+                                  <rect width="17.2266" height="16" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <label
+                              class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
+                              for="checkbox-role-1-1">
+                              IDRM Role
+                            </label>
+                          </div>
                         </div>
                       </li>
                       <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                        <div class="mb-[0.125rem] flex items-center min-h-[1.5rem] pl-[1.5rem]">
                           <input data-checkbox="role-manager"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkbox-role-1-2" />
-                          <label
-                            class="leading-[180%] text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-role-1-2">
-                            Workday
-                          </label>
+                          <div class="flex items-center ml-2">
+                            <svg class="mr-1 dark:hidden" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_925_78517)">
+                                <path
+                                  d="M4.66667 4.00033H15.3333C15.5101 4.00033 15.6797 3.93009 15.8047 3.80506C15.9298 3.68004 16 3.51047 16 3.33366C16 3.15685 15.9298 2.98728 15.8047 2.86225C15.6797 2.73723 15.5101 2.66699 15.3333 2.66699H4.66667C4.48986 2.66699 4.32029 2.73723 4.19526 2.86225C4.07024 2.98728 4 3.15685 4 3.33366C4 3.51047 4.07024 3.68004 4.19526 3.80506C4.32029 3.93009 4.48986 4.00033 4.66667 4.00033Z"
+                                  fill="#4F4F4F" />
+                                <path
+                                  d="M15.3333 7.33301H4.66667C4.48986 7.33301 4.32029 7.40325 4.19526 7.52827C4.07024 7.65329 4 7.82286 4 7.99967C4 8.17649 4.07024 8.34605 4.19526 8.47108C4.32029 8.5961 4.48986 8.66634 4.66667 8.66634H15.3333C15.5101 8.66634 15.6797 8.5961 15.8047 8.47108C15.9298 8.34605 16 8.17649 16 7.99967C16 7.82286 15.9298 7.65329 15.8047 7.52827C15.6797 7.40325 15.5101 7.33301 15.3333 7.33301Z"
+                                  fill="#4F4F4F" />
+                                <path
+                                  d="M15.3333 12H4.66667C4.48986 12 4.32029 12.0702 4.19526 12.1953C4.07024 12.3203 4 12.4899 4 12.6667C4 12.8435 4.07024 13.013 4.19526 13.1381C4.32029 13.2631 4.48986 13.3333 4.66667 13.3333H15.3333C15.5101 13.3333 15.6797 13.2631 15.8047 13.1381C15.9298 13.013 16 12.8435 16 12.6667C16 12.4899 15.9298 12.3203 15.8047 12.1953C15.6797 12.0702 15.5101 12 15.3333 12Z"
+                                  fill="#4F4F4F" />
+                                <path
+                                  d="M1.33333 4.66667C2.06971 4.66667 2.66667 4.06971 2.66667 3.33333C2.66667 2.59695 2.06971 2 1.33333 2C0.596954 2 0 2.59695 0 3.33333C0 4.06971 0.596954 4.66667 1.33333 4.66667Z"
+                                  fill="#4F4F4F" />
+                                <path
+                                  d="M1.33333 9.33366C2.06971 9.33366 2.66667 8.73671 2.66667 8.00033C2.66667 7.26395 2.06971 6.66699 1.33333 6.66699C0.596954 6.66699 0 7.26395 0 8.00033C0 8.73671 0.596954 9.33366 1.33333 9.33366Z"
+                                  fill="#4F4F4F" />
+                                <path
+                                  d="M1.33333 13.9997C2.06971 13.9997 2.66667 13.4027 2.66667 12.6663C2.66667 11.93 2.06971 11.333 1.33333 11.333C0.596954 11.333 0 11.93 0 12.6663C0 13.4027 0.596954 13.9997 1.33333 13.9997Z"
+                                  fill="#4F4F4F" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_925_78517">
+                                  <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <svg class="mr-1 hidden dark:block" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_925_78517)">
+                                <path
+                                  d="M4.66667 4.00033H15.3333C15.5101 4.00033 15.6797 3.93009 15.8047 3.80506C15.9298 3.68004 16 3.51047 16 3.33366C16 3.15685 15.9298 2.98728 15.8047 2.86225C15.6797 2.73723 15.5101 2.66699 15.3333 2.66699H4.66667C4.48986 2.66699 4.32029 2.73723 4.19526 2.86225C4.07024 2.98728 4 3.15685 4 3.33366C4 3.51047 4.07024 3.68004 4.19526 3.80506C4.32029 3.93009 4.48986 4.00033 4.66667 4.00033Z"
+                                  fill="#ffffff" />
+                                <path
+                                  d="M15.3333 7.33301H4.66667C4.48986 7.33301 4.32029 7.40325 4.19526 7.52827C4.07024 7.65329 4 7.82286 4 7.99967C4 8.17649 4.07024 8.34605 4.19526 8.47108C4.32029 8.5961 4.48986 8.66634 4.66667 8.66634H15.3333C15.5101 8.66634 15.6797 8.5961 15.8047 8.47108C15.9298 8.34605 16 8.17649 16 7.99967C16 7.82286 15.9298 7.65329 15.8047 7.52827C15.6797 7.40325 15.5101 7.33301 15.3333 7.33301Z"
+                                  fill="#ffffff" />
+                                <path
+                                  d="M15.3333 12H4.66667C4.48986 12 4.32029 12.0702 4.19526 12.1953C4.07024 12.3203 4 12.4899 4 12.6667C4 12.8435 4.07024 13.013 4.19526 13.1381C4.32029 13.2631 4.48986 13.3333 4.66667 13.3333H15.3333C15.5101 13.3333 15.6797 13.2631 15.8047 13.1381C15.9298 13.013 16 12.8435 16 12.6667C16 12.4899 15.9298 12.3203 15.8047 12.1953C15.6797 12.0702 15.5101 12 15.3333 12Z"
+                                  fill="#ffffff" />
+                                <path
+                                  d="M1.33333 4.66667C2.06971 4.66667 2.66667 4.06971 2.66667 3.33333C2.66667 2.59695 2.06971 2 1.33333 2C0.596954 2 0 2.59695 0 3.33333C0 4.06971 0.596954 4.66667 1.33333 4.66667Z"
+                                  fill="#ffffff" />
+                                <path
+                                  d="M1.33333 9.33366C2.06971 9.33366 2.66667 8.73671 2.66667 8.00033C2.66667 7.26395 2.06971 6.66699 1.33333 6.66699C0.596954 6.66699 0 7.26395 0 8.00033C0 8.73671 0.596954 9.33366 1.33333 9.33366Z"
+                                  fill="#ffffff" />
+                                <path
+                                  d="M1.33333 13.9997C2.06971 13.9997 2.66667 13.4027 2.66667 12.6663C2.66667 11.93 2.06971 11.333 1.33333 11.333C0.596954 11.333 0 11.93 0 12.6663C0 13.4027 0.596954 13.9997 1.33333 13.9997Z"
+                                  fill="#ffffff" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_925_78517">
+                                  <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <label
+                              class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
+                              for="checkbox-role-1-2">
+                              Application Role
+                            </label>
+                          </div>
                         </div>
                       </li>
                       <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                        <div class="mb-[0.125rem] flex items-center min-h-[1.5rem] pl-[1.5rem]">
                           <input data-checkbox="role-manager"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkbox-role-1-3" />
-                          <label
-                            class="leading-[180%] text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-role-1-3">
-                            Analytics Viewer
-                          </label>
+                          <div class="flex items-center ml-2">
+                            <svg class="mr-1 dark:hidden" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M11.4446 6.44412V10.8886C11.4446 12.4202 10.1985 13.6663 8.66683 13.6663H3.11127C1.57961 13.6663 0.333496 12.4202 0.333496 10.8886V5.33301C0.333496 3.80134 1.57961 2.55523 3.11127 2.55523H7.55572C7.86239 2.55523 8.11127 2.80412 8.11127 3.11079C8.11127 3.41745 7.86239 3.66634 7.55572 3.66634H3.11127C2.19239 3.66634 1.44461 4.41412 1.44461 5.33301V10.8886C1.44461 11.8075 2.19239 12.5552 3.11127 12.5552H8.66683C9.58572 12.5552 10.3335 11.8075 10.3335 10.8886V6.44412C10.3335 6.13745 10.5824 5.88856 10.8891 5.88856C11.1957 5.88856 11.4446 6.13745 11.4446 6.44412ZM12.0002 0.333008H8.11127C7.80461 0.333008 7.55572 0.581897 7.55572 0.888563C7.55572 1.19523 7.80461 1.44412 8.11127 1.44412H11.7702L4.94072 8.27356C4.7235 8.49079 4.7235 8.8419 4.94072 9.05912C5.04905 9.16745 5.19127 9.2219 5.3335 9.2219C5.47572 9.2219 5.61794 9.16745 5.72627 9.05912L12.5557 2.22967V5.88856C12.5557 6.19523 12.8046 6.44412 13.1113 6.44412C13.4179 6.44412 13.6668 6.19523 13.6668 5.88856V1.99967C13.6668 1.08079 12.9191 0.333008 12.0002 0.333008Z"
+                                fill="#4F4F4F" />
+                            </svg>
+                            <svg class="mr-1 hidden dark:block" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M11.4446 6.44412V10.8886C11.4446 12.4202 10.1985 13.6663 8.66683 13.6663H3.11127C1.57961 13.6663 0.333496 12.4202 0.333496 10.8886V5.33301C0.333496 3.80134 1.57961 2.55523 3.11127 2.55523H7.55572C7.86239 2.55523 8.11127 2.80412 8.11127 3.11079C8.11127 3.41745 7.86239 3.66634 7.55572 3.66634H3.11127C2.19239 3.66634 1.44461 4.41412 1.44461 5.33301V10.8886C1.44461 11.8075 2.19239 12.5552 3.11127 12.5552H8.66683C9.58572 12.5552 10.3335 11.8075 10.3335 10.8886V6.44412C10.3335 6.13745 10.5824 5.88856 10.8891 5.88856C11.1957 5.88856 11.4446 6.13745 11.4446 6.44412ZM12.0002 0.333008H8.11127C7.80461 0.333008 7.55572 0.581897 7.55572 0.888563C7.55572 1.19523 7.80461 1.44412 8.11127 1.44412H11.7702L4.94072 8.27356C4.7235 8.49079 4.7235 8.8419 4.94072 9.05912C5.04905 9.16745 5.19127 9.2219 5.3335 9.2219C5.47572 9.2219 5.61794 9.16745 5.72627 9.05912L12.5557 2.22967V5.88856C12.5557 6.19523 12.8046 6.44412 13.1113 6.44412C13.4179 6.44412 13.6668 6.19523 13.6668 5.88856V1.99967C13.6668 1.08079 12.9191 0.333008 12.0002 0.333008Z"
+                                fill="#ffffff" />
+                            </svg>
+                            <label
+                              class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
+                              for="checkbox-role-1-3">
+                              App Access
+                            </label>
+                          </div>
                         </div>
                       </li>
                       <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                        <div class="mb-[0.125rem] flex items-center min-h-[1.5rem] pl-[1.5rem]">
                           <input data-checkbox="role-manager"
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                             type="checkbox" value="" id="checkbox-role-1-4" />
-                          <label
-                            class="leading-[180%] text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-role-1-4">
-                            Relationship Manager
-                          </label>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input data-checkbox="role-manager"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="checkbox" value="" id="checkbox-role-1-5" />
-                          <label
-                            class="leading-[180%] text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-role-1-5">
-                            Access Approver
-                          </label>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input data-checkbox="role-manager"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="checkbox" value="" id="checkbox-role-1-6" />
-                          <label
-                            class="leading-[180%] text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-role-1-6">
-                            Manager
-                          </label>
+                          <div class="flex items-center ml-2">
+                            <svg class="mr-1 dark:hidden" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10.8891 0.333008H6.44461C5.70817 0.33389 5.00214 0.626831 4.4814 1.14757C3.96065 1.66832 3.66771 2.37434 3.66683 3.11079V6.44412H3.11127C2.37483 6.445 1.66881 6.73794 1.14806 7.25869C0.627319 7.77943 0.334378 8.48546 0.333496 9.2219L0.333496 10.8886C0.334378 11.625 0.627319 12.331 1.14806 12.8518C1.66881 13.3725 2.37483 13.6655 3.11127 13.6663H4.77794C5.51438 13.6655 6.22041 13.3725 6.74115 12.8518C7.2619 12.331 7.55484 11.625 7.55572 10.8886V10.333H10.8891C11.6255 10.3321 12.3315 10.0392 12.8523 9.51844C13.373 8.9977 13.6659 8.29167 13.6668 7.55523V3.11079C13.6659 2.37434 13.373 1.66832 12.8523 1.14757C12.3315 0.626831 11.6255 0.33389 10.8891 0.333008ZM6.44461 9.2219C6.00258 9.2219 5.57866 9.0463 5.2661 8.73374C4.95354 8.42118 4.77794 7.99726 4.77794 7.55523C5.21997 7.55523 5.64389 7.73082 5.95645 8.04339C6.26901 8.35595 6.44461 8.77987 6.44461 9.2219ZM6.44461 10.8886C6.44461 11.3306 6.26901 11.7545 5.95645 12.0671C5.64389 12.3796 5.21997 12.5552 4.77794 12.5552H3.11127C2.66925 12.5552 2.24532 12.3796 1.93276 12.0671C1.6202 11.7545 1.44461 11.3306 1.44461 10.8886V9.2219C1.44461 8.77987 1.6202 8.35595 1.93276 8.04339C2.24532 7.73082 2.66925 7.55523 3.11127 7.55523H3.66683C3.66771 8.29167 3.96065 8.9977 4.4814 9.51844C5.00214 10.0392 5.70817 10.3321 6.44461 10.333V10.8886ZM12.5557 7.55523C12.5557 7.99726 12.3801 8.42118 12.0676 8.73374C11.755 9.0463 11.3311 9.2219 10.8891 9.2219H7.55572C7.55561 8.67761 7.3946 8.1455 7.09294 7.69245L10.3335 4.4519V5.88856C10.3335 6.03591 10.392 6.17721 10.4962 6.2814C10.6004 6.38559 10.7417 6.44412 10.8891 6.44412C11.0364 6.44412 11.1777 6.38559 11.2819 6.2814C11.3861 6.17721 11.4446 6.03591 11.4446 5.88856V4.2219C11.4446 3.77987 11.269 3.35595 10.9565 3.04339C10.6439 2.73082 10.22 2.55523 9.77794 2.55523H8.11127C7.96393 2.55523 7.82262 2.61376 7.71844 2.71795C7.61425 2.82214 7.55572 2.96344 7.55572 3.11079C7.55572 3.25813 7.61425 3.39944 7.71844 3.50362C7.82262 3.60781 7.96393 3.66634 8.11127 3.66634H9.54794L6.30739 6.9069C5.85434 6.60523 5.32223 6.44423 4.77794 6.44412V3.11079C4.77794 2.66876 4.95354 2.24484 5.2661 1.93227C5.57866 1.61971 6.00258 1.44412 6.44461 1.44412H10.8891C11.3311 1.44412 11.755 1.61971 12.0676 1.93227C12.3801 2.24484 12.5557 2.66876 12.5557 3.11079V7.55523Z"
+                                fill="#4F4F4F" />
+                            </svg>
+                            <svg class="mr-1 hidden dark:block" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10.8891 0.333008H6.44461C5.70817 0.33389 5.00214 0.626831 4.4814 1.14757C3.96065 1.66832 3.66771 2.37434 3.66683 3.11079V6.44412H3.11127C2.37483 6.445 1.66881 6.73794 1.14806 7.25869C0.627319 7.77943 0.334378 8.48546 0.333496 9.2219L0.333496 10.8886C0.334378 11.625 0.627319 12.331 1.14806 12.8518C1.66881 13.3725 2.37483 13.6655 3.11127 13.6663H4.77794C5.51438 13.6655 6.22041 13.3725 6.74115 12.8518C7.2619 12.331 7.55484 11.625 7.55572 10.8886V10.333H10.8891C11.6255 10.3321 12.3315 10.0392 12.8523 9.51844C13.373 8.9977 13.6659 8.29167 13.6668 7.55523V3.11079C13.6659 2.37434 13.373 1.66832 12.8523 1.14757C12.3315 0.626831 11.6255 0.33389 10.8891 0.333008ZM6.44461 9.2219C6.00258 9.2219 5.57866 9.0463 5.2661 8.73374C4.95354 8.42118 4.77794 7.99726 4.77794 7.55523C5.21997 7.55523 5.64389 7.73082 5.95645 8.04339C6.26901 8.35595 6.44461 8.77987 6.44461 9.2219ZM6.44461 10.8886C6.44461 11.3306 6.26901 11.7545 5.95645 12.0671C5.64389 12.3796 5.21997 12.5552 4.77794 12.5552H3.11127C2.66925 12.5552 2.24532 12.3796 1.93276 12.0671C1.6202 11.7545 1.44461 11.3306 1.44461 10.8886V9.2219C1.44461 8.77987 1.6202 8.35595 1.93276 8.04339C2.24532 7.73082 2.66925 7.55523 3.11127 7.55523H3.66683C3.66771 8.29167 3.96065 8.9977 4.4814 9.51844C5.00214 10.0392 5.70817 10.3321 6.44461 10.333V10.8886ZM12.5557 7.55523C12.5557 7.99726 12.3801 8.42118 12.0676 8.73374C11.755 9.0463 11.3311 9.2219 10.8891 9.2219H7.55572C7.55561 8.67761 7.3946 8.1455 7.09294 7.69245L10.3335 4.4519V5.88856C10.3335 6.03591 10.392 6.17721 10.4962 6.2814C10.6004 6.38559 10.7417 6.44412 10.8891 6.44412C11.0364 6.44412 11.1777 6.38559 11.2819 6.2814C11.3861 6.17721 11.4446 6.03591 11.4446 5.88856V4.2219C11.4446 3.77987 11.269 3.35595 10.9565 3.04339C10.6439 2.73082 10.22 2.55523 9.77794 2.55523H8.11127C7.96393 2.55523 7.82262 2.61376 7.71844 2.71795C7.61425 2.82214 7.55572 2.96344 7.55572 3.11079C7.55572 3.25813 7.61425 3.39944 7.71844 3.50362C7.82262 3.60781 7.96393 3.66634 8.11127 3.66634H9.54794L6.30739 6.9069C5.85434 6.60523 5.32223 6.44423 4.77794 6.44412V3.11079C4.77794 2.66876 4.95354 2.24484 5.2661 1.93227C5.57866 1.61971 6.00258 1.44412 6.44461 1.44412H10.8891C11.3311 1.44412 11.755 1.61971 12.0676 1.93227C12.3801 2.24484 12.5557 2.66876 12.5557 3.11079V7.55523Z"
+                                fill="#ffffff" />
+                            </svg>
+                            <label
+                              class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
+                              for="checkbox-role-1-4">
+                              External
+                            </label>
+                          </div>
                         </div>
                       </li>
                     </ul>
                   </div>
+
+
                   <button
                     class="w-[40px] h-[40px] border border-[#E5E7EB] dark:border-[#4B5563] rounded-[100%] bg-transparent p-2 flex justify-center items-center"
                     id="resetButton">
@@ -1933,7 +2019,7 @@
                     class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                     <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-1">
                       <li class="flex justify-between items-center px-4 py-2">
-                        <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                        <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                           Active
                         </div>
                         <label class="cursor-pointer">
@@ -1945,7 +2031,7 @@
                       </li>
                       <li>
                         <button type="button"
-                          class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                          class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                           <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1995,7 +2081,7 @@
                         class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                         <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-2">
                           <li class="flex justify-between items-center px-4 py-2">
-                            <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                            <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                               Active
                             </div>
                             <label class="cursor-pointer">
@@ -2007,7 +2093,7 @@
                           </li>
                           <li>
                             <button type="button"
-                              class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                              class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                               <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2051,7 +2137,7 @@
                             class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-3">
                               <li class="flex justify-between items-center px-4 py-2">
-                                <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                                   Active
                                 </div>
                                 <label class="cursor-pointer">
@@ -2063,7 +2149,82 @@
                               </li>
                               <li>
                                 <button type="button"
-                                  class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.1999 1.95312C7.05137 1.9532 6.9058 1.99463 6.77948 2.07277C6.65317 2.1509 6.5511 2.26266 6.4847 2.39552L5.9055 3.55312H3.1999C2.98773 3.55312 2.78425 3.63741 2.63422 3.78744C2.48419 3.93747 2.3999 4.14095 2.3999 4.35312C2.3999 4.5653 2.48419 4.76878 2.63422 4.91881C2.78425 5.06884 2.98773 5.15312 3.1999 5.15312V13.1531C3.1999 13.5775 3.36847 13.9844 3.66853 14.2845C3.96859 14.5846 4.37556 14.7531 4.7999 14.7531H11.1999C11.6242 14.7531 12.0312 14.5846 12.3313 14.2845C12.6313 13.9844 12.7999 13.5775 12.7999 13.1531V5.15312C13.0121 5.15312 13.2156 5.06884 13.3656 4.91881C13.5156 4.76878 13.5999 4.5653 13.5999 4.35312C13.5999 4.14095 13.5156 3.93747 13.3656 3.78744C13.2156 3.63741 13.0121 3.55312 12.7999 3.55312H10.0943L9.5151 2.39552C9.44871 2.26266 9.34664 2.1509 9.22032 2.07277C9.09401 1.99463 8.94843 1.9532 8.7999 1.95312H7.1999ZM5.5999 6.75312C5.5999 6.54095 5.68419 6.33747 5.83422 6.18744C5.98425 6.03741 6.18773 5.95312 6.3999 5.95312C6.61208 5.95312 6.81556 6.03741 6.96559 6.18744C7.11562 6.33747 7.1999 6.54095 7.1999 6.75312V11.5531C7.1999 11.7653 7.11562 11.9688 6.96559 12.1188C6.81556 12.2688 6.61208 12.3531 6.3999 12.3531C6.18773 12.3531 5.98425 12.2688 5.83422 12.1188C5.68419 11.9688 5.5999 11.7653 5.5999 11.5531V6.75312ZM9.5999 5.95312C9.38773 5.95312 9.18425 6.03741 9.03422 6.18744C8.88419 6.33747 8.7999 6.54095 8.7999 6.75312V11.5531C8.7999 11.7653 8.88419 11.9688 9.03422 12.1188C9.18425 12.2688 9.38773 12.3531 9.5999 12.3531C9.81208 12.3531 10.0156 12.2688 10.1656 12.1188C10.3156 11.9688 10.3999 11.7653 10.3999 11.5531V6.75312C10.3999 6.54095 10.3156 6.33747 10.1656 6.18744C10.0156 6.03741 9.81208 5.95312 9.5999 5.95312Z"
+                                      fill="#E02424" />
+                                  </svg>
+                                  Delete Node
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="relative ml-[50px]">
+                          <button type="button"
+                            class="h-[32px] flex items-center justify-between py-1 px-2 w-full text-[14px] font-medium text-[#2B2B2B] rounded-lg transition duration-75 group hover:bg-[#F3F4F6] dark:hover:bg-[#323D4B]">
+                            <div class="flex items-center">
+                              <svg class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="8" fill="#613783" fill-opacity="0.16" />
+                                <path
+                                  d="M16.5202 14.223C16.021 14.2252 15.5385 14.4087 15.1568 14.7415C15.117 14.6998 15.073 14.6626 15.0255 14.6305L9.79688 11.7991C9.74424 11.776 9.68922 11.7594 9.6329 11.7493C9.63891 11.6854 9.65179 11.6241 9.65179 11.5593C9.65179 11.5513 9.65179 11.5442 9.65179 11.5371C9.70831 11.531 9.7641 11.5191 9.81835 11.5016L14.889 9.25084C14.9392 9.22267 14.9864 9.18903 15.0298 9.15051C15.3862 9.50624 15.8507 9.72351 16.3444 9.76546C16.8382 9.80741 17.3307 9.67145 17.7385 9.38066C18.1464 9.08986 18.4444 8.66213 18.5821 8.17001C18.7197 7.67788 18.6885 7.15167 18.4938 6.68061C18.299 6.20956 17.9527 5.82267 17.5136 5.58556C17.0745 5.34845 16.5696 5.27572 16.0845 5.37971C15.5994 5.4837 15.1641 5.758 14.8523 6.1561C14.5405 6.55419 14.3715 7.05157 14.3738 7.56386C14.3734 7.57125 14.3734 7.57867 14.3738 7.58606C14.3173 7.59246 14.2615 7.60465 14.2073 7.62246L9.13666 9.87235C9.08653 9.90074 9.03935 9.93436 8.99585 9.97269C8.69915 9.66997 8.32382 9.46289 7.91547 9.37661C7.50712 9.29033 7.08332 9.32856 6.69558 9.48667C6.30785 9.64477 5.97286 9.91594 5.73133 10.2672C5.48981 10.6185 5.35214 11.0348 5.33506 11.4654C5.31798 11.8961 5.42222 12.3226 5.63512 12.6932C5.84802 13.0637 6.16041 13.3623 6.53432 13.5528C6.90824 13.7432 7.32758 13.8172 7.7414 13.7658C8.15521 13.7144 8.54568 13.5398 8.86535 13.2632C8.90519 13.3049 8.94923 13.3421 8.99671 13.3742L14.2253 16.2056C14.2769 16.2331 14.3313 16.2546 14.3876 16.2695C14.3876 16.3281 14.3704 16.385 14.3704 16.4471C14.3704 16.8861 14.4963 17.3153 14.7321 17.6803C14.968 18.0454 15.3032 18.3299 15.6954 18.4979C16.0876 18.6659 16.5192 18.7098 16.9355 18.6242C17.3519 18.5385 17.7343 18.3271 18.0345 18.0167C18.3347 17.7063 18.5391 17.3107 18.6219 16.8802C18.7048 16.4496 18.6622 16.0033 18.4998 15.5977C18.3373 15.1921 18.0622 14.8454 17.7093 14.6015C17.3563 14.3576 16.9413 14.2274 16.5168 14.2274L16.5202 14.223Z"
+                                  fill="#613783" />
+                              </svg>
+                              <span class="dark:text-[#F5F9FF]">Dealership</span>
+                              <div class="ml-2">
+                                <svg class="dark:hidden" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M9 2C8.46957 2 7.96086 2.21071 7.58579 2.58579C7.21071 2.96086 7 3.46957 7 4V12C7 12.5304 7.21071 13.0391 7.58579 13.4142C7.96086 13.7893 8.46957 14 9 14H15C15.5304 14 16.0391 13.7893 16.4142 13.4142C16.7893 13.0391 17 12.5304 17 12V6.414C16.9999 5.88361 16.7891 5.37499 16.414 5L14 2.586C13.625 2.2109 13.1164 2.00011 12.586 2H9Z"
+                                    fill="#1F2A37" />
+                                  <path
+                                    d="M3 8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6V16H13C13 16.5304 12.7893 17.0391 12.4142 17.4142C12.0391 17.7893 11.5304 18 11 18H5C4.46957 18 3.96086 17.7893 3.58579 17.4142C3.21071 17.0391 3 16.5304 3 16V8Z"
+                                    fill="#111928" />
+                                </svg>
+                                <svg class="hidden dark:block" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M9 2C8.46957 2 7.96086 2.21071 7.58579 2.58579C7.21071 2.96086 7 3.46957 7 4V12C7 12.5304 7.21071 13.0391 7.58579 13.4142C7.96086 13.7893 8.46957 14 9 14H15C15.5304 14 16.0391 13.7893 16.4142 13.4142C16.7893 13.0391 17 12.5304 17 12V6.414C16.9999 5.88361 16.7891 5.37499 16.414 5L14 2.586C13.625 2.2109 13.1164 2.00011 12.586 2H9Z"
+                                    fill="white" />
+                                  <path
+                                    d="M3 8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6V16H13C13 16.5304 12.7893 17.0391 12.4142 17.4142C12.0391 17.7893 11.5304 18 11 18H5C4.46957 18 3.96086 17.7893 3.58579 17.4142C3.21071 17.0391 3 16.5304 3 16V8Z"
+                                    fill="white" />
+                                </svg>
+                              </div>
+                            </div>
+                          </button>
+                          <button type="button" id="actionsButton-13" data-dropdown-toggle="actions-13"
+                            class="absolute top-1 end-2 bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[24px] h-[24px]">
+                            <span class="fill-[#1F2A37] dark:fill-[#9CA3AF] stroke-[#111928] dark:stroke-[#ffffff]">
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" />
+                                <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                          </button>
+                          <!-- Dropdown menu -->
+                          <div id="actions-13"
+                            class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
+                            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-13">
+                              <li class="flex justify-between items-center px-4 py-2">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
+                                  Active
+                                </div>
+                                <label class="cursor-pointer">
+                                  <input type="checkbox" value="" class="sr-only peer">
+                                  <div
+                                    class="relative w-11 h-6 bg-gray-200 dark:bg-gray-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <button type="button"
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                   <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2106,7 +2267,7 @@
                             class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-4">
                               <li class="flex justify-between items-center px-4 py-2">
-                                <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                                   Active
                                 </div>
                                 <label class="cursor-pointer">
@@ -2118,7 +2279,7 @@
                               </li>
                               <li>
                                 <button type="button"
-                                  class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                   <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2171,7 +2332,7 @@
                     class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                     <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-5">
                       <li class="flex justify-between items-center px-4 py-2">
-                        <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                        <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                           Active
                         </div>
                         <label class="cursor-pointer">
@@ -2183,7 +2344,7 @@
                       </li>
                       <li>
                         <button type="button"
-                          class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                          class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                           <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2233,7 +2394,7 @@
                         class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                         <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-6">
                           <li class="flex justify-between items-center px-4 py-2">
-                            <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                            <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                               Active
                             </div>
                             <label class="cursor-pointer">
@@ -2245,7 +2406,7 @@
                           </li>
                           <li>
                             <button type="button"
-                              class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                              class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                               <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2289,7 +2450,7 @@
                             class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-7">
                               <li class="flex justify-between items-center px-4 py-2">
-                                <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                                   Active
                                 </div>
                                 <label class="cursor-pointer">
@@ -2301,7 +2462,7 @@
                               </li>
                               <li>
                                 <button type="button"
-                                  class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                   <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2344,7 +2505,7 @@
                             class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-8">
                               <li class="flex justify-between items-center px-4 py-2">
-                                <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                                   Active
                                 </div>
                                 <label class="cursor-pointer">
@@ -2356,7 +2517,7 @@
                               </li>
                               <li>
                                 <button type="button"
-                                  class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                   <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2409,7 +2570,7 @@
                     class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                     <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-9">
                       <li class="flex justify-between items-center px-4 py-2">
-                        <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                        <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                           Active
                         </div>
                         <label class="cursor-pointer">
@@ -2421,7 +2582,7 @@
                       </li>
                       <li>
                         <button type="button"
-                          class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                          class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                           <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2471,7 +2632,7 @@
                         class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                         <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-10">
                           <li class="flex justify-between items-center px-4 py-2">
-                            <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                            <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                               Active
                             </div>
                             <label class="cursor-pointer">
@@ -2483,7 +2644,7 @@
                           </li>
                           <li>
                             <button type="button"
-                              class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                              class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                               <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2527,7 +2688,7 @@
                             class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-11">
                               <li class="flex justify-between items-center px-4 py-2">
-                                <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                                   Active
                                 </div>
                                 <label class="cursor-pointer">
@@ -2539,7 +2700,7 @@
                               </li>
                               <li>
                                 <button type="button"
-                                  class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                   <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2582,7 +2743,7 @@
                             class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                             <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-12">
                               <li class="flex justify-between items-center px-4 py-2">
-                                <div class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block ">
+                                <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-sm block ">
                                   Active
                                 </div>
                                 <label class="cursor-pointer">
@@ -2594,7 +2755,7 @@
                               </li>
                               <li>
                                 <button type="button"
-                                  class="flex justify-center items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                  class="flex justify-start items-center leading-[180%] text-left text-[#E02424] dark:text-[#F05252] text-sm px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                   <svg class="mr-1" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2687,8 +2848,8 @@
                           <input type="text" id="id-input"
                             class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                             id="exampleFormControlInput1" placeholder="Example label" />
-                          <label for="exampleFormControlInput1"
-                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                          <label
+                            class="input-for-edit font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary text-[#1A56DB]">
                             Unique ID* </label>
                           <span class="absolute right-[12px] top-[10px]">
                             <svg class="fill-[#717171] dark:fill-[#BECCDD]" width="14" height="14" viewBox="0 0 14 14"
@@ -2709,8 +2870,8 @@
                           <input type="text" id="name-input"
                             class="_req peer block min-h-[auto] w-[100%] rounded border-0 bg-transparent px-3 py-[0.32rem] pr-[40px] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                             id="exampleFormControlInput1" placeholder="Example label" />
-                          <label for="exampleFormControlInput1"
-                            class="font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
+                          <label
+                            class="input-for-edit font-normal name-label pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
                             Name*
                           </label>
                           <span class="absolute right-[12px] top-[10px]">
@@ -2905,7 +3066,7 @@
                     <div class="flex items-center justify-end mt-6 hidden" id="edit-btns">
                       <button id="cancel-node-btn" type="button"
                         class="min-w-[120px] h-[40px] py-2.5 px-5 text-sm font-medium text-[#1F2A37] focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-transparent dark:text-[#FFFFFF] dark:border-[#FFFFFF] dark:hover:text-white dark:hover:bg-gray-700">Cancel</button>
-                      <button id="add-node-btn" type="submit"
+                      <button id="add-node-btn" type="button"
                         class="ml-4 min-w-[120px] h-[40px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Save</button>
                     </div>
                   </div>
@@ -4885,6 +5046,27 @@
       </span>
       <div class="font-normal text-[16px] text-[#0D6832]">
         You successfully added a new role
+      </div>
+    </div>
+
+    <div id="edit-detail-msg"
+      class="z-50 absolute top-[46px] end-[16px] py-4 px-4 pr-[71px] bg-[#D6F0E0] rounded-lg hidden flex items-center">
+      <span class="mr-3">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_174_7464)">
+            <path
+              d="M7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14ZM10.0898 5.71484L6.58984 9.21484C6.33281 9.47188 5.91719 9.47188 5.66289 9.21484L3.91289 7.46484C3.65586 7.20781 3.65586 6.79219 3.91289 6.53789C4.16992 6.28359 4.58555 6.28086 4.83984 6.53789L6.125 7.82305L9.16016 4.78516C9.41719 4.52812 9.83281 4.52812 10.0871 4.78516C10.3414 5.04219 10.3441 5.45781 10.0871 5.71211L10.0898 5.71484Z"
+              fill="#0D6832" />
+          </g>
+          <defs>
+            <clipPath id="clip0_174_7464">
+              <rect width="14" height="14" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+      <div class="font-normal text-[16px] text-[#0D6832]">
+        You successfully edit detail
       </div>
     </div>
   </div>

@@ -26,7 +26,18 @@ function manageQuotasPopup() {
         document.getElementById('quotas-popup').style.display = 'flex';
       });
     document
+      .getElementById('quotas-edit-save')
+      .addEventListener('click', function () {
+        document.getElementById('edit-quotas-popup').style.display = 'none';
+        document.getElementById('quotas-popup').style.display = 'flex';
+      });
+    document
       .getElementById('quotas-close')
+      .addEventListener('click', function () {
+        document.getElementById('quotas-popup').style.display = 'none';
+      });
+    document
+      .getElementById('quotas-save')
       .addEventListener('click', function () {
         document.getElementById('quotas-popup').style.display = 'none';
       });

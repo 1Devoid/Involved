@@ -416,6 +416,10 @@ tbody tr:hover {
 :is(.dark .hint-block)::before {
   background: #465260;
 }
+
+.edit-color {
+  color: #1a56db !important;
+}
 // .preloader {
 //   position: fixed;
 //   top: 0;

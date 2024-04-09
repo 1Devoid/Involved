@@ -49,13 +49,18 @@ function addNodePopup() {
     });
   }
 }
-function showDelegatePopup() {
-  const modalEl = document.getElementById('add-delegate-popup');
+function showDelegatePopup(
+  popupSelector,
+  triggerSelector,
+  closeSelector,
+  submitSelector
+) {
+  const modalEl = document.getElementById(popupSelector);
 
   if (modalEl) {
-    const modalBtn = document.getElementById('add-delegate');
-    const closeModalEl = document.getElementById('add-delegate-close');
-    // const acceptPrivacyEl = document.getElementById('confirm-button');
+    const modalBtn = document.getElementById(triggerSelector);
+    const closeModalEl = document.getElementById(closeSelector);
+    const acceptPrivacyEl = document.getElementById(submitSelector);
 
     const roleModal = new Modal(modalEl, {
       placement: 'center',
@@ -69,10 +74,43 @@ function showDelegatePopup() {
       roleModal.hide();
     });
 
-    // acceptPrivacyEl.addEventListener('click', function () {
-    //   roleModal.hide();
-    // });
+    acceptPrivacyEl.addEventListener('click', function () {
+      roleModal.hide();
+    });
   }
 }
 
-export { popupInit, addNodePopup, showDelegatePopup };
+function showDurationDelegate(
+  popupSelector,
+  triggerSelector,
+  closeSelector,
+  submitSelector
+) {
+  const modalEl = document.getElementById(popupSelector);
+
+  if (modalEl) {
+    const modalBtn = document.querySelectorAll(triggerSelector);
+    const closeModalEl = document.getElementById(closeSelector);
+    const acceptPrivacyEl = document.getElementById(submitSelector);
+
+    const roleModal = new Modal(modalEl, {
+      placement: 'center',
+    });
+
+    modalBtn.forEach((btn) => {
+      btn.addEventListener('click', function () {
+        roleModal.show();
+      });
+    });
+
+    closeModalEl.addEventListener('click', function () {
+      roleModal.hide();
+    });
+
+    acceptPrivacyEl.addEventListener('click', function () {
+      roleModal.hide();
+    });
+  }
+}
+
+export { popupInit, addNodePopup, showDelegatePopup, showDurationDelegate };

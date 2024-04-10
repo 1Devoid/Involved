@@ -10,7 +10,11 @@ function toggleEdit(msgSelector) {
     editNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'none';
       inputsForEdit.forEach((input) => {
-        input.classList.add('edit-color');
+        if (input.hasAttribute('disabled')) {
+          input.removeAttribute('disabled');
+        } else {
+          input.setAttribute('disabled', 'disabled');
+        }
       });
       editBtns.style.display = 'flex';
     });
@@ -18,7 +22,11 @@ function toggleEdit(msgSelector) {
     cancelNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
       inputsForEdit.forEach((input) => {
-        input.classList.remove('edit-color');
+        if (input.hasAttribute('disabled')) {
+          input.removeAttribute('disabled');
+        } else {
+          input.setAttribute('disabled', 'disabled');
+        }
       });
       editBtns.style.display = 'none';
     });
@@ -26,7 +34,11 @@ function toggleEdit(msgSelector) {
     addNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
       inputsForEdit.forEach((input) => {
-        input.classList.remove('edit-color');
+        if (input.hasAttribute('disabled')) {
+          input.removeAttribute('disabled');
+        } else {
+          input.setAttribute('disabled', 'disabled');
+        }
       });
       editBtns.style.display = 'none';
       editMsg.classList.remove('hidden');
@@ -57,7 +69,11 @@ function toggleRelationshipsEdit(msgSelector) {
       expireTogglerWrap.classList.remove('hidden');
       editNodeBtn.style.display = 'none';
       inputsForEdit.forEach((input) => {
-        input.classList.add('edit-color');
+        if (input.hasAttribute('disabled')) {
+          input.removeAttribute('disabled');
+        } else {
+          input.setAttribute('disabled', 'disabled');
+        }
       });
       editBtns.style.display = 'flex';
     });
@@ -79,7 +95,11 @@ function toggleRelationshipsEdit(msgSelector) {
       editNodeBtn.style.display = 'flex';
       expireTogglerWrap.classList.add('hidden');
       inputsForEdit.forEach((input) => {
-        input.classList.remove('edit-color');
+        if (input.hasAttribute('disabled')) {
+          input.removeAttribute('disabled');
+        } else {
+          input.setAttribute('disabled', 'disabled');
+        }
       });
       editBtns.style.display = 'none';
     });
@@ -88,7 +108,11 @@ function toggleRelationshipsEdit(msgSelector) {
       editNodeBtn.style.display = 'flex';
       expireTogglerWrap.classList.add('hidden');
       inputsForEdit.forEach((input) => {
-        input.classList.remove('edit-color');
+        if (input.hasAttribute('disabled')) {
+          input.removeAttribute('disabled');
+        } else {
+          input.setAttribute('disabled', 'disabled');
+        }
       });
       editBtns.style.display = 'none';
       editMsg.classList.remove('hidden');

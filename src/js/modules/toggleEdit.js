@@ -22,11 +22,8 @@ function toggleEdit(msgSelector) {
     cancelNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
       inputsForEdit.forEach((input) => {
-        if (input.hasAttribute('disabled')) {
-          input.removeAttribute('disabled');
-        } else {
-          input.setAttribute('disabled', 'disabled');
-        }
+        input.setAttribute('disabled', 'disabled');
+        input.value = '';
       });
       editBtns.style.display = 'none';
     });
@@ -83,7 +80,6 @@ function toggleRelationshipsEdit(msgSelector) {
         if (quotaInput.hasAttribute('disabled')) {
           quotaInput.removeAttribute('disabled');
           quotaLabel.classList.remove('opacity-50');
-          console.log(1);
         } else {
           quotaInput.setAttribute('disabled', 'disabled');
           quotaLabel.classList.add('opacity-50');
@@ -95,11 +91,8 @@ function toggleRelationshipsEdit(msgSelector) {
       editNodeBtn.style.display = 'flex';
       expireTogglerWrap.classList.add('hidden');
       inputsForEdit.forEach((input) => {
-        if (input.hasAttribute('disabled')) {
-          input.removeAttribute('disabled');
-        } else {
-          input.setAttribute('disabled', 'disabled');
-        }
+        input.setAttribute('disabled', 'disabled');
+        input.value = '';
       });
       editBtns.style.display = 'none';
     });

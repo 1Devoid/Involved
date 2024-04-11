@@ -449,6 +449,9 @@ button[disabled] > span > svg {
 :is(.dark button[disabled] > div) {
   color: #8593a3;
 }
+:is(.dark button[disabled] > span > svg) {
+  stroke: #8593a3;
+}
 
 // .preloader {
 //   position: fixed;

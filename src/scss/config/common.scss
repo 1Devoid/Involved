@@ -420,6 +420,24 @@ tbody tr:hover {
 .edit-color {
   color: #1a56db !important;
 }
+
+input[disabled] {
+  color: #707e8d;
+}
+input[disabled] + label {
+  color: #8896a5;
+}
+button[disabled] > span > svg {
+  stroke: #d4d4d4;
+}
+
+:is(.dark input[disabled]) {
+  color: #8593a3;
+}
+:is(.dark input[disabled] + label) {
+  color: #8593a3;
+}
+
 // .preloader {
 //   position: fixed;
 //   top: 0;

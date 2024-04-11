@@ -3,12 +3,14 @@ function toggleEdit(msgSelector) {
   let cancelNodeBtn = document.getElementById('cancel-node-btn');
   let addNodeBtn = document.getElementById('add-node-btn');
   let editBtns = document.getElementById('edit-btns');
+  let closeEditBtn = document.getElementById('close-edit-node');
   let inputsForEdit = document.querySelectorAll('.input-for-edit');
   let editMsg = document.getElementById(msgSelector);
 
   if (editNodeBtn) {
     editNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'none';
+      closeEditBtn.classList.remove('hidden');
       inputsForEdit.forEach((input) => {
         if (input.hasAttribute('disabled')) {
           input.removeAttribute('disabled');
@@ -21,6 +23,17 @@ function toggleEdit(msgSelector) {
 
     cancelNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
+      closeEditBtn.classList.add('hidden');
+      inputsForEdit.forEach((input) => {
+        input.setAttribute('disabled', 'disabled');
+        input.value = '';
+      });
+      editBtns.style.display = 'none';
+    });
+
+    closeEditBtn.addEventListener('click', () => {
+      editNodeBtn.style.display = 'flex';
+      closeEditBtn.classList.add('hidden');
       inputsForEdit.forEach((input) => {
         input.setAttribute('disabled', 'disabled');
         input.value = '';
@@ -30,6 +43,7 @@ function toggleEdit(msgSelector) {
 
     addNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
+      closeEditBtn.classList.add('hidden');
       inputsForEdit.forEach((input) => {
         if (input.hasAttribute('disabled')) {
           input.removeAttribute('disabled');
@@ -51,6 +65,7 @@ function toggleRelationshipsEdit(msgSelector) {
   let cancelNodeBtn = document.getElementById('cancel-relationship-node-btn');
   let addNodeBtn = document.getElementById('add-relationship-node-btn');
   let editBtns = document.getElementById('relationship-edit-btns');
+  let closeEditBtn = document.getElementById('relationship-close-edit-node');
   let inputsForEdit = document.querySelectorAll('.input-for-edit');
   let editMsg = document.getElementById(msgSelector);
   let expireToggler = document.getElementById('relationship-nodes-no-expire');
@@ -65,6 +80,7 @@ function toggleRelationshipsEdit(msgSelector) {
     editNodeBtn.addEventListener('click', () => {
       expireTogglerWrap.classList.remove('hidden');
       editNodeBtn.style.display = 'none';
+      closeEditBtn.classList.remove('hidden');
       inputsForEdit.forEach((input) => {
         if (input.hasAttribute('disabled')) {
           input.removeAttribute('disabled');
@@ -90,6 +106,18 @@ function toggleRelationshipsEdit(msgSelector) {
     cancelNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
       expireTogglerWrap.classList.add('hidden');
+      closeEditBtn.classList.add('hidden');
+      inputsForEdit.forEach((input) => {
+        input.setAttribute('disabled', 'disabled');
+        input.value = '';
+      });
+      editBtns.style.display = 'none';
+    });
+
+    closeEditBtn.addEventListener('click', () => {
+      editNodeBtn.style.display = 'flex';
+      expireTogglerWrap.classList.add('hidden');
+      closeEditBtn.classList.add('hidden');
       inputsForEdit.forEach((input) => {
         input.setAttribute('disabled', 'disabled');
         input.value = '';
@@ -100,6 +128,7 @@ function toggleRelationshipsEdit(msgSelector) {
     addNodeBtn.addEventListener('click', () => {
       editNodeBtn.style.display = 'flex';
       expireTogglerWrap.classList.add('hidden');
+      closeEditBtn.classList.add('hidden');
       inputsForEdit.forEach((input) => {
         if (input.hasAttribute('disabled')) {
           input.removeAttribute('disabled');

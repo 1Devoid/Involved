@@ -427,14 +427,26 @@ input[disabled] {
 input[disabled] + label {
   color: #8896a5;
 }
+
+button[disabled] {
+  color: #8896a5;
+}
+button[disabled] > div {
+  color: #8896a5;
+}
 button[disabled] > span > svg {
   stroke: #d4d4d4;
 }
-
 :is(.dark input[disabled]) {
   color: #8593a3;
 }
 :is(.dark input[disabled] + label) {
+  color: #8593a3;
+}
+:is(.dark button[disabled]) {
+  color: #8593a3;
+}
+:is(.dark button[disabled] > div) {
   color: #8593a3;
 }
 

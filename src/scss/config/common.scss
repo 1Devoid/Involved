@@ -452,7 +452,12 @@ button[disabled] > span > svg {
 :is(.dark button[disabled] > span > svg) {
   stroke: #8593a3;
 }
-
+textarea:focus {
+  border-color: #e5e7eb !important;
+}
+:is(.dark textarea):focus {
+  border-color: #4b5563 !important;
+}
 // .preloader {
 //   position: fixed;
 //   top: 0;

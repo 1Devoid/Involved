@@ -7,6 +7,7 @@ import {
   addNodePopup,
   showDelegatePopup,
   showDurationDelegate,
+  changeDatePopup,
 } from './modules/popup.js';
 import inputInit from './modules/input.js';
 import inputError from './modules/inputError.js';
@@ -23,8 +24,10 @@ import handlerExpandBtn from './modules/handlerExpandBtn.js';
 import quotaExpire from './modules/quotaExpire.js';
 import manageQuotasPopup from './modules/manageQuotasPopup.js';
 import addDelegatePopup from './modules/addDelegatePopup.js';
+import addChangeDatePopup from './modules/addChangeDatePopup.js';
 import delegateDurationPopup from './modules/delegateDurationPopup.js';
 import addNewRelationshipPopup from './modules/addNewRelationshipPopup.js';
+import resetPassword from './modules/reset-password-popups.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -164,6 +167,13 @@ showDelegatePopup(
   'add-delegate-submit'
 );
 
+changeDatePopup(
+  'change-date-popup',
+  '.change-date',
+  '.change-date-close',
+  'change-date-save'
+);
+
 showDurationDelegate(
   'delegate-duration-popup',
   '.add-delegate-duration',
@@ -172,3 +182,21 @@ showDurationDelegate(
 );
 
 addNewRelationshipPopup();
+
+resetPassword(
+  'reset-password',
+  'reset-password-popup',
+  'reset-password-save',
+  'reset-password-close'
+);
+
+// Show user popup for reset password
+
+// resetPassword(
+//   'reset-password',
+//   'user-reset-password-popup',
+//   'user-reset-password-save',
+//   'user-reset-password-close'
+// );
+
+addChangeDatePopup();

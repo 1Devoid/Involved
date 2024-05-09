@@ -416,6 +416,27 @@ tbody tr:hover {
 :is(.dark .hint-block)::before {
   background: #465260;
 }
+.hint-block-table {
+  font-family: $fontFamilyInter;
+}
+.hint-icon-table:hover ~ .hint-block-table {
+  display: block;
+}
+
+.hint-block-table::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #e7e7e7;
+  top: 35px;
+  left: -15px;
+  rotate: 45deg;
+}
+:is(.dark .hint-block)::before {
+  background: #465260;
+}
 
 .edit-color {
   color: #1a56db !important;

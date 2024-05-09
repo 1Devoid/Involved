@@ -1,12 +1,8 @@
-function checkboxesCheckerManage() {
-  const masterCheckbox = document.querySelector(
-    '[data-checkbox="masterPopup"]'
-  );
+function checkboxesCheckerManage(masterSelector, subSelector) {
+  const masterCheckbox = document.querySelector(masterSelector);
 
   if (masterCheckbox) {
-    const checkboxes = document.querySelectorAll(
-      '[data-checkbox="usersPopup"]'
-    );
+    const checkboxes = document.querySelectorAll(subSelector);
 
     masterCheckbox.addEventListener('click', function () {
       checkboxes.forEach((checkbox) => {

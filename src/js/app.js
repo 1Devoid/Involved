@@ -8,6 +8,7 @@ import {
   showDelegatePopup,
   showDurationDelegate,
   changeDatePopup,
+  changeDurationPopup,
 } from './modules/popup.js';
 import inputInit from './modules/input.js';
 import inputError from './modules/inputError.js';
@@ -16,6 +17,7 @@ import darkThemeToggler from './modules/darkTheme.js';
 import arrowRotateInput from './modules/arrowRotateInput.js';
 import trimString from './modules/trimString.js';
 import checkboxesChecker from './modules/checkboxesChecker.js';
+import checkboxesCheckerRoles from './modules/checkboxesCheckerRoles.js';
 import checkboxesCheckerManage from './modules/checkboxesCheckerManage.js';
 import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
 import { toggleEdit, toggleRelationshipsEdit } from './modules/toggleEdit.js';
@@ -28,6 +30,8 @@ import addChangeDatePopup from './modules/addChangeDatePopup.js';
 import delegateDurationPopup from './modules/delegateDurationPopup.js';
 import addNewRelationshipPopup from './modules/addNewRelationshipPopup.js';
 import resetPassword from './modules/reset-password-popups.js';
+import addChangeDurationPopup from './modules/addChangeDurationPopup.js';
+import extendRolesFlow from './modules/extendRolesFlow.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -84,12 +88,26 @@ arrowRotateInput(
   '#dropdownButton-profileHomeNode',
   '#dropdown-profileHomeNode'
 );
+arrowRotateInput('#dropdownButton-roles-tab', '#dropdown-roles-tab');
+arrowRotateInput('#dropdownButton-nodes-tab', '#dropdown-nodes-tab');
+arrowRotateInput('#dropdownButton-status-tab', '#dropdown-status-tab');
 trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
 trimString('[data-trim34]', 34);
 trimString('[data-trim60]', 60);
 checkboxesChecker();
-checkboxesCheckerManage();
+checkboxesCheckerManage(
+  '[data-checkbox="masterPopup"]',
+  '[data-checkbox="usersPopup"]'
+);
+checkboxesCheckerManage(
+  '[data-checkbox="masterRoles"]',
+  '[data-checkbox="subRoles"]'
+);
+checkboxesCheckerManage(
+  '[data-checkbox="masterRoles-2"]',
+  '[data-checkbox="subRoles-2"]'
+);
 checkboxFilterLabel(
   '[data-checkbox="role-application-label"]',
   '[data-checkbox="role-application"]'
@@ -142,6 +160,22 @@ checkboxFilterLabel(
   '[data-checkbox="delegates-role-label"]',
   '[data-checkbox="delegates-role"]'
 );
+checkboxFilterLabel(
+  '[data-checkbox="roles-tab-label"]',
+  '[data-checkbox="roles-tab-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="roles-tab-2-label"]',
+  '[data-checkbox="roles-tab-2-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="nodes-tab-label"]',
+  '[data-checkbox="nodes-tab-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="nodes-tab-2-label"]',
+  '[data-checkbox="nodes-tab-2-type"]'
+);
 
 toggleEdit('edit-detail-msg');
 toggleRelationshipsEdit('edit-relationship-msg');
@@ -174,6 +208,13 @@ changeDatePopup(
   'change-date-save'
 );
 
+changeDurationPopup(
+  'change-duration-popup',
+  '.change-duration-roles',
+  '.change-duration-close',
+  'change-duration-save'
+);
+
 showDurationDelegate(
   'delegate-duration-popup',
   '.add-delegate-duration',
@@ -200,3 +241,6 @@ resetPassword(
 // );
 
 addChangeDatePopup();
+checkboxesCheckerRoles();
+addChangeDurationPopup();
+extendRolesFlow();

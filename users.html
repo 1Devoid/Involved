@@ -7,10 +7,10 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240415185554" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240415185554" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240415185554" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240415185554">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240509213202" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240509213202" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240509213202" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240509213202">
   <title>Involved</title>
 </head>
 
@@ -1109,17 +1109,17 @@
                     </span>
                   </button>
                   
-                  <div id="dropdown-addUser" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 dark:bg-[#323D4B] min-w-[200px]">
+                  <div id="dropdown-addUser" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden dark:bg-[#323D4B] min-w-[200px]">
                     <ul class="text-gray-700 text-sm dark:text-gray-200 min-w-[200px]" aria-labelledby="dropdownButton-addUser">
                       <li class="flex items-center dark:hover:bg-gray-500 duration-150 ease-in-out transition hover:bg-primary-accent-100 px-4 py-[7px]">
-                        <button class="flex items-center">
+                        <a href="create-user.html" class="flex items-center">
                           <span class="mr-3">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M12.6889 6.2885H7.71109V1.31072C7.71109 1.12212 7.63617 0.941248 7.50281 0.807889C7.36945 0.67453 7.18857 0.599609 6.99998 0.599609C6.81138 0.599609 6.6305 0.67453 6.49714 0.807889C6.36379 0.941248 6.28886 1.12212 6.28886 1.31072V6.2885H1.31109C1.12249 6.2885 0.941614 6.36342 0.808255 6.49678C0.674896 6.63014 0.599976 6.81101 0.599976 6.99961C0.599976 7.18821 0.674896 7.36908 0.808255 7.50244C0.941614 7.6358 1.12249 7.71072 1.31109 7.71072H6.28886V12.6885C6.28886 12.8771 6.36379 13.058 6.49714 13.1913C6.6305 13.3247 6.81138 13.3996 6.99998 13.3996C7.18857 13.3996 7.36945 13.3247 7.50281 13.1913C7.63617 13.058 7.71109 12.8771 7.71109 12.6885V7.71072H12.6889C12.8775 7.71072 13.0583 7.6358 13.1917 7.50244C13.3251 7.36908 13.4 7.18821 13.4 6.99961C13.4 6.81101 13.3251 6.63014 13.1917 6.49678C13.0583 6.36342 12.8775 6.2885 12.6889 6.2885Z" fill="#1A56DB"/>
                             </svg>
                           </span>
                           <span class="leading-[160%] text-sm">New User</span>
-                        </button>
+                        </a>
                       </li>
                       <li class="flex items-center dark:hover:bg-gray-500 duration-150 ease-in-out transition hover:bg-primary-accent-100 px-4 py-[7px]">
                         <button class="flex items-center">
@@ -1146,7 +1146,7 @@
                 </div>
               </div>
               
-              <div class="flex flex-col justify-between justify-start xl:flex-row xl:items-center">
+              <div class="flex flex-col justify-between xl:flex-row xl:items-center">
                 <div class="flex items-center md:flex-row flex-col mb-4 flex-wrap md:mb-2 xl:mb-0">
                   <div class="relative mb-4 xl:mb-0 md:mr-2" data-te-input-wrapper-init>
                     <input type="text" class="dark:peer-focus:text-primary duration-200 leading-[1.6] motion-reduce:transition-none peer-focus:text-primary transition-all [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-neutral-200 data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 h-[40px] md:min-w-[248px] outline-none peer px-3 py-[0.32rem] rounded search-input w-[190px]" id="exampleFormControlInput1" placeholder="Example label" pattern="[A-Za-zА-Яа-яЁёЇїІіҐґЄє\s]+" title="Search by First Name, Last Name, Username, Email, Node Name" required>
@@ -1154,6 +1154,7 @@
                       Search by First Name, Last Name, Username, Email, Node Name
                     </label>
                   </div>
+
                   <button id="dropdownButton-delegated" data-dropdown-toggle="dropdown-delegated" class="flex items-center rounded-lg text-[#717171] transition bg-[#ffffff] border border-[#E5E7EB] dark:border-[#4B5563] duration-150 ease-in-out focus:outline-none focus:ring-0 leading-normal motion-reduce:transition-none whitespace-nowrap active:bg-primary-accent-200 focus:bg-primary-accent-100 font-medium hover:bg-primary-accent-100 px-3 dark:bg-[#1F2A37] dark:hover:bg-[#5a687d66] dark:text-[#9CA3AF] h-[40px] justify-between mb-4 min-w-[190px] py-[10px] text-[14px] md:min-w-[151px] md:mr-2 xl:mb-0" type="button">Delegated Users
                     <span class="dark:hidden mr-2 w-2 ml-2">
                       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1394,7 +1395,7 @@
                       <th class="text-[14px] text-[#717171] font-medium dark:text-[#99A7B7] text-left py-4 max-w-[106px] min-w-[107px] px-6 lg:min-w-[108px] whitespace-nowrap">
                         Last Login
                       </th>
-                      <th class="text-[14px] text-[#717171] font-medium dark:text-[#99A7B7] text-left py-4 px-6 lg:min-w-[108px] max-w-[194px] min-w-[125px]">
+                      <th class="text-[14px] text-[#717171] font-medium dark:text-[#99A7B7] text-left py-4 px-6 lg:min-w-[108px] max-w-[194px] min-w-[125px] text-center">
                         Status
                       </th>
                       <th class="text-[14px] text-[#717171] font-medium dark:text-[#99A7B7] text-left lg:min-w-[72px] max-w-[80px] min-w-[80px] px-[15px] py-[16px]">
@@ -1458,7 +1459,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         Never
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-success-100 dark:bg-[#1C3F43] dark:text-[#8AE9A0] text-success-700">
                           Active
                         </span>
@@ -1479,7 +1480,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-1" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-1" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-1">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -1574,7 +1575,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         6h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#EBEDEF] dark:bg-[#465260] dark:text-[#BECCDD] text-[#40464F]">
                           Disabled
                         </span>
@@ -1595,7 +1596,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-2" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-2" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-2">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -1690,7 +1691,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         3h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#DEF1F7] dark:bg-[#3A3C61] dark:text-[#5DADE8] text-[#1C657D]">
                           Pending
                         </span>
@@ -1711,7 +1712,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-3" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-3" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-3">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -1806,7 +1807,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         1h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#FBF0DA] dark:bg-[#ac9a324f] dark:text-[#DDBE45] text-[#723B13]">
                           Expired
                         </span>
@@ -1827,7 +1828,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-4" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-4" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-4">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -1922,7 +1923,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         1h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#FBF0DA] dark:bg-[#ac9a324f] dark:text-[#DDBE45] text-[#723B13]">
                           Expired
                         </span>
@@ -1943,7 +1944,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-5" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-5" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-5">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -2038,7 +2039,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         1h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#FBF0DA] dark:bg-[#ac9a324f] dark:text-[#DDBE45] text-[#723B13]">
                           Expired
                         </span>
@@ -2059,7 +2060,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-6" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-6" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-6">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -2154,7 +2155,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         1h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#FBF0DA] dark:bg-[#ac9a324f] dark:text-[#DDBE45] text-[#723B13]">
                           Expired
                         </span>
@@ -2175,7 +2176,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-7" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-7" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-7">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -2270,7 +2271,7 @@
                       <td class="dark:text-[#D9E5F6] text-[14px] font-normal align-top py-4 text-[#424242] xl:align-middle px-[22px]">
                         1h
                       </td>
-                      <td class="text-center align-top px-[22px] py-4 xl:align-middle">
+                      <td class="text-center py-4 align-top px-[22px] xl:align-middle">
                         <span class="rounded-full font-normal px-[10px] py-[5px] text-[15px] whitespace-nowrap bg-[#FBF0DA] dark:bg-[#ac9a324f] dark:text-[#DDBE45] text-[#723B13]">
                           Expired
                         </span>
@@ -2291,7 +2292,7 @@
                           </span>
                         </button>
                         
-                        <div id="actions-8" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 min-w-[225px] overflow-hidden">
+                        <div id="actions-8" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg w-44 z-10 overflow-hidden min-w-[225px]">
                           <ul class="text-gray-700 text-sm dark:text-gray-200" aria-labelledby="actionsButton-8">
                             <li>
                               <a href="user-details.html" class="hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white block px-4 text-sm py-2 dark:text-[#D9E5F6] text-[#4F4F4F]">View
@@ -2351,7 +2352,7 @@
                         <path d="M3.47228 4.45419C3.76389 4.74704 4.23746 4.74704 4.52907 4.45419L7.51514 1.45536C7.72976 1.23982 7.79275 0.91885 7.6761 0.637709C7.55946 0.356569 7.28885 0.173828 6.98557 0.173828L1.01344 0.176171C0.712501 0.176171 0.439556 0.358912 0.322912 0.640052C0.206269 0.921193 0.271589 1.24216 0.48388 1.4577L3.46995 4.45653L3.47228 4.45419Z" fill="#F5F9FF"/>
                       </svg>
                     </button>
-                    <ul class="hidden bg-white rounded-lg overflow-hidden [&[data-te-dropdown-show]]:block absolute bg-clip-padding border-none dark:bg-[#323D4B] float-left list-none m-0 min-w-max shadow-lg text-base text-left z-[1000]" aria-labelledby="dropdownMenuButton9" data-te-dropdown-menu-ref>
+                    <ul class="hidden bg-white rounded-lg overflow-hidden dark:bg-[#323D4B] [&[data-te-dropdown-show]]:block absolute bg-clip-padding border-none float-left list-none m-0 min-w-max shadow-lg text-base text-left z-[1000]" aria-labelledby="dropdownMenuButton9" data-te-dropdown-menu-ref>
                       <li class="dark:hover:bg-gray-500 dark:text-[#F5F9FF] hover:bg-[#F2F2F2] w-16">
                         <button class="w-[100%] py-2">10</button>
                       </li>
@@ -2407,10 +2408,10 @@
     </footer>
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240415185554"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240415185554"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240415185554"></script>
-<script src="js/app.min.js?_v=20240415185554"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240509213202"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240509213202"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240509213202"></script>
+<script src="js/app.min.js?_v=20240509213202"></script>
 </body>
 
 </html>

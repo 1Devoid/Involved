@@ -52,6 +52,10 @@ function checkboxesChecker() {
 
     deleteBtn.addEventListener('click', () => {
       deleteBtn.style.display = 'none';
+      const checkboxes = document.querySelectorAll('[data-checkbox="users"]');
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = false;
+      });
     });
   }
 }

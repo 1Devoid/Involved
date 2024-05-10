@@ -32,6 +32,10 @@ import addNewRelationshipPopup from './modules/addNewRelationshipPopup.js';
 import resetPassword from './modules/reset-password-popups.js';
 import addChangeDurationPopup from './modules/addChangeDurationPopup.js';
 import extendRolesFlow from './modules/extendRolesFlow.js';
+import expireRolesFlow from './modules/expireRolesFlow.js';
+import removeRolesFlow from './modules/removeRolesFlow.js';
+import assignRolesFlow from './modules/assignRolesFlow.js';
+import hideResetRoles from './modules/hideResetRoles.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -53,6 +57,7 @@ inputInit();
 inputError();
 asideNavToggler();
 darkThemeToggler();
+
 arrowRotateInput('#dropdownButton-1', '#dropdown-1');
 arrowRotateInput('#dropdownButton-2', '#dropdown-2');
 arrowRotateInput('#dropdownButton-3', '#dropdown-3');
@@ -89,13 +94,24 @@ arrowRotateInput(
   '#dropdown-profileHomeNode'
 );
 arrowRotateInput('#dropdownButton-roles-tab', '#dropdown-roles-tab');
+arrowRotateInput('#dropdownButton-roles-tab-2', '#dropdown-roles-tab-2');
+arrowRotateInput('#dropdownButton-roles-tab-3', '#dropdown-roles-tab-3');
+arrowRotateInput('#dropdownButton-roles-tab-4', '#dropdown-roles-tab-4');
+arrowRotateInput('#dropdownButton-roles-tab-5', '#dropdown-roles-tab-5');
 arrowRotateInput('#dropdownButton-nodes-tab', '#dropdown-nodes-tab');
+arrowRotateInput('#dropdownButton-nodes-tab-2', '#dropdown-nodes-tab-2');
+arrowRotateInput('#dropdownButton-nodes-tab-3', '#dropdown-nodes-tab-3');
+arrowRotateInput('#dropdownButton-nodes-tab-4', '#dropdown-nodes-tab-4');
+arrowRotateInput('#dropdownButton-nodes-tab-5', '#dropdown-nodes-tab-5');
 arrowRotateInput('#dropdownButton-status-tab', '#dropdown-status-tab');
+
 trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
 trimString('[data-trim34]', 34);
 trimString('[data-trim60]', 60);
+
 checkboxesChecker();
+
 checkboxesCheckerManage(
   '[data-checkbox="masterPopup"]',
   '[data-checkbox="usersPopup"]'
@@ -108,6 +124,19 @@ checkboxesCheckerManage(
   '[data-checkbox="masterRoles-2"]',
   '[data-checkbox="subRoles-2"]'
 );
+checkboxesCheckerManage(
+  '[data-checkbox="masterRoles-3"]',
+  '[data-checkbox="subRoles-3"]'
+);
+checkboxesCheckerManage(
+  '[data-checkbox="masterRoles-4"]',
+  '[data-checkbox="subRoles-4"]'
+);
+checkboxesCheckerManage(
+  '[data-checkbox="masterRoles-5"]',
+  '[data-checkbox="subRoles-5"]'
+);
+
 checkboxFilterLabel(
   '[data-checkbox="role-application-label"]',
   '[data-checkbox="role-application"]'
@@ -169,12 +198,36 @@ checkboxFilterLabel(
   '[data-checkbox="roles-tab-2-type"]'
 );
 checkboxFilterLabel(
+  '[data-checkbox="roles-tab-3-label"]',
+  '[data-checkbox="roles-tab-3-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="roles-tab-4-label"]',
+  '[data-checkbox="roles-tab-4-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="roles-tab-5-label"]',
+  '[data-checkbox="roles-tab-5-type"]'
+);
+checkboxFilterLabel(
   '[data-checkbox="nodes-tab-label"]',
   '[data-checkbox="nodes-tab-type"]'
 );
 checkboxFilterLabel(
   '[data-checkbox="nodes-tab-2-label"]',
   '[data-checkbox="nodes-tab-2-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="nodes-tab-3-label"]',
+  '[data-checkbox="nodes-tab-3-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="nodes-tab-4-label"]',
+  '[data-checkbox="nodes-tab-4-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="nodes-tab-5-label"]',
+  '[data-checkbox="nodes-tab-5-type"]'
 );
 
 toggleEdit('edit-detail-msg');
@@ -244,3 +297,7 @@ addChangeDatePopup();
 checkboxesCheckerRoles();
 addChangeDurationPopup();
 extendRolesFlow();
+expireRolesFlow();
+removeRolesFlow();
+assignRolesFlow();
+hideResetRoles();

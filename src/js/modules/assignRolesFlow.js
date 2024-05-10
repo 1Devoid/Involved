@@ -29,10 +29,27 @@ function assignRolesFlow() {
       });
 
       const saveModalBtn = document.getElementById('assign-flow-save');
+      const assignErrorElement = document.getElementById('assign-error');
+
       saveModalBtn.addEventListener('click', () => {
-        modalEl.classList.add('hidden');
-        assignConfirmEl.classList.remove('hidden');
+        const startDateInput = document.getElementById(
+          'assign-duration-start-date'
+        );
+
+        if (startDateInput.value.trim() === '') {
+          assignErrorElement.classList.remove('hidden');
+        } else {
+          assignErrorElement.classList.add('hidden');
+          modalEl.classList.add('hidden');
+          assignConfirmEl.classList.remove('hidden');
+        }
       });
+
+      document
+        .getElementById('assign-error-close')
+        .addEventListener('click', function () {
+          assignErrorElement.classList.add('hidden');
+        });
     }
   }
 
@@ -152,7 +169,15 @@ function assignRolesFlow() {
   assignDurationPopupLogic();
 
   function assignConfirmPopup() {
+    const assignConfirmEl = document.getElementById(
+      'assign-roles-confirm-popup'
+    );
     if (assignConfirmEl) {
+      const processBtn = document.getElementById('process-roles-btn');
+      processBtn.addEventListener('click', () => {
+        processBtn.classList.add('hidden');
+      });
+
       const closeModalBtn = document.getElementById(
         'assign-roles-confirm-close'
       );
@@ -178,6 +203,7 @@ function assignRolesFlow() {
       );
       confirmModalBtn.addEventListener('click', () => {
         assignConfirmEl.classList.add('hidden');
+        processBtn.classList.remove('hidden');
       });
     }
   }

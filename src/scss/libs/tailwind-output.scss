@@ -2247,6 +2247,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: max-content;
 }
 
+.min-w-\[170px\] {
+  min-width: 170px;
+}
+
+.min-w-\[140px\] {
+  min-width: 140px;
+}
+
 .max-w-\[106px\] {
   max-width: 106px;
 }
@@ -3469,11 +3477,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-\[\#ffffff\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-b-\[\#E7E7E7\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(231 231 231 / var(--tw-border-opacity));
@@ -3676,6 +3679,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .bg-\[\#EBEDEF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(235 237 239 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F05252\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F16B46\] {
@@ -3975,11 +3983,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F05252\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
-}
-
 .bg-clip-padding {
   background-clip: padding-box;
 }
@@ -4004,6 +4007,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   fill: #717171;
 }
 
+.fill-\[\#9B1C1C\] {
+  fill: #9B1C1C;
+}
+
 .fill-\[\#9CA3AF\] {
   fill: #9CA3AF;
 }
@@ -4014,10 +4021,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .fill-current {
   fill: currentColor;
-}
-
-.fill-\[\#9B1C1C\] {
-  fill: #9B1C1C;
 }
 
 .stroke-\[\#111928\] {
@@ -4906,6 +4909,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   color: #ffffff8a;
 }
 
+.text-\[\#ffffff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-\[rgb\(220\2c 76\2c 100\)\] {
   --tw-text-opacity: 1;
   color: rgb(220 76 100 / var(--tw-text-opacity));
@@ -5050,11 +5058,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 .text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#ffffff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -7132,12 +7135,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(75 85 99 / var(--tw-divide-opacity));
 }
 
-:is(.dark .dark\:border-0) {
-  border-width: 0px;
-}
-
 :is(.dark .dark\:border) {
   border-width: 1px;
+}
+
+:is(.dark .dark\:border-0) {
+  border-width: 0px;
 }
 
 :is(.dark .dark\:border-\[\#14a44d\]) {
@@ -7173,6 +7176,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:border-\[\#707E8D\]) {
   --tw-border-opacity: 1;
   border-color: rgb(112 126 141 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:border-\[\#771D1D\]) {
+  --tw-border-opacity: 1;
+  border-color: rgb(119 29 29 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-\[\#8593A3\]) {
@@ -7233,11 +7241,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:border-primary-400) {
   --tw-border-opacity: 1;
   border-color: rgb(143 174 224 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-\[\#771D1D\]) {
-  --tw-border-opacity: 1;
-  border-color: rgb(119 29 29 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-b-\[\#5B6776\]) {
@@ -7521,6 +7524,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   fill: #D1D5DB;
 }
 
+:is(.dark .dark\:fill-\[\#F98080\]) {
+  fill: #F98080;
+}
+
 :is(.dark .dark\:fill-\[\#FFFFFF\]) {
   fill: #FFFFFF;
 }
@@ -7531,14 +7538,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 :is(.dark .dark\:fill-gray-400) {
   fill: #9ca3af;
-}
-
-:is(.dark .dark\:fill-\[\#9B1C1C\]) {
-  fill: #9B1C1C;
-}
-
-:is(.dark .dark\:fill-\[\#F98080\]) {
-  fill: #F98080;
 }
 
 :is(.dark .dark\:stroke-\[\#ADBBCC\]) {
@@ -7653,6 +7652,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   color: rgb(245 249 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-\[\#F98080\]) {
+  --tw-text-opacity: 1;
+  color: rgb(249 128 128 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:text-\[\#FF4949\]) {
   --tw-text-opacity: 1;
   color: rgb(255 73 73 / var(--tw-text-opacity));
@@ -7716,11 +7720,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-\[\#F98080\]) {
-  --tw-text-opacity: 1;
-  color: rgb(249 128 128 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:shadow-\[0_4px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.5\)\]) {

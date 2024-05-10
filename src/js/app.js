@@ -36,6 +36,7 @@ import expireRolesFlow from './modules/expireRolesFlow.js';
 import removeRolesFlow from './modules/removeRolesFlow.js';
 import assignRolesFlow from './modules/assignRolesFlow.js';
 import hideResetRoles from './modules/hideResetRoles.js';
+import toggleInputsDisabled from './modules/toggleInputsDisabled.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -301,3 +302,4 @@ expireRolesFlow();
 removeRolesFlow();
 assignRolesFlow();
 hideResetRoles();
+toggleInputsDisabled();

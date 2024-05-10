@@ -7,10 +7,10 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240510143634" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240510143634" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240510143634" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240510143634">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240510181311" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240510181311" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240510181311" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240510181311">
   <title>Involved</title>
 </head>
 
@@ -846,12 +846,12 @@
               <path d="M9.00033 0.673828C7.09077 0.673828 5.25942 1.4324 3.90916 2.78266C2.5589 4.13292 1.80033 5.96427 1.80033 7.87383V12.177L0.95193 13.0254C0.784159 13.1933 0.669911 13.407 0.62363 13.6398C0.577349 13.8725 0.601113 14.1138 0.691917 14.333C0.782721 14.5523 0.936488 14.7396 1.13378 14.8715C1.33107 15.0034 1.56303 15.0738 1.80033 15.0738H16.2003C16.4376 15.0738 16.6696 15.0034 16.8669 14.8715C17.0642 14.7396 17.2179 14.5523 17.3087 14.333C17.3995 14.1138 17.4233 13.8725 17.377 13.6398C17.3307 13.407 17.2165 13.1933 17.0487 13.0254L16.2003 12.177V7.87383C16.2003 5.96427 15.4418 4.13292 14.0915 2.78266C12.7412 1.4324 10.9099 0.673828 9.00033 0.673828ZM9.00033 19.8738C8.04555 19.8738 7.12988 19.4945 6.45475 18.8194C5.77961 18.1443 5.40033 17.2286 5.40033 16.2738H12.6003C12.6003 17.2286 12.221 18.1443 11.5459 18.8194C10.8708 19.4945 9.95511 19.8738 9.00033 19.8738Z" fill="#BECCDD"/>
             </svg>
           </span>
-          <div class="rounded-full absolute bg-[#1C64F2] block border-2 border-white dark:border-gray-900 end-[2px] h-3 top-[1px] w-3">
+          <div class="h-3 w-3 absolute bg-[#1C64F2] block border-2 border-white dark:border-gray-900 end-[2px] rounded-full top-[1px]">
           </div>
         </button>
         <div id="dropdownNotification" class="hidden bg-white shadow divide-gray-100 divide-y rounded-lg dark:bg-[#323D4B] dark:divide-[#5f656f] max-w-sm w-full z-20" aria-labelledby="dropdownNotificationButton">
           <div class="items-center flex justify-between notification-decor px-3 py-3 relative">
-            <div class="text-[14px] font-semibold dark:text-white text-[#111928]">
+            <div class="text-[14px] text-[#111928] dark:text-white font-semibold">
               Notifications
             </div>
             <div class="text-[14px] font-normal cursor-pointer dark:text-[#ADBBCC] text-[#5B6776]">
@@ -1012,7 +1012,7 @@
           <div>
             <button type="button" class="flex text-sm bg-gray-800 dark:focus:ring-gray-600 focus:ring-4 focus:ring-gray-300 rounded-full" aria-expanded="false" data-dropdown-toggle="dropdown-user">
               <span class="sr-only">Open user menu</span>
-              <picture><source srcset="images/avatar.webp" type="image/webp"><img class="rounded-full h-8 w-8" src="images/avatar.png" alt="User Avatar"></picture>
+              <picture><source srcset="images/avatar.webp" type="image/webp"><img class="h-8 rounded-full w-8" src="images/avatar.png" alt="User Avatar"></picture>
             </button>
           </div>
           <div class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y list-none my-4 text-base z-50 dark:divide-gray-600 min-w-[224px] rounded-lg" id="dropdown-user">
@@ -1073,7 +1073,7 @@
             </div>
             <div class="bg-white content__wrapper dark:bg-[#1F2A37] px-6 py-6 rounded-[8px]">
               <div class="mb-6">
-                <div class="font-medium text-[#2B2B2B] leading-[160%] text-[28px] dark:text-[#F5F9FF] mb-1">Create User
+                <div class="font-medium dark:text-[#F5F9FF] leading-[160%] mb-1 text-[#2B2B2B] text-[28px]">Create User
                 </div>
                 <div class="text-[16px] dark:text-[#ADBBCC] leading-[120%] text-[#4F4F4F]">Confirmation</div>
               </div>
@@ -1166,16 +1166,26 @@
                       <tr>
                         <td class="py-2 text-sm border-b dark:border-b-[#5B6776] dark:text-[#D9E5F6] font-normal md:py-4 md:text-[16px] px-[10px] relative text-[#2B2B2B]">
                           <div class="items-center flex gap-[20px]">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_1269_106923)">
-                                <path d="M9.9987 0.910156C8.1857 0.910156 6.41342 1.44777 4.90597 2.45502C3.39852 3.46226 2.22361 4.8939 1.52981 6.56889C0.836003 8.24388 0.654473 10.087 1.00817 11.8651C1.36187 13.6433 2.23491 15.2766 3.51689 16.5586C4.79887 17.8406 6.43221 18.7137 8.21037 19.0673C9.98853 19.421 11.8316 19.2395 13.5066 18.5457C15.1816 17.8519 16.6133 16.677 17.6205 15.1695C18.6277 13.6621 19.1654 11.8898 19.1654 10.0768C19.1626 7.64653 18.1959 5.31659 16.4774 3.59811C14.7589 1.87964 12.429 0.912965 9.9987 0.910156ZM14.0919 11.0417H10.9636V14.17C10.9636 14.4259 10.862 14.6713 10.681 14.8523C10.5 15.0332 10.2546 15.1349 9.9987 15.1349C9.74279 15.1349 9.49736 15.0332 9.3164 14.8523C9.13545 14.6713 9.03379 14.4259 9.03379 14.17V11.0417H5.90554C5.64963 11.0417 5.4042 10.9401 5.22325 10.7591C5.04229 10.5782 4.94063 10.3327 4.94063 10.0768C4.94063 9.82091 5.04229 9.57548 5.22325 9.39452C5.4042 9.21357 5.64963 9.11191 5.90554 9.11191H9.03379V5.98366C9.03379 5.72775 9.13545 5.48232 9.3164 5.30137C9.49736 5.12041 9.74279 5.01875 9.9987 5.01875C10.2546 5.01875 10.5 5.12041 10.681 5.30137C10.862 5.48232 10.9636 5.72775 10.9636 5.98366V9.11191H14.0919C14.3478 9.11191 14.5932 9.21357 14.7742 9.39452C14.9551 9.57548 15.0568 9.82091 15.0568 10.0768C15.0568 10.3327 14.9551 10.5782 14.7742 10.7591C14.5932 10.9401 14.3478 11.0417 14.0919 11.0417Z" fill="#0E9F6E"/>
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_1269_106923">
-                                  <rect width="20" height="20" fill="white" transform="translate(0 0.0761719)"/>
-                                </clipPath>
-                              </defs>
-                            </svg>
+                            <div class="relative">
+                              <svg class="hint-icon-table" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1269_106923)">
+                                  <path d="M9.9987 0.910156C8.1857 0.910156 6.41342 1.44777 4.90597 2.45502C3.39852 3.46226 2.22361 4.8939 1.52981 6.56889C0.836003 8.24388 0.654473 10.087 1.00817 11.8651C1.36187 13.6433 2.23491 15.2766 3.51689 16.5586C4.79887 17.8406 6.43221 18.7137 8.21037 19.0673C9.98853 19.421 11.8316 19.2395 13.5066 18.5457C15.1816 17.8519 16.6133 16.677 17.6205 15.1695C18.6277 13.6621 19.1654 11.8898 19.1654 10.0768C19.1626 7.64653 18.1959 5.31659 16.4774 3.59811C14.7589 1.87964 12.429 0.912965 9.9987 0.910156ZM14.0919 11.0417H10.9636V14.17C10.9636 14.4259 10.862 14.6713 10.681 14.8523C10.5 15.0332 10.2546 15.1349 9.9987 15.1349C9.74279 15.1349 9.49736 15.0332 9.3164 14.8523C9.13545 14.6713 9.03379 14.4259 9.03379 14.17V11.0417H5.90554C5.64963 11.0417 5.4042 10.9401 5.22325 10.7591C5.04229 10.5782 4.94063 10.3327 4.94063 10.0768C4.94063 9.82091 5.04229 9.57548 5.22325 9.39452C5.4042 9.21357 5.64963 9.11191 5.90554 9.11191H9.03379V5.98366C9.03379 5.72775 9.13545 5.48232 9.3164 5.30137C9.49736 5.12041 9.74279 5.01875 9.9987 5.01875C10.2546 5.01875 10.5 5.12041 10.681 5.30137C10.862 5.48232 10.9636 5.72775 10.9636 5.98366V9.11191H14.0919C14.3478 9.11191 14.5932 9.21357 14.7742 9.39452C14.9551 9.57548 15.0568 9.82091 15.0568 10.0768C15.0568 10.3327 14.9551 10.5782 14.7742 10.7591C14.5932 10.9401 14.3478 11.0417 14.0919 11.0417Z" fill="#0E9F6E"></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1269_106923">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.0761719)"></rect>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <div class="hidden py-2 px-3 absolute bg-[#E7E7E7] dark:bg-[#465260] hint-block-table left-[30px] pt-0 rounded top-[-30px] z-[1] w-[210px]">
+                                <div class="font-medium text-[14px] dark:text-[#ffffff] mb-1 text-[#111928]">
+                                  New
+                                </div>
+                                <div class="text-[#6B7280] dark:text-[#ffffff] text-[12px]">
+                                  Role not currently assigned role
+                                </div>
+                              </div>
+                            </div>
                             <div class="items-center flex">
                               <svg class="dark:hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1541 3.91542L12 1.5L4.8459 3.91542C4.30907 4.0951 3.84162 4.44279 3.51017 4.90893C3.17871 5.37507 3.00018 5.93587 3 6.51142V12.4917C3 19.3887 11.28 23.1975 11.6346 23.3561L11.9532 23.5L12.2844 23.3882C12.6399 23.2672 21 20.354 21 12.4917V6.51142C20.9997 5.93591 20.8211 5.37517 20.4897 4.90906C20.1582 4.44295 19.6909 4.09523 19.1541 3.91542ZM19.2 12.4917C19.2 18.2328 13.4859 20.9397 12.0423 21.531C10.596 20.7949 4.8 17.5279 4.8 12.4917V6.51142C4.80008 6.31953 4.85964 6.13257 4.97018 5.97718C5.08072 5.8218 5.2366 5.70593 5.4156 5.64608L12 3.42225L18.5844 5.64608C18.7635 5.70568 18.9196 5.82149 19.0302 5.97693C19.1407 6.13237 19.2002 6.31946 19.2 6.51142V12.4917Z" fill="#4F4F4F"></path>
@@ -1228,9 +1238,19 @@
                       <tr>
                         <td class="py-2 text-sm border-b dark:border-b-[#5B6776] dark:text-[#D9E5F6] font-normal md:py-4 md:text-[16px] px-[10px] relative text-[#2B2B2B]">
                           <div class="items-center flex gap-[20px]">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.9987 0.910156C8.18571 0.910156 6.41342 1.44777 4.90597 2.45502C3.39852 3.46226 2.22361 4.8939 1.52981 6.56889C0.836003 8.24388 0.654472 10.087 1.00817 11.8651C1.36187 13.6433 2.23491 15.2766 3.51689 16.5586C4.79887 17.8406 6.43221 18.7137 8.21037 19.0673C9.98853 19.421 11.8316 19.2395 13.5066 18.5457C15.1816 17.8519 16.6133 16.677 17.6205 15.1695C18.6277 13.6621 19.1654 11.8898 19.1654 10.0768C19.1627 7.64649 18.1961 5.31646 16.4776 3.59796C14.7591 1.87945 12.429 0.912825 9.9987 0.910156ZM13.3968 8.89157L9.73012 12.5582C9.55822 12.7301 9.3251 12.8266 9.08203 12.8266C8.83897 12.8266 8.60585 12.7301 8.43395 12.5582L6.60062 10.7249C6.43364 10.552 6.34124 10.3205 6.34333 10.0801C6.34542 9.83977 6.44183 9.60986 6.61178 9.4399C6.78174 9.26995 7.01165 9.17354 7.252 9.17145C7.49235 9.16936 7.7239 9.26176 7.89678 9.42874L9.08203 10.614L12.1006 7.5954C12.2735 7.42843 12.5051 7.33603 12.7454 7.33812C12.9857 7.34021 13.2157 7.43661 13.3856 7.60657C13.5556 7.77653 13.652 8.00644 13.6541 8.24679C13.6562 8.48713 13.5638 8.71868 13.3968 8.89157Z" fill="#1A56DB"/>
-                            </svg>
+                            <div class="relative">
+                              <svg class="hint-icon-table" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.9987 0.910156C8.18571 0.910156 6.41342 1.44777 4.90597 2.45502C3.39852 3.46226 2.22361 4.8939 1.52981 6.56889C0.836003 8.24388 0.654472 10.087 1.00817 11.8651C1.36187 13.6433 2.23491 15.2766 3.51689 16.5586C4.79887 17.8406 6.43221 18.7137 8.21037 19.0673C9.98853 19.421 11.8316 19.2395 13.5066 18.5457C15.1816 17.8519 16.6133 16.677 17.6205 15.1695C18.6277 13.6621 19.1654 11.8898 19.1654 10.0768C19.1627 7.64649 18.1961 5.31646 16.4776 3.59796C14.7591 1.87945 12.429 0.912825 9.9987 0.910156ZM13.3968 8.89157L9.73012 12.5582C9.55822 12.7301 9.3251 12.8266 9.08203 12.8266C8.83897 12.8266 8.60585 12.7301 8.43395 12.5582L6.60062 10.7249C6.43364 10.552 6.34124 10.3205 6.34333 10.0801C6.34542 9.83977 6.44183 9.60986 6.61178 9.4399C6.78174 9.26995 7.01165 9.17354 7.252 9.17145C7.49235 9.16936 7.7239 9.26176 7.89678 9.42874L9.08203 10.614L12.1006 7.5954C12.2735 7.42843 12.5051 7.33603 12.7454 7.33812C12.9857 7.34021 13.2157 7.43661 13.3856 7.60657C13.5556 7.77653 13.652 8.00644 13.6541 8.24679C13.6562 8.48713 13.5638 8.71868 13.3968 8.89157Z" fill="#1A56DB"></path>
+                              </svg>
+                              <div class="hidden py-2 px-3 absolute bg-[#E7E7E7] dark:bg-[#465260] hint-block-table left-[30px] pt-0 rounded top-[-30px] z-[1] w-[120px]">
+                                <div class="font-medium text-[14px] dark:text-[#ffffff] mb-1 text-[#111928]">
+                                  Exist
+                                </div>
+                                <div class="text-[#6B7280] dark:text-[#ffffff] text-[12px]">
+                                  No change
+                                </div>
+                              </div>
+                            </div>
                             <div class="items-center flex">
                               <svg class="dark:hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1541 3.91542L12 1.5L4.8459 3.91542C4.30907 4.0951 3.84162 4.44279 3.51017 4.90893C3.17871 5.37507 3.00018 5.93587 3 6.51142V12.4917C3 19.3887 11.28 23.1975 11.6346 23.3561L11.9532 23.5L12.2844 23.3882C12.6399 23.2672 21 20.354 21 12.4917V6.51142C20.9997 5.93591 20.8211 5.37517 20.4897 4.90906C20.1582 4.44295 19.6909 4.09523 19.1541 3.91542ZM19.2 12.4917C19.2 18.2328 13.4859 20.9397 12.0423 21.531C10.596 20.7949 4.8 17.5279 4.8 12.4917V6.51142C4.80008 6.31953 4.85964 6.13257 4.97018 5.97718C5.08072 5.8218 5.2366 5.70593 5.4156 5.64608L12 3.42225L18.5844 5.64608C18.7635 5.70568 18.9196 5.82149 19.0302 5.97693C19.1407 6.13237 19.2002 6.31946 19.2 6.51142V12.4917Z" fill="#4F4F4F"></path>
@@ -1285,9 +1305,19 @@
                       <tr>
                         <td class="py-2 text-sm border-b dark:border-b-[#5B6776] dark:text-[#D9E5F6] font-normal md:py-4 md:text-[16px] px-[10px] relative text-[#2B2B2B]">
                           <div class="items-center flex gap-[20px]">
-                            <svg class="dark:stroke-[#ffffff] stroke-[#111928]" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M16.5 5.74219H1.5M12.3333 0.742188V3.24219M5.66667 0.742188V3.24219M9 14.0755V9.07552M6.5 11.5755H11.5M5.5 17.4089H12.5C13.9001 17.4089 14.6002 17.4089 15.135 17.1364C15.6054 16.8967 15.9878 16.5142 16.2275 16.0438C16.5 15.5091 16.5 14.809 16.5 13.4089V6.40885C16.5 5.00872 16.5 4.30866 16.2275 3.77388C15.9878 3.30347 15.6054 2.92102 15.135 2.68134C14.6002 2.40885 13.9001 2.40885 12.5 2.40885H5.5C4.09987 2.40885 3.3998 2.40885 2.86502 2.68134C2.39462 2.92102 2.01217 3.30347 1.77248 3.77388C1.5 4.30866 1.5 5.00872 1.5 6.40885V13.4089C1.5 14.809 1.5 15.5091 1.77248 16.0438C2.01217 16.5142 2.39462 16.8967 2.86502 17.1364C3.3998 17.4089 4.09987 17.4089 5.5 17.4089Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="relative">
+                              <svg class="hint-icon-table dark:stroke-[#ffffff] stroke-[#111928]" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 5.74219H1.5M12.3333 0.742188V3.24219M5.66667 0.742188V3.24219M9 14.0755V9.07552M6.5 11.5755H11.5M5.5 17.4089H12.5C13.9001 17.4089 14.6002 17.4089 15.135 17.1364C15.6054 16.8967 15.9878 16.5142 16.2275 16.0438C16.5 15.5091 16.5 14.809 16.5 13.4089V6.40885C16.5 5.00872 16.5 4.30866 16.2275 3.77388C15.9878 3.30347 15.6054 2.92102 15.135 2.68134C14.6002 2.40885 13.9001 2.40885 12.5 2.40885H5.5C4.09987 2.40885 3.3998 2.40885 2.86502 2.68134C2.39462 2.92102 2.01217 3.30347 1.77248 3.77388C1.5 4.30866 1.5 5.00872 1.5 6.40885V13.4089C1.5 14.809 1.5 15.5091 1.77248 16.0438C2.01217 16.5142 2.39462 16.8967 2.86502 17.1364C3.3998 17.4089 4.09987 17.4089 5.5 17.4089Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <div class="hidden py-2 px-3 absolute bg-[#E7E7E7] dark:bg-[#465260] hint-block-table left-[30px] pt-0 rounded top-[-30px] z-[1] w-[210px]">
+                                <div class="font-medium text-[14px] dark:text-[#ffffff] mb-1 text-[#111928]">
+                                  Extended Access Date
+                                </div>
+                                <div class="text-[#6B7280] dark:text-[#ffffff] text-[12px]">
+                                  Added more time to a previously assigned role
+                                </div>
+                              </div>
+                            </div>
                             <div class="items-center flex">
                               <svg class="dark:hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1541 3.91542L12 1.5L4.8459 3.91542C4.30907 4.0951 3.84162 4.44279 3.51017 4.90893C3.17871 5.37507 3.00018 5.93587 3 6.51142V12.4917C3 19.3887 11.28 23.1975 11.6346 23.3561L11.9532 23.5L12.2844 23.3882C12.6399 23.2672 21 20.354 21 12.4917V6.51142C20.9997 5.93591 20.8211 5.37517 20.4897 4.90906C20.1582 4.44295 19.6909 4.09523 19.1541 3.91542ZM19.2 12.4917C19.2 18.2328 13.4859 20.9397 12.0423 21.531C10.596 20.7949 4.8 17.5279 4.8 12.4917V6.51142C4.80008 6.31953 4.85964 6.13257 4.97018 5.97718C5.08072 5.8218 5.2366 5.70593 5.4156 5.64608L12 3.42225L18.5844 5.64608C18.7635 5.70568 18.9196 5.82149 19.0302 5.97693C19.1407 6.13237 19.2002 6.31946 19.2 6.51142V12.4917Z" fill="#4F4F4F"></path>
@@ -1342,10 +1372,20 @@
                       <tr>
                         <td class="py-2 text-sm border-b dark:border-b-[#5B6776] dark:text-[#D9E5F6] font-normal md:py-4 md:text-[16px] px-[10px] relative text-[#2B2B2B]">
                           <div class="items-center flex gap-[20px]">
-                            <svg class="dark:stroke-[#ffffff] stroke-[#111928]" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M17.5 7.16602H2.5M13.3333 2.16602V4.66602M6.66667 2.16602V4.66602M6.5 18.8327H13.5C14.9001 18.8327 15.6002 18.8327 16.135 18.5602C16.6054 18.3205 16.9878 17.9381 17.2275 17.4677C17.5 16.9329 17.5 16.2328 17.5 14.8327V7.83268C17.5 6.43255 17.5 5.73249 17.2275 5.19771C16.9878 4.7273 16.6054 4.34485 16.135 4.10517C15.6002 3.83268 14.9001 3.83268 13.5 3.83268H6.5C5.09987 3.83268 4.3998 3.83268 3.86502 4.10517C3.39462 4.34485 3.01217 4.7273 2.77248 5.19771C2.5 5.73249 2.5 6.43255 2.5 7.83268V14.8327C2.5 16.2328 2.5 16.9329 2.77248 17.4677C3.01217 17.9381 3.39462 18.3205 3.86502 18.5602C4.3998 18.8327 5.09987 18.8327 6.5 18.8327Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M12.1624 11.334L8.33203 15.1644M8.33203 11.334L12.1624 15.1644" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="relative">
+                              <svg class="hint-icon-table dark:stroke-[#ffffff] stroke-[#111928]" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 7.16602H2.5M13.3333 2.16602V4.66602M6.66667 2.16602V4.66602M6.5 18.8327H13.5C14.9001 18.8327 15.6002 18.8327 16.135 18.5602C16.6054 18.3205 16.9878 17.9381 17.2275 17.4677C17.5 16.9329 17.5 16.2328 17.5 14.8327V7.83268C17.5 6.43255 17.5 5.73249 17.2275 5.19771C16.9878 4.7273 16.6054 4.34485 16.135 4.10517C15.6002 3.83268 14.9001 3.83268 13.5 3.83268H6.5C5.09987 3.83268 4.3998 3.83268 3.86502 4.10517C3.39462 4.34485 3.01217 4.7273 2.77248 5.19771C2.5 5.73249 2.5 6.43255 2.5 7.83268V14.8327C2.5 16.2328 2.5 16.9329 2.77248 17.4677C3.01217 17.9381 3.39462 18.3205 3.86502 18.5602C4.3998 18.8327 5.09987 18.8327 6.5 18.8327Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12.1624 11.334L8.33203 15.1644M8.33203 11.334L12.1624 15.1644" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <div class="hidden py-2 px-3 absolute bg-[#E7E7E7] dark:bg-[#465260] hint-block-table left-[30px] pt-0 rounded top-[-30px] z-[1] w-[210px]">
+                                <div class="font-medium text-[14px] dark:text-[#ffffff] mb-1 text-[#111928]">
+                                  Expire Access Date
+                                </div>
+                                <div class="text-[#6B7280] dark:text-[#ffffff] text-[12px]">
+                                  Expire a previously assigned role
+                                </div>
+                              </div>
+                            </div>
                             <div class="items-center flex">
                               <svg class="dark:hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1541 3.91542L12 1.5L4.8459 3.91542C4.30907 4.0951 3.84162 4.44279 3.51017 4.90893C3.17871 5.37507 3.00018 5.93587 3 6.51142V12.4917C3 19.3887 11.28 23.1975 11.6346 23.3561L11.9532 23.5L12.2844 23.3882C12.6399 23.2672 21 20.354 21 12.4917V6.51142C20.9997 5.93591 20.8211 5.37517 20.4897 4.90906C20.1582 4.44295 19.6909 4.09523 19.1541 3.91542ZM19.2 12.4917C19.2 18.2328 13.4859 20.9397 12.0423 21.531C10.596 20.7949 4.8 17.5279 4.8 12.4917V6.51142C4.80008 6.31953 4.85964 6.13257 4.97018 5.97718C5.08072 5.8218 5.2366 5.70593 5.4156 5.64608L12 3.42225L18.5844 5.64608C18.7635 5.70568 18.9196 5.82149 19.0302 5.97693C19.1407 6.13237 19.2002 6.31946 19.2 6.51142V12.4917Z" fill="#4F4F4F"></path>
@@ -1437,10 +1477,10 @@
     </footer>
 
     <div id="change-date-popup" tabindex="-1" class="items-center flex justify-center w-full bg-[#00000060] bottom-0 fixed h-modal hidden left-0 md:h-full md:inset-0 overflow-x-hidden overflow-y-auto right-0 top-0 z-50">
-      <div class="info-popup__wrap h-full max-w-[454px] md:h-auto p-4 relative top-[4rem] w-full">
-        <div class="bg-white shadow dark:bg-[#323D4B] rounded-lg md:p-6 p-3 pt-[32px] relative">
+      <div class="relative h-full info-popup__wrap max-w-[454px] md:h-auto p-4 top-[4rem] w-full">
+        <div class="relative rounded-lg bg-white dark:bg-[#323D4B] md:p-6 p-3 pt-[32px] shadow">
           <div class="mb-6 mr-4">
-            <h2 class="font-medium text-[#2B2B2B] dark:text-[#ffffff] leading-[160%] mb-2 text-[28px]">
+            <h2 class="font-medium dark:text-[#ffffff] text-[#2B2B2B] leading-[160%] mb-2 text-[28px]">
               Change Date
             </h2>
             <div class="items-center flex gap-[10px]">
@@ -1479,7 +1519,7 @@
           </div>
           <div class="mb-6 max-h-[617px] mx-auto">
             <div class="mb-4">
-              <div class="w-[100%] relative" data-te-datepicker-init data-te-input-wrapper-init>
+              <div class="relative w-[100%]" data-te-datepicker-init data-te-input-wrapper-init>
                 <input type="text" id="change-date-start-date" class="peer [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-transparent block border-0 dark:peer-focus:text-primary dark:placeholder:text-neutral-200 data-[te-input-state-active]:placeholder:opacity-100 duration-200 ease-linear focus:placeholder:opacity-100 leading-[1.6] motion-reduce:transition-none outline-none peer-focus:text-primary px-3 py-[0.32rem] rounded transition-all dark:text-[#BECCDD] h-[36px] text-[#00000099] w-full" placeholder="Select a date">
                 <label id="change-date-start-date-label" class="dark:peer-focus:text-primary duration-200 leading-[1.6] motion-reduce:transition-none peer-focus:text-primary transition-all text-[#00000099] absolute dark:text-[#97a2b0] ease-out left-3 max-w-[90%] mb-0 origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] top-0 truncate">
                   Start Date
@@ -1491,7 +1531,7 @@
               </div>
             </div>
             <div class="mb-2" id="change-date-togglers">
-              <div class="w-[100%] relative" id="change-date-expire-date-wrap" data-te-datepicker-init data-te-input-wrapper-init>
+              <div class="relative w-[100%]" id="change-date-expire-date-wrap" data-te-datepicker-init data-te-input-wrapper-init>
                 <input type="text" id="change-date-expire-date" class="peer [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-transparent block border-0 dark:peer-focus:text-primary dark:placeholder:text-neutral-200 data-[te-input-state-active]:placeholder:opacity-100 duration-200 ease-linear focus:placeholder:opacity-100 leading-[1.6] motion-reduce:transition-none outline-none peer-focus:text-primary px-3 py-[0.32rem] rounded transition-all dark:text-[#BECCDD] h-[36px] text-[#00000099] w-full" placeholder="Select a date">
                 <label class="dark:peer-focus:text-primary duration-200 leading-[1.6] motion-reduce:transition-none peer-focus:text-primary transition-all text-[#00000099] absolute dark:text-[#97a2b0] ease-out left-3 max-w-[90%] mb-0 origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] top-0 truncate">
                   Expiration Date
@@ -1506,7 +1546,7 @@
             <div class="items-center flex mb-4">
               <label class="cursor-pointer">
                 <input id="change-date-days" type="checkbox" value="" class="peer sr-only">
-                <div class="rounded-full after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:h-5 after:rounded-full after:start-[2px] after:top-[2px] after:transition-all after:w-5 bg-gray-200 dark:bg-gray-500 dark:border-gray-600 dark:peer-focus:ring-blue-800 h-6 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 relative rtl:peer-checked:after:-translate-x-full w-11">
+                <div class="relative after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:h-5 after:rounded-full after:start-[2px] after:top-[2px] after:transition-all after:w-5 bg-gray-200 dark:bg-gray-500 dark:border-gray-600 dark:peer-focus:ring-blue-800 h-6 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full rtl:peer-checked:after:-translate-x-full w-11">
                 </div>
               </label>
               <div class="ml-1 dark:text-[#ffffff] text-[#717171]">Show in days</div>
@@ -1514,7 +1554,7 @@
             <div class="items-center flex">
               <label class="cursor-pointer">
                 <input id="change-date-no-expire" type="checkbox" value="" class="peer sr-only">
-                <div class="rounded-full after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:h-5 after:rounded-full after:start-[2px] after:top-[2px] after:transition-all after:w-5 bg-gray-200 dark:bg-gray-500 dark:border-gray-600 dark:peer-focus:ring-blue-800 h-6 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 relative rtl:peer-checked:after:-translate-x-full w-11">
+                <div class="relative after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:h-5 after:rounded-full after:start-[2px] after:top-[2px] after:transition-all after:w-5 bg-gray-200 dark:bg-gray-500 dark:border-gray-600 dark:peer-focus:ring-blue-800 h-6 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full rtl:peer-checked:after:-translate-x-full w-11">
                 </div>
               </label>
               <div class="ml-1 dark:text-[#ffffff] text-[#717171]">No expire</div>
@@ -1531,10 +1571,10 @@
 
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240510143634"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240510143634"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240510143634"></script>
-<script src="js/app.min.js?_v=20240510143634"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240510181311"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240510181311"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240510181311"></script>
+<script src="js/app.min.js?_v=20240510181311"></script>
 </body>
 
 </html>

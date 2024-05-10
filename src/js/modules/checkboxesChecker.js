@@ -49,6 +49,10 @@ function checkboxesChecker() {
         }
       });
     });
+
+    deleteBtn.addEventListener('click', () => {
+      deleteBtn.style.display = 'none';
+    });
   }
 }
 

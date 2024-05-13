@@ -1961,6 +1961,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 355px;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
 .w-\[40px\] {
   width: 40px;
 }
@@ -2017,12 +2021,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100vw;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .min-w-0 {
@@ -2349,6 +2349,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-\[668px\] {
+  max-width: 668px;
 }
 
 .flex-1 {
@@ -8202,6 +8206,18 @@ input[type="range"]:active::-webkit-slider-thumb {
     width: 100%;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .md\:w-\[35\%\] {
+    width: 35%;
+  }
+
   .md\:min-w-\[100px\] {
     min-width: 100px;
   }
@@ -8401,6 +8417,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:w-\[unset\] {
     width: unset;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
   }
 
   .lg\:min-w-\[108px\] {

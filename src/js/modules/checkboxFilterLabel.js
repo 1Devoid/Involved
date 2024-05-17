@@ -10,6 +10,10 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
     const resetButton5 = document.getElementById('resetButton-5');
     const resetButton6 = document.getElementById('resetButton-6');
     const resetButton7 = document.getElementById('resetButton-7');
+    const resetButton8 = document.getElementById('resetButton-8');
+    const resetButton9 = document.getElementById('resetButton-9');
+    const resetButton10 = document.getElementById('resetButton-10');
+    const resetButton11 = document.getElementById('resetButton-11');
 
     checkboxesLabel.style.display = 'none';
 
@@ -51,6 +55,10 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
     reset(resetButton5);
     reset(resetButton6);
     reset(resetButton7);
+    reset(resetButton8);
+    reset(resetButton9);
+    reset(resetButton10);
+    reset(resetButton11);
   }
 }
 

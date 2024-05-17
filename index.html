@@ -7,10 +7,10 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240516181915" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240516181915" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240516181915" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240516181915">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240517115019" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240517115019" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240517115019" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240517115019">
   <title>Involved</title>
 </head>
 
@@ -1161,13 +1161,18 @@
                         <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </span>
-                    <div data-checkbox="role-manager-label" class="bg-[#C8DFF5] absolute dark:bg-[#F3F4F6] dark:text-[#111928] h-[20px] right-[-7px] rounded-[50%] text-[#1A56DB] top-[-10px] w-[20px]">
+                    <div data-checkbox="role-manager-label" class="text-[#1A56DB] absolute bg-[#C8DFF5] dark:bg-[#F3F4F6] dark:text-[#111928] h-[20px] right-[-7px] rounded-[50%] top-[-10px] w-[20px]">
                       1 </div>
                   </button>
                   
                   <div id="dropdown-1" class="hidden bg-white shadow dark:bg-gray-700 divide-gray-100 divide-y rounded-lg z-10 min-w-[194px]">
                     <ul class="text-sm text-gray-700 dark:text-gray-200 min-w-[194px]" aria-labelledby="dropdownButton-1">
-                      <div class="dark:text-[#F5F9FF] text-[#4F4F4F] px-4 py-4 text-[16px]">Role type</div>
+                      <div class="items-center flex justify-between px-4 my-2">
+                        <div class="dark:text-[#F5F9FF] text-[#4F4F4F] text-[16px] leading-[160%]">Role type</div>
+                        <button id="resetButton-2" class="text-[#1A56DB] dark:text-[#3F83F8] font-medium text-[14px]" type="button">
+                          Clear all
+                        </button>
+                      </div>
                       <li class="py-1 px-4">
                         <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
                           <input data-checkbox="role-manager" class="hover:cursor-pointer -ml-[1.5rem] appearance-none before:absolute before:bg-transparent before:content-[''] before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] border-neutral-300 border-solid checked:after:absolute checked:after:content-[''] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] relative before:h-[0.875rem] before:w-[0.875rem] border-[0.125rem] checked:after:-mt-px checked:after:bg-transparent checked:after:block checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-solid checked:after:border-t-0 checked:after:border-white checked:after:h-[0.8125rem] checked:after:ml-[0.25rem] checked:after:rotate-45 checked:after:w-[0.375rem] checked:bg-primary checked:focus:after:-mt-px checked:focus:after:bg-transparent checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-t-0 checked:focus:after:border-white checked:focus:after:h-[0.8125rem] checked:focus:after:ml-[0.25rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:w-[0.375rem] dark:checked:bg-primary focus:after:absolute focus:after:block focus:after:content-[''] focus:after:h-[0.875rem] focus:after:rounded-[0.125rem] focus:after:w-[0.875rem] focus:after:z-[1] focus:transition-[border-color_0.2s] h-[1.125rem] mr-[6px] mt-[0.15rem] outline-none rounded-[0.25rem] w-[1.125rem] dark:border-[#8593A3]" type="checkbox" value="" id="checkbox-1">
@@ -2118,7 +2123,7 @@
                         </li>
                         <div class="items-center flex justify-center pt-4">
                           <button type="button" class="bg-white rounded-lg border border-gray-200 dark:bg-transparent dark:border-[#FFFFFF] dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:hover:text-white dark:text-[#FFFFFF] focus:outline-none focus:ring-4 focus:ring-gray-200 focus:z-10 font-medium hover:bg-gray-100 hover:text-blue-700 px-5 py-2.5 text-[#1F2A37] dark:hover:bg-[#5a687d66] md:min-w-[150px] min-w-[100px] text-xs">Cancel</button>
-                          <button type="button" class="text-xs border focus:outline-none focus:ring-4 font-medium md:min-w-[150px] min-w-[100px] px-5 py-2.5 rounded-lg bg-blue-700 dark:bg-blue-600 dark:border-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:ring-blue-300 hover:bg-blue-800 ml-4 text-white">Apply</button>
+                          <button type="button" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 ml-4 px-5 py-2.5 rounded-lg text-white border dark:border-blue-600 md:min-w-[150px] min-w-[100px] text-xs">Apply</button>
                         </div>
                       </ul>
                     </div>
@@ -2263,10 +2268,10 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240516181915"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240516181915"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240516181915"></script>
-<script src="js/app.min.js?_v=20240516181915"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240517115019"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240517115019"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240517115019"></script>
+<script src="js/app.min.js?_v=20240517115019"></script>
 </body>
 
 </html>

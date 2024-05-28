@@ -37,6 +37,7 @@ import removeRolesFlow from './modules/removeRolesFlow.js';
 import assignRolesFlow from './modules/assignRolesFlow.js';
 import hideResetRoles from './modules/hideResetRoles.js';
 import toggleInputsDisabled from './modules/toggleInputsDisabled.js';
+import toggleCursorPointerOnSearchInputs from './modules/toggleCursorPointerOnSearchInputs.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -94,6 +95,7 @@ arrowRotateInput(
   '#dropdownButton-profileHomeNode',
   '#dropdown-profileHomeNode'
 );
+arrowRotateInput('#dropdownButton-roles-history', '#dropdown-roles-history');
 arrowRotateInput('#dropdownButton-roles-tab', '#dropdown-roles-tab');
 arrowRotateInput('#dropdownButton-roles-tab-2', '#dropdown-roles-tab-2');
 arrowRotateInput('#dropdownButton-roles-tab-3', '#dropdown-roles-tab-3');
@@ -189,6 +191,10 @@ checkboxFilterLabel(
 checkboxFilterLabel(
   '[data-checkbox="delegates-role-label"]',
   '[data-checkbox="delegates-role"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="roles-tab-history-label"]',
+  '[data-checkbox="roles-tab-history-type"]'
 );
 checkboxFilterLabel(
   '[data-checkbox="roles-tab-label"]',
@@ -303,3 +309,4 @@ removeRolesFlow();
 assignRolesFlow();
 hideResetRoles();
 toggleInputsDisabled();
+toggleCursorPointerOnSearchInputs();

@@ -173,11 +173,6 @@ function assignRolesFlow() {
       'assign-roles-confirm-popup'
     );
     if (assignConfirmEl) {
-      const processBtn = document.getElementById('process-roles-btn');
-      processBtn.addEventListener('click', () => {
-        processBtn.classList.add('hidden');
-      });
-
       const closeModalBtn = document.getElementById(
         'assign-roles-confirm-close'
       );
@@ -203,7 +198,6 @@ function assignRolesFlow() {
       );
       confirmModalBtn.addEventListener('click', () => {
         assignConfirmEl.classList.add('hidden');
-        processBtn.classList.remove('hidden');
       });
     }
   }

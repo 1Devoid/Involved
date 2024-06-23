@@ -8,7 +8,6 @@ import {
   showDelegatePopup,
   showDurationDelegate,
   changeDatePopup,
-  changeDurationPopup,
 } from './modules/popup.js';
 import inputInit from './modules/input.js';
 import inputError from './modules/inputError.js';
@@ -17,7 +16,7 @@ import darkThemeToggler from './modules/darkTheme.js';
 import arrowRotateInput from './modules/arrowRotateInput.js';
 import trimString from './modules/trimString.js';
 import checkboxesChecker from './modules/checkboxesChecker.js';
-import checkboxesCheckerRoles from './modules/checkboxesCheckerRoles.js';
+import processRoleFlow from './modules/processRoleFlow.js';
 import checkboxesCheckerManage from './modules/checkboxesCheckerManage.js';
 import checkboxFilterLabel from './modules/checkboxFilterLabel.js';
 import { toggleEdit, toggleRelationshipsEdit } from './modules/toggleEdit.js';
@@ -87,6 +86,7 @@ arrowRotateInput('#dropdownButton-add-node-popup', '#dropdown-add-node-popup');
 arrowRotateInput('#dropdownButton-roles-type', '#dropdown-roles-type');
 arrowRotateInput('#dropdownButton-add-delegate', '#dropdown-add-delegate');
 arrowRotateInput('#dropdownButton-delegates-role', '#dropdown-delegates-role');
+arrowRotateInput('#dropdownButton-action', '#dropdown-action');
 arrowRotateInput(
   '#dropdownButton-select-username',
   '#dropdown-select-username'
@@ -107,6 +107,7 @@ arrowRotateInput('#dropdownButton-nodes-tab-3', '#dropdown-nodes-tab-3');
 arrowRotateInput('#dropdownButton-nodes-tab-4', '#dropdown-nodes-tab-4');
 arrowRotateInput('#dropdownButton-nodes-tab-5', '#dropdown-nodes-tab-5');
 arrowRotateInput('#dropdownButton-status-tab', '#dropdown-status-tab');
+arrowRotateInput('#actionsButton-rolesTab', '#dropdown-actionsButton');
 
 trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
@@ -236,6 +237,10 @@ checkboxFilterLabel(
   '[data-checkbox="nodes-tab-5-label"]',
   '[data-checkbox="nodes-tab-5-type"]'
 );
+checkboxFilterLabel(
+  '[data-checkbox="action-label"]',
+  '[data-checkbox="action"]'
+);
 
 toggleEdit('edit-detail-msg');
 toggleRelationshipsEdit('edit-relationship-msg');
@@ -268,13 +273,6 @@ changeDatePopup(
   'change-date-save'
 );
 
-changeDurationPopup(
-  'change-duration-popup',
-  '.change-duration-roles',
-  '.change-duration-close',
-  'change-duration-save'
-);
-
 showDurationDelegate(
   'delegate-duration-popup',
   '.add-delegate-duration',
@@ -301,7 +299,7 @@ resetPassword(
 // );
 
 addChangeDatePopup();
-checkboxesCheckerRoles();
+processRoleFlow();
 addChangeDurationPopup();
 extendRolesFlow();
 expireRolesFlow();

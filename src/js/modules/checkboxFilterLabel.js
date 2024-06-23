@@ -3,6 +3,7 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
 
   if (checkboxesLabel) {
     const checkboxes = document.querySelectorAll(checkboxesSelecto);
+    const processRoleReset = document.getElementById('process-role-reset');
     const resetButton = document.getElementById('resetButton');
     const resetButton2 = document.getElementById('resetButton-2');
     const resetButton3 = document.getElementById('resetButton-3');
@@ -50,6 +51,7 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
         });
       }
     }
+    reset(processRoleReset);
     reset(resetButton);
     reset(resetButton2);
     reset(resetButton3);

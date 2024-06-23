@@ -2143,6 +2143,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 150px;
 }
 
+.min-w-\[151px\] {
+  min-width: 151px;
+}
+
 .min-w-\[160px\] {
   min-width: 160px;
 }
@@ -8684,6 +8688,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:rounded-l-lg {

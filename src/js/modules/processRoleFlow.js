@@ -40,17 +40,21 @@ function processRoleFlow() {
       const popupElement = document.getElementById('process-role-popup');
       const popupRolesBtn = document.getElementById('process-roles-btn');
 
-      document
-        .getElementById('process-popup-trigger')
-        .addEventListener('click', function () {
+      document.querySelectorAll('.process-popup-trigger').forEach((button) => {
+        button.addEventListener('click', function () {
           popupElement.classList.remove('hidden');
         });
+      });
 
       popupRolesBtn.addEventListener('click', function () {
         popupElement.classList.remove('hidden');
       });
 
-      const buttonsToHidePopup = ['process-role-reset', 'process-role-confirm'];
+      const buttonsToHidePopup = [
+        'process-role-reset',
+        'process-role-confirm',
+        'process-role-continue',
+      ];
 
       buttonsToHidePopup.forEach(function (buttonId) {
         document

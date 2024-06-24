@@ -2422,8 +2422,8 @@
                         <div id="dropdown-actionsButton"
                           class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                           <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="rolesTab">
-                            <li id="process-popup-trigger"
-                              class="change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                            <li
+                              class="process-popup-trigger flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                               <svg class="dark:hidden mr-3" width="14" height="15" viewBox="0 0 14 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -2447,7 +2447,7 @@
                               </div>
                             </li>
                             <li
-                              class="expire-role-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                              class="process-popup-trigger flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                               <svg class="dark:hidden mr-4" width="12" height="15" viewBox="0 0 12 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -2862,6 +2862,13 @@
                         class="min-w-[210px] z-10 hidden bg-white dark:bg-[#323D4B] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                         <ul class="min-w-[210px] py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="dropdownButton-nodes-tab">
+                          <div class="flex justify-between items-center px-4 mb-2">
+                            <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-[16px] leading-[160%]">Node</div>
+                            <button id="resetButton-8"
+                              class="text-[#1A56DB] dark:text-[#3F83F8] text-[14px] font-medium" type="button">
+                              Clear all
+                            </button>
+                          </div>
                           <input type="search"
                             class="hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] h-[40px] w-[184px] ml-2 mb-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[16px] font-normal leading-normal placeholder:text-[#717171] dark:placeholder:text-[#ffffff] dark:text-[#ffffff] text-[#717171] transition duration-150 ease-in-out dark:hover:bg-[#5a687d66] focus:outline-none focus:ring-0 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1f2a375e] dark:text-[#9CA3AF]"
                             placeholder="Search by node" />
@@ -3205,7 +3212,7 @@
                                 <ul class="text-sm text-gray-700 dark:text-gray-200"
                                   aria-labelledby="actionsButton-role-1">
                                   <li
-                                    class="change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    class="process-popup-trigger change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     <svg class="dark:hidden mr-3" width="14" height="15" viewBox="0 0 14 15" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -3229,7 +3236,7 @@
                                     </div>
                                   </li>
                                   <li
-                                    class="expire-role-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    class="process-popup-trigger flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     <svg class="dark:hidden mr-4" width="12" height="15" viewBox="0 0 12 15" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -3381,7 +3388,7 @@
                                 <ul class="text-sm text-gray-700 dark:text-gray-200"
                                   aria-labelledby="actionsButton-role-2">
                                   <li
-                                    class="change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    class="process-popup-trigger change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     <svg class="dark:hidden mr-3" width="14" height="15" viewBox="0 0 14 15" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -3405,7 +3412,7 @@
                                     </div>
                                   </li>
                                   <li
-                                    class="expire-role-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    class="process-popup-trigger flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     <svg class="dark:hidden mr-4" width="12" height="15" viewBox="0 0 12 15" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -3541,7 +3548,7 @@
                                 <ul class="text-sm text-gray-700 dark:text-gray-200"
                                   aria-labelledby="actionsButton-role-3">
                                   <li
-                                    class="change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    class="process-popup-trigger change-duration-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     <svg class="dark:hidden mr-3" width="14" height="15" viewBox="0 0 14 15" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -3565,7 +3572,7 @@
                                     </div>
                                   </li>
                                   <li
-                                    class="expire-role-roles flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    class="process-popup-trigger flex items-center px-4 py-3 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                     <svg class="dark:hidden mr-4" width="12" height="15" viewBox="0 0 12 15" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -4817,7 +4824,6 @@
         </div>
       </div>
     </div>
-
 
     <div id="assign-flow-popup" tabindex="-1"
       class="hidden flex justify-end items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 z-50 w-full md:inset-0 h-modal md:h-full bg-[#00000060]">
@@ -7516,6 +7522,17 @@
             </button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Error message for process -->
+    <div
+      class="hidden z-50 absolute top-[90px] end-[16px] py-[20px] px-6 pr-[71px] bg-[#F9E1E5] dark:bg-[#3D2C33] rounded-lg">
+      <div class="font-medium text-[16px] leading-[16px] text-[#C81E1E] dark:text-[#F05252] mb-2">
+        You cannot add this role to remove
+      </div>
+      <div class="text-[14px] leading-[150%] text-[#9B1C1C] dark:text-[#F05252]">
+        This role is for Expire
       </div>
     </div>
   </div>

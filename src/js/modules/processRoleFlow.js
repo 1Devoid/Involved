@@ -50,11 +50,7 @@ function processRoleFlow() {
         popupElement.classList.remove('hidden');
       });
 
-      const buttonsToHidePopup = [
-        'process-role-reset',
-        'process-role-confirm',
-        'process-role-continue',
-      ];
+      const buttonsToHidePopup = ['process-role-reset', 'process-role-confirm'];
 
       buttonsToHidePopup.forEach(function (buttonId) {
         document
@@ -103,6 +99,14 @@ function processRoleFlow() {
 
     document
       .getElementById('process-role-close')
+      .addEventListener('click', function () {
+        const processRolePopup = document.getElementById('process-role-popup');
+        processRolePopup.classList.add('hidden');
+        toggleProcessRolesBtn();
+      });
+
+    document
+      .getElementById('process-role-continue')
       .addEventListener('click', function () {
         const processRolePopup = document.getElementById('process-role-popup');
         processRolePopup.classList.add('hidden');

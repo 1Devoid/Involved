@@ -222,6 +222,14 @@ checkboxFilterLabel(
   '[data-checkbox="nodes-tab-type"]'
 );
 checkboxFilterLabel(
+  '[data-checkbox="history-nodes-tab-label"]',
+  '[data-checkbox="history-nodes-tab-type"]'
+);
+checkboxFilterLabel(
+  '[data-checkbox="nodes-tab-label-2"]',
+  '[data-checkbox="nodes-tab-type-2"]'
+);
+checkboxFilterLabel(
   '[data-checkbox="nodes-tab-2-label"]',
   '[data-checkbox="nodes-tab-2-type"]'
 );

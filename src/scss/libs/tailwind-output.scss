@@ -1779,6 +1779,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-height: 327px;
 }
 
+.max-h-\[350px\] {
+  max-height: 350px;
+}
+
 .max-h-\[410px\] {
   max-height: 410px;
 }
@@ -1795,8 +1799,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-height: 100%;
 }
 
-.max-h-\[350px\] {
-  max-height: 350px;
+.max-h-\[300px\] {
+  max-height: 300px;
 }
 
 .min-h-\[1\.5rem\] {

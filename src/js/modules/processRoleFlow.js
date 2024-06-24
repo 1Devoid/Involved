@@ -67,7 +67,7 @@ function processRoleFlow() {
     // Process btn handler
     function toggleProcessRolesBtn() {
       const checkboxes = document.querySelectorAll(
-        'input[type="checkbox"][data-checkbox="action"]'
+        'input[type="checkbox"][data-checkbox="subRoles"]'
       );
       let isChecked = false;
       let checkedCount = 0;
@@ -137,6 +137,31 @@ function processRoleFlow() {
       if (event.target.matches('[expire-popup-toggle]')) {
         togglePopups();
       }
+    });
+
+    // Block scrollbar when popup open
+    function toggleBodyScroll() {
+      const assignFlowPopup = document.getElementById('assign-flow-popup');
+      const processRolePopup = document.getElementById('process-role-popup');
+
+      if (
+        !assignFlowPopup.classList.contains('hidden') ||
+        !processRolePopup.classList.contains('hidden')
+      ) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', toggleBodyScroll);
+
+    const observer = new MutationObserver(toggleBodyScroll);
+    observer.observe(document.getElementById('assign-flow-popup'), {
+      attributes: true,
+    });
+    observer.observe(document.getElementById('process-role-popup'), {
+      attributes: true,
     });
   }
 }

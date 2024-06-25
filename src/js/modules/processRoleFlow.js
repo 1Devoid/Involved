@@ -223,6 +223,31 @@ function processRoleFlow() {
     }
 
     setupRolePopupToggle();
+
+    // Reset checkbox state
+    function resetRoles() {
+      const subRolesCheckboxes = document.querySelectorAll(
+        '[data-checkbox="subRoles"]'
+      );
+
+      const masterRolesCheckboxes = document.querySelectorAll(
+        '[data-checkbox="masterRoles"]'
+      );
+
+      subRolesCheckboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+
+      masterRolesCheckboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+
+      document.getElementById('actionsButton-rolesTab').classList.add('hidden');
+    }
+
+    document
+      .getElementById('process-role-reset')
+      .addEventListener('click', resetRoles);
   }
 }
 

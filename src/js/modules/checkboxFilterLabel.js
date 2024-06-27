@@ -50,6 +50,18 @@ function checkboxFilterLabel(labelSelector, checkboxesSelecto) {
             checkbox.checked = false;
           });
           checkboxesLabel.style.display = 'none';
+
+          const radioGroups = document.querySelectorAll('input[type="radio"]');
+
+          radioGroups.forEach((radio) => {
+            const radioGroup = document.querySelectorAll(
+              `input[name="${radio.name}"]`
+            );
+
+            if (radioGroup.length > 0) {
+              radioGroup[0].checked = true;
+            }
+          });
         });
       }
     }

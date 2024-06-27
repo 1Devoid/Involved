@@ -248,6 +248,22 @@ function processRoleFlow() {
     document
       .getElementById('process-role-reset')
       .addEventListener('click', resetRoles);
+
+    // Hide rows in the table (for demonstration)
+    function addHiddenClassToClosestTr() {
+      const deleteButtons = document.querySelectorAll('[process-delete]');
+
+      deleteButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+          const closestTr = this.closest('tr');
+          if (closestTr) {
+            closestTr.classList.add('hidden');
+          }
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', addHiddenClassToClosestTr);
   }
 }
 

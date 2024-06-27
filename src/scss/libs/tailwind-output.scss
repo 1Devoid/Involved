@@ -1827,6 +1827,18 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-height: auto;
 }
 
+.min-h-\[100px\] {
+  min-height: 100px;
+}
+
+.min-h-\[110px\] {
+  min-height: 110px;
+}
+
+.min-h-\[115px\] {
+  min-height: 115px;
+}
+
 .\!w-px {
   width: 1px !important;
 }

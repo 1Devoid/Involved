@@ -255,7 +255,7 @@ function processRoleFlow() {
 
       deleteButtons.forEach((button) => {
         button.addEventListener('click', function () {
-          const closestTr = this.closest('tr');
+          const closestTr = this.closest('[cart-item]');
           if (closestTr) {
             closestTr.classList.add('hidden');
           }

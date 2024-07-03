@@ -525,3 +525,9 @@ textarea:focus {
   color: #ffffff !important;
   background: transparent !important;
 }
+
+@media (max-height: 825px) {
+  .process-role-popup-content {
+    max-height: 215px;
+  }
+}

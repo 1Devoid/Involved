@@ -1,7 +1,7 @@
 function assignRolesFlow() {
   const modalEl = document.getElementById('assign-flow-popup');
   const assignDurationEl = document.getElementById('assign-duration-popup');
-  const assignConfirmEl = document.getElementById('assign-roles-confirm-popup');
+  const processRolePopup = document.getElementById('process-role-popup');
 
   function assignRolesPopup() {
     if (modalEl) {
@@ -41,7 +41,7 @@ function assignRolesFlow() {
         } else {
           assignErrorElement.classList.add('hidden');
           modalEl.classList.add('hidden');
-          assignConfirmEl.classList.remove('hidden');
+          processRolePopup.classList.remove('hidden');
         }
       });
 
@@ -167,42 +167,6 @@ function assignRolesFlow() {
   }
 
   assignDurationPopupLogic();
-
-  function assignConfirmPopup() {
-    const assignConfirmEl = document.getElementById(
-      'assign-roles-confirm-popup'
-    );
-    if (assignConfirmEl) {
-      const closeModalBtn = document.getElementById(
-        'assign-roles-confirm-close'
-      );
-      closeModalBtn.addEventListener('click', () => {
-        assignConfirmEl.classList.add('hidden');
-      });
-
-      const backModalBtn = document.getElementById('assign-roles-back');
-      backModalBtn.addEventListener('click', () => {
-        assignConfirmEl.classList.add('hidden');
-        modalEl.classList.remove('hidden');
-      });
-
-      const cancelModalBtn = document.getElementById(
-        'assign-roles-confirm-cancel'
-      );
-      cancelModalBtn.addEventListener('click', () => {
-        assignConfirmEl.classList.add('hidden');
-      });
-
-      const confirmModalBtn = document.getElementById(
-        'assign-roles-confirm-confirm'
-      );
-      confirmModalBtn.addEventListener('click', () => {
-        assignConfirmEl.classList.add('hidden');
-      });
-    }
-  }
-
-  assignConfirmPopup();
 }
 
 export default assignRolesFlow;

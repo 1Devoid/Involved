@@ -1363,6 +1363,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-left: 50px;
 }
 
+.ml-\[56px\] {
+  margin-left: 56px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -1496,10 +1500,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mt-px {
   margin-top: 1px;
-}
-
-.ml-\[56px\] {
-  margin-left: 56px;
 }
 
 .box-border {
@@ -1759,6 +1759,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 100vh;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .max-h-\[228px\] {
   max-height: 228px;
 }
@@ -1799,6 +1803,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-height: 100%;
 }
 
+.max-h-\[700px\] {
+  max-height: 700px;
+}
+
+.max-h-\[450px\] {
+  max-height: 450px;
+}
+
 .min-h-\[1\.5rem\] {
   min-height: 1.5rem;
 }
@@ -1825,18 +1837,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-h-\[auto\] {
   min-height: auto;
-}
-
-.min-h-\[100vh\] {
-  min-height: 100vh;
-}
-
-.min-h-\[110vh\] {
-  min-height: 110vh;
-}
-
-.min-h-\[101vh\] {
-  min-height: 101vh;
 }
 
 .\!w-px {
@@ -2988,6 +2988,10 @@ input[type="range"]:active::-webkit-slider-thumb {
           animation: spin 1s linear infinite;
 }
 
+.cursor-auto {
+  cursor: auto;
+}
+
 .cursor-default {
   cursor: default;
 }
@@ -2998,10 +3002,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.cursor-auto {
-  cursor: auto;
 }
 
 .touch-none {
@@ -3639,6 +3639,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .border-t-transparent {
   border-top-color: transparent;
+}
+
+.border-t-\[\#F3F4F6\] {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .\!bg-\[\#858585\] {
@@ -4610,6 +4615,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
 }
 
 .text-left {
@@ -7515,6 +7524,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-inline-start-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:border-t-\[\#4B5563\]) {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:\!bg-neutral-600) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(82 82 82 / var(--tw-bg-opacity)) !important;
@@ -8675,6 +8689,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-bottom: 0px;
   }
 
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:ml-4 {
     margin-left: 1rem;
   }
@@ -8697,10 +8715,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:mt-\[80px\] {
     margin-top: 80px;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
   }
 
   .lg\:line-clamp-none {

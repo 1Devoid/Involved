@@ -69,10 +69,21 @@ function processRoleFlow() {
       const checkboxes = document.querySelectorAll(
         'input[type="checkbox"][data-checkbox="subRoles"]'
       );
+      const checkboxesAssign = document.querySelectorAll(
+        'input[type="checkbox"][data-checkbox="subRoles-5"]'
+      );
+
       let isChecked = false;
       let checkedCount = 0;
 
       checkboxes.forEach(function (checkbox) {
+        if (checkbox.checked) {
+          isChecked = true;
+          checkedCount++;
+        }
+      });
+
+      checkboxesAssign.forEach(function (checkbox) {
         if (checkbox.checked) {
           isChecked = true;
           checkedCount++;
@@ -234,11 +245,27 @@ function processRoleFlow() {
         '[data-checkbox="masterRoles"]'
       );
 
+      const subRolesCheckboxesAssign = document.querySelectorAll(
+        '[data-checkbox="subRoles-5"]'
+      );
+
+      const masterRolesCheckboxesAssign = document.querySelectorAll(
+        '[data-checkbox="masterRoles-5"]'
+      );
+
       subRolesCheckboxes.forEach(function (checkbox) {
         checkbox.checked = false;
       });
 
       masterRolesCheckboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+
+      subRolesCheckboxesAssign.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+
+      masterRolesCheckboxesAssign.forEach(function (checkbox) {
         checkbox.checked = false;
       });
 

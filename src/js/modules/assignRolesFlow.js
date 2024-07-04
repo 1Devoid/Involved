@@ -35,8 +35,14 @@ function assignRolesFlow() {
         const startDateInput = document.getElementById(
           'assign-duration-start-date'
         );
+        const expireDateInput = document.getElementById(
+          'assign-duration-expire-date'
+        );
 
-        if (startDateInput.value.trim() === '') {
+        if (
+          startDateInput.value.trim() === '' ||
+          expireDateInput.value.trim() === ''
+        ) {
           assignErrorElement.classList.remove('hidden');
         } else {
           assignErrorElement.classList.add('hidden');
@@ -64,9 +70,24 @@ function assignRolesFlow() {
       });
 
       const saveModalBtn = document.getElementById('assign-duration-save');
+      const startDateInput = document.getElementById(
+        'assign-duration-start-date'
+      );
+      const expireDateInput = document.getElementById(
+        'assign-duration-expire-date'
+      );
+      const startDateField = document.getElementById(
+        'assign-duration-start-field'
+      );
+      const expireDateField = document.getElementById(
+        'assign-duration-expire-field'
+      );
       saveModalBtn.addEventListener('click', () => {
         assignDurationEl.classList.add('hidden');
         modalEl.classList.remove('hidden');
+
+        startDateField.textContent = startDateInput.value;
+        expireDateField.textContent = expireDateInput.value;
       });
     }
   }

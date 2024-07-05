@@ -44,10 +44,20 @@ function assignRolesFlow() {
           expireDateInput.value.trim() === ''
         ) {
           assignErrorElement.classList.remove('hidden');
+          document
+            .querySelectorAll('[data-select-period-btn]')
+            .forEach((btn) => {
+              btn.classList.add('change-date-popup-error');
+            });
         } else {
           assignErrorElement.classList.add('hidden');
           modalEl.classList.add('hidden');
           processRolePopup.classList.remove('hidden');
+          document
+            .querySelectorAll('[data-select-period-btn]')
+            .forEach((btn) => {
+              btn.classList.remove('change-date-popup-error');
+            });
         }
       });
 
@@ -76,18 +86,23 @@ function assignRolesFlow() {
       const expireDateInput = document.getElementById(
         'assign-duration-expire-date'
       );
-      const startDateField = document.getElementById(
-        'assign-duration-start-field'
-      );
-      const expireDateField = document.getElementById(
-        'assign-duration-expire-field'
-      );
+      const dataSelectPeriod = document.querySelector('[data-select-period]');
+
       saveModalBtn.addEventListener('click', () => {
         assignDurationEl.classList.add('hidden');
         modalEl.classList.remove('hidden');
 
-        startDateField.textContent = startDateInput.value;
-        expireDateField.textContent = expireDateInput.value;
+        const defaultStartDate = '';
+        const defaultExpireDate = '';
+
+        if (!startDateInput.value) {
+          startDateInput.value = defaultStartDate;
+        }
+        if (!expireDateInput.value) {
+          expireDateInput.value = defaultExpireDate;
+        }
+
+        dataSelectPeriod.textContent = `${startDateInput.value} - ${expireDateInput.value}`;
       });
     }
   }

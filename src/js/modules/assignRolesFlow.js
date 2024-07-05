@@ -13,7 +13,6 @@ function assignRolesFlow() {
       const changeDateBtns = document.querySelectorAll('.change-date-popup');
       changeDateBtns.forEach((btn) => {
         btn.addEventListener('click', () => {
-          modalEl.classList.add('hidden');
           assignDurationEl.classList.remove('hidden');
         });
       });

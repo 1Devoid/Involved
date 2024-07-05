@@ -529,3 +529,6 @@ textarea:focus {
 .change-date-popup-error {
   border: 1px solid #e02424;
 }
+:is(.dark .change-date-popup-error) {
+  border: 1px solid #e02424;
+}

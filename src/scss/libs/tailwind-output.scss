@@ -1071,6 +1071,18 @@ input[type="range"]:active::-webkit-slider-thumb {
   top: 100%;
 }
 
+.end-1 {
+  inset-inline-end: 0.25rem;
+}
+
+.end-4 {
+  inset-inline-end: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -2323,6 +2335,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.min-w-\[66px\] {
+  min-width: 66px;
 }
 
 .max-w-\[106px\] {
@@ -4449,6 +4465,21 @@ input[type="range"]:active::-webkit-slider-thumb {
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.py-\[4px\] {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .pb-0 {

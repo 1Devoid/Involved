@@ -7,10 +7,10 @@
   <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240711124648" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240711124648" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240711124648" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240711124648">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&_v=20240711151546" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240711151546" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css?_v=20240711151546" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240711151546">
   <title>Involved</title>
 </head>
 
@@ -1414,8 +1414,11 @@
                   </div>
                   <div class="flex items-center">
                     <div class="mr-[10px] dark:text-[#ffffff] text-[#2B2B2B] text-[16px]">Status:</div>
-                    <span class="leading-[150%] py-[4px] rounded-[6px] text-[12px] bg-success-100 dark:bg-[#1C3F43] dark:text-[#8AE9A0] px-[16px] text-success-700 font-medium">
+                    <span id="status-active" class="hidden bg-success-100 dark:bg-[#1C3F43] dark:text-[#8AE9A0] font-medium leading-[150%] px-[16px] py-[4px] rounded-[6px] text-[12px] text-success-700">
                       Active
+                    </span>
+                    <span id="status-inactive" class="leading-[150%] py-[4px] rounded-[6px] text-[12px] bg-danger-100 dark:bg-[#e8351d2c] dark:text-[#FF4949] px-[12px] text-danger-700 font-medium">
+                      Inactive
                     </span>
                   </div>
                 </div>
@@ -1446,7 +1449,7 @@
                     <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-1">
                       <li class="flex items-center gap-3 px-4 py-2">
                         <label class="cursor-pointer">
-                          <input type="checkbox" value="" class="peer sr-only">
+                          <input id="status-toggler" type="checkbox" value="" class="peer sr-only">
                           <div class="relative after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:h-5 after:rounded-full after:start-[2px] after:top-[2px] after:transition-all after:w-5 bg-gray-200 dark:bg-gray-500 dark:border-gray-600 dark:peer-focus:ring-blue-800 h-6 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full rtl:peer-checked:after:-translate-x-full w-11">
                           </div>
                         </label>
@@ -3152,10 +3155,10 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240711124648"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240711124648"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240711124648"></script>
-<script src="js/app.min.js?_v=20240711124648"></script>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js?_v=20240711151546"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js?_v=20240711151546"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js?_v=20240711151546"></script>
+<script src="js/app.min.js?_v=20240711151546"></script>
 </body>
 
 </html>

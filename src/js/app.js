@@ -37,6 +37,7 @@ import assignRolesFlow from './modules/assignRolesFlow.js';
 import hideResetRoles from './modules/hideResetRoles.js';
 import toggleInputsDisabled from './modules/toggleInputsDisabled.js';
 import toggleCursorPointerOnSearchInputs from './modules/toggleCursorPointerOnSearchInputs.js';
+import toggleStatus from './modules/toggleStatus.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -316,3 +317,4 @@ assignRolesFlow();
 hideResetRoles();
 toggleInputsDisabled();
 toggleCursorPointerOnSearchInputs();
+toggleStatus();

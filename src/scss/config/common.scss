@@ -532,3 +532,11 @@ textarea:focus {
 :is(.dark .change-date-popup-error) {
   border: 1px solid #e02424;
 }
+
+#tree-mode button > span {
+  display: none !important;
+}
+
+#tree-mode button:hover span {
+  display: block !important;
+}

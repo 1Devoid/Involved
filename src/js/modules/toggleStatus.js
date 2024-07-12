@@ -6,13 +6,16 @@ function toggleStatus() {
       let isChecked = this.checked;
       let activeElement = document.getElementById('status-active');
       let inactiveElement = document.getElementById('status-inactive');
+      let statusString = document.getElementById('status-string');
 
       if (isChecked) {
         activeElement.classList.remove('hidden');
         inactiveElement.classList.add('hidden');
+        statusString.textContent = 'Activate';
       } else {
         activeElement.classList.add('hidden');
         inactiveElement.classList.remove('hidden');
+        statusString.textContent = 'Deactivate';
       }
     });
   }

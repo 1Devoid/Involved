@@ -540,3 +540,34 @@ textarea:focus {
 #tree-mode button:hover span {
   display: block !important;
 }
+
+#tab-tree-btn.active {
+  background: #ebf5ff;
+  border-color: #1a56db;
+  svg {
+    fill: #1a56db;
+  }
+}
+
+:is(.dark #tab-tree-btn.active) {
+  background: #233876;
+  border-color: #1c64f2;
+  svg {
+    fill: #1c64f2;
+  }
+}
+#tab-list-btn.active {
+  background: #ebf5ff;
+  border-color: #1a56db;
+  svg {
+    stroke: #1a56db;
+  }
+}
+
+:is(.dark #tab-list-btn.active) {
+  background: #233876;
+  border-color: #1c64f2;
+  svg {
+    stroke: #1c64f2;
+  }
+}

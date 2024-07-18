@@ -38,6 +38,7 @@ import hideResetRoles from './modules/hideResetRoles.js';
 import toggleInputsDisabled from './modules/toggleInputsDisabled.js';
 import toggleCursorPointerOnSearchInputs from './modules/toggleCursorPointerOnSearchInputs.js';
 import toggleStatus from './modules/toggleStatus.js';
+import addTabClickListeners from './modules/addTabClickListeners.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -318,3 +319,4 @@ hideResetRoles();
 toggleInputsDisabled();
 toggleCursorPointerOnSearchInputs();
 toggleStatus();
+addTabClickListeners();

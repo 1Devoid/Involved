@@ -39,6 +39,9 @@ import toggleInputsDisabled from './modules/toggleInputsDisabled.js';
 import toggleCursorPointerOnSearchInputs from './modules/toggleCursorPointerOnSearchInputs.js';
 import toggleStatus from './modules/toggleStatus.js';
 import addTabClickListeners from './modules/addTabClickListeners.js';
+import setupApplicationPopup from './modules/setupApplicationPopup.js';
+import editApplicationPopup from './modules/editApplicationPopup.js';
+import manageApplicationPopup from './modules/manageApplicationPopup.js';
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   window.onload = function () {
@@ -320,3 +323,6 @@ toggleInputsDisabled();
 toggleCursorPointerOnSearchInputs();
 toggleStatus();
 addTabClickListeners();
+setupApplicationPopup();
+editApplicationPopup();
+manageApplicationPopup();

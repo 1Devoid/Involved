@@ -11,11 +11,11 @@ function toggleStatus() {
       if (isChecked) {
         activeElement.classList.remove('hidden');
         inactiveElement.classList.add('hidden');
-        statusString.textContent = 'Activate';
+        statusString.textContent = 'Deactivate';
       } else {
         activeElement.classList.add('hidden');
         inactiveElement.classList.remove('hidden');
-        statusString.textContent = 'Deactivate';
+        statusString.textContent = 'Activate';
       }
     });
   }

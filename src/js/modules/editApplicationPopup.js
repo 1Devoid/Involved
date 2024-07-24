@@ -18,6 +18,12 @@ function editApplicationPopup() {
     applicationAddButton.addEventListener('click', function () {
       applicationPopup.classList.add('hidden');
     });
+
+    document
+      .getElementById('actions-edit-delete')
+      .addEventListener('click', function () {
+        document.getElementById('edit-application-popup').click();
+      });
   }
 }
 

@@ -42,17 +42,8 @@ import addTabClickListeners from './modules/addTabClickListeners.js';
 import setupApplicationPopup from './modules/setupApplicationPopup.js';
 import editApplicationPopup from './modules/editApplicationPopup.js';
 import manageApplicationPopup from './modules/manageApplicationPopup.js';
-
-// window.addEventListener('DOMContentLoaded', () => {
-//   window.onload = function () {
-//     setTimeout(() => {
-//       let preloader = document.querySelector('#preloader');
-//       if (!preloader.classList.contains('done')) {
-//         preloader.classList.add('done');
-//       }
-//     }, 1000);
-//   };
-// });
+import setupActivityHandlers from './modules/setupActivityHandlers.js';
+import setupActivityHandlers2 from './modules/setupActivityHandlers2.js';
 
 initTE({ Datepicker, Input });
 dropdownInit();
@@ -326,3 +317,5 @@ addTabClickListeners();
 setupApplicationPopup();
 editApplicationPopup();
 manageApplicationPopup();
+setupActivityHandlers();
+setupActivityHandlers2();

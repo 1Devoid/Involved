@@ -698,7 +698,7 @@
         </ul>
       </div>
       <div
-        class="hidden absolute bottom-0 left-0 justify-center p-4 space-x-1 w-full lg:flex bg-white dark:bg-gray-800 z-20  dark:border-gray-700">
+        class="absolute bottom-0 left-0 justify-center p-4 space-x-1 w-full flex bg-white dark:bg-gray-800 z-20  dark:border-gray-700">
         <a href="#" data-tooltip-target="tooltip-settings"
           class="inline-flex justify-center p-2 text-[#717171] rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
           <svg class="dark:hidden" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -1141,7 +1141,7 @@
       </ul>
     </div>
     <div
-      class="hidden absolute bottom-0 left-0 justify-center p-4 space-x-1 w-full lg:flex bg-white dark:bg-gray-800 z-20  dark:border-gray-700">
+      class="absolute bottom-0 left-0 justify-center p-4 space-x-1 w-full flex bg-white dark:bg-gray-800 z-20  dark:border-gray-700">
       <a href="#" data-tooltip-target="tooltip-settings"
         class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
         <svg class="dark:hidden" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -2440,28 +2440,26 @@
                     </div>
                   </div>
                 </div>
-                <button id="actionsButton-edit-application" data-dropdown-toggle="actions-edit-application"
-                  type="button"
-                  class="bg-transparent border-[#E5E7EB] dark:border-[#5B6776] border rounded-full flex items-center justify-center w-[32px] h-[32px]">
-                  <span class="dark:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
-                      <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#111928" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                <button id="dropdownButton-3" data-dropdown-toggle="dropdown-3"
+                  class="h-[40px]  mb-2 lg:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
+                  type="button">Actions
+                  <span class="mr-2 dark:hidden ml-2 w-2 pointer-events-none">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </span>
-                  <span class="hidden dark:block">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 6H20H4ZM4 12H20H4ZM4 18H20H4Z" fill="#1F2A37" />
-                      <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                  <span class="mr-2 hidden dark:block ml-[41px] w-2 pointer-events-none">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </span>
                 </button>
                 <!-- Dropdown menu -->
-                <div id="actions-edit-application"
+                <div id="dropdown-3"
                   class="overflow-hidden min-w-[182px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
-                  <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-edit-application">
+                  <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownButton-3">
                     <li class="flex items-center px-4 py-2 gap-3">
                       <label class="cursor-pointer">
                         <input id="status-toggler" type="checkbox" value="" class="sr-only peer">

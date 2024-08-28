@@ -44,6 +44,7 @@ import editApplicationPopup from './modules/editApplicationPopup.js';
 import manageApplicationPopup from './modules/manageApplicationPopup.js';
 import setupActivityHandlers from './modules/setupActivityHandlers.js';
 import setupActivityHandlers2 from './modules/setupActivityHandlers2.js';
+import addTabPersonaListeners from './modules/addTabPersonaListeners.js';
 
 initTE({ Datepicker, Input });
 dropdownInit();
@@ -319,3 +320,4 @@ editApplicationPopup();
 manageApplicationPopup();
 setupActivityHandlers();
 setupActivityHandlers2();
+addTabPersonaListeners();

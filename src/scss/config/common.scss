@@ -568,3 +568,34 @@ textarea:focus {
     stroke: #1c64f2;
   }
 }
+
+#tab-plate-persona-btn.active {
+  background: #ebf5ff;
+  border-color: #1a56db;
+  svg {
+    fill: #1a56db;
+  }
+}
+
+:is(.dark #tab-plate-persona-btn.active) {
+  background: #233876;
+  border-color: #1c64f2;
+  svg {
+    fill: #1c64f2;
+  }
+}
+#tab-list-persona-btn.active {
+  background: #ebf5ff;
+  border-color: #1a56db;
+  svg {
+    stroke: #1a56db;
+  }
+}
+
+:is(.dark #tab-list-persona-btn.active) {
+  background: #233876;
+  border-color: #1c64f2;
+  svg {
+    stroke: #1c64f2;
+  }
+}

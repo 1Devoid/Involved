@@ -45,6 +45,12 @@ import manageApplicationPopup from './modules/manageApplicationPopup.js';
 import setupActivityHandlers from './modules/setupActivityHandlers.js';
 import setupActivityHandlers2 from './modules/setupActivityHandlers2.js';
 import addTabPersonaListeners from './modules/addTabPersonaListeners.js';
+import togglePersonaPopup from './modules/togglePersonaPopup.js';
+import addTabDashboardListeners from './modules/addTabDashboardListeners.js';
+import {
+  activateCheckedRadio,
+  activateCheckedRadioList,
+} from './modules/activateCheckedRadio.js';
 
 initTE({ Datepicker, Input });
 dropdownInit();
@@ -321,3 +327,7 @@ manageApplicationPopup();
 setupActivityHandlers();
 setupActivityHandlers2();
 addTabPersonaListeners();
+activateCheckedRadio();
+activateCheckedRadioList();
+togglePersonaPopup();
+addTabDashboardListeners();

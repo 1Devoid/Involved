@@ -2,7 +2,7 @@
 <html lang="en">
 @@include('html/head.html', { 'title': 'Involved' })
 
-<body class="body ">
+<body class="body">
   <div class="aside-nav">
     <!-- Class "active" added for active status nav bar's item -->
     <aside
@@ -1975,9 +1975,9 @@
     </footer>
 
     <div id="persona-popup" tabindex="-1"
-      class="flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 z-50 w-full md:inset-0 h-modal md:h-full bg-[#00000060]">
+      class="hidden flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 z-50 w-full md:inset-0 h-modal md:h-full bg-[#00000060]">
       <div class="info-popup__wrap relative top-[4rem] p-4 w-full max-w-[947px] h-full md:h-auto">
-        <div class="relative bg-white rounded-lg shadow dark:bg-[#323D4B] p-3 md:p-6 pt-[32px]">
+        <div class="relative bg-white rounded-lg shadow dark:bg-[#323D4B] p-6">
           <form action="#">
             <div class="mb-6">
               <div class="mb-6 flex justify-between">
@@ -2052,10 +2052,10 @@
                       Refresh
                     </button>
                   </div>
-
                   <div
                     class="ml-auto flex items-center gap-2 bg-[#F9FAFB] dark:bg-[#374151] rounded-[8px] p-1 border border-[#D1D5DB] dark:border-[#4B5563] h-[50px]">
-                    <button class="active border border-transparent rounded-[6px]" id="tab-plate-persona-btn">
+                    <button class="active border border-transparent rounded-[6px]" id="tab-plate-persona-btn"
+                      type="button">
                       <svg class="fill-[#374151] dark:fill-[#9CA3AF]" width="41" height="41" viewBox="0 0 41 41"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -2084,7 +2084,7 @@
                           stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </button>
-                    <button class=" border border-transparent rounded-[6px]" id="tab-list-persona-btn">
+                    <button class=" border border-transparent rounded-[6px]" id="tab-list-persona-btn" type="button">
                       <svg class="stroke-[#374151] dark:stroke-[#9CA3AF]" width="40" height="40" viewBox="0 0 40 40"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 26H28M12 14H28H12ZM12 18H28H12ZM12 22H28H12Z" stroke="" stroke-width="2"
@@ -2115,7 +2115,7 @@
                 <div id="persona-tab-content">
                   <!-- Tab1 -->
                   <div class="hidden" id="plate-aside" role="tabpanel" aria-labelledby="plate-tab-aside">
-                    <div class="grid grid-cols-2 gap-6 max-h-[304px] overflow-y-auto">
+                    <div class="grid grid-cols-2 gap-6 max-h-[425px] lg:max-h-[330px] overflow-y-auto">
                       <div
                         class="persona-plate-block p-4 pl-[36px] bg-[#ffffff] dark:bg-[#374151] border border-1 border-[#E5E7EB] dark:border-[#4B5563] rounded-[16px]">
                         <div class="mb-2 flex items-center gap-2">
@@ -2366,16 +2366,144 @@
                   </div>
                   <!-- Tab2 -->
                   <div class="hidden" id="list-aside" role="tabpanel" aria-labelledby="list-tab-aside">
-                    <div class="">
-                      2
+                    <div class="mx-auto mt-8 lg:mt-[10px] max-h-[420px] overflow-auto">
+                      <table class="min-w-[900px] lg:min-w-full">
+                        <thead>
+                          <tr>
+                            <th
+                              class="w-[50px] p-4 border-b text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
+                            </th>
+                            <th
+                              class="min-w-[230px] p-4 border-b text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
+                              <div class="items-center flex gap-2">
+                                <svg class="cursor-pointer dark:stroke-[#ADBBCC] stroke-[#4F4F4F]" width="12"
+                                  height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M1.83594 10.9987L6.0026 15.1654L10.1693 10.9987M1.83594 5.9987L6.0026 1.83203L10.1693 5.9987"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <label class="hover:cursor-pointer inline-block leading-relaxed">
+                                  Node Type
+                                </label>
+                              </div>
+                            </th>
+                            <th
+                              class="min-w-[100px] p-4 border-b text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
+                              Label
+                            </th>
+                            <th
+                              class="min-w-[140px] text-center p-4 border-b max-w-[106px] text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
+                              Status
+                            </th>
+                            <th
+                              class="w-[100%] p-4 border-b text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
+                              Description
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Content below with your data -->
+                          <tr class="active persona-list-block border-b dark:border-b-[#5B6776] h-[100px]">
+                            <td class="p-4">
+                              <input
+                                class="relative mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 dark:border-[#8593A3] before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                                type="radio" name="persona-list-checkbox" checked />
+                            </td>
+                            <td class="p-4">
+                              <div class="flex items-center gap-2">
+                                <span class="dark:hidden">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="8" fill="#A052B0" fill-opacity="0.16" />
+                                    <path
+                                      d="M16.5205 14.2215C16.0213 14.2237 15.5387 14.4073 15.1571 14.74C15.1172 14.6983 15.0732 14.6611 15.0257 14.6291L9.79713 11.7976C9.74449 11.7746 9.68947 11.7579 9.63314 11.7479C9.63915 11.6839 9.65203 11.6227 9.65203 11.5579C9.65203 11.5499 9.65203 11.5428 9.65203 11.5357C9.70855 11.5296 9.76435 11.5177 9.81859 11.5002L14.8892 9.24937C14.9395 9.2212 14.9867 9.18757 15.03 9.14904C15.3865 9.50478 15.851 9.72204 16.3447 9.76399C16.8384 9.80594 17.3309 9.66999 17.7388 9.37919C18.1466 9.0884 18.4446 8.66067 18.5823 8.16854C18.72 7.67642 18.6888 7.1502 18.494 6.67915C18.2993 6.20809 17.953 5.8212 17.5139 5.58409C17.0747 5.34698 16.5698 5.27426 16.0848 5.37825C15.5997 5.48224 15.1643 5.75654 14.8525 6.15463C14.5407 6.55273 14.3717 7.0501 14.3741 7.5624C14.3737 7.56979 14.3737 7.5772 14.3741 7.58459C14.3175 7.59099 14.2617 7.60319 14.2075 7.621L9.1369 9.87089C9.08678 9.89928 9.0396 9.93289 8.9961 9.97122C8.6994 9.6685 8.32407 9.46142 7.91571 9.37514C7.50736 9.28886 7.08356 9.3271 6.69583 9.4852C6.30809 9.64331 5.9731 9.91448 5.73158 10.2658C5.49005 10.617 5.35238 11.0333 5.3353 11.464C5.31822 11.8946 5.42247 12.3211 5.63537 12.6917C5.84826 13.0623 6.16065 13.3609 6.53457 13.5513C6.90848 13.7417 7.32783 13.8157 7.74164 13.7643C8.15546 13.7129 8.54592 13.5383 8.8656 13.2617C8.90543 13.3034 8.94947 13.3406 8.99695 13.3727L14.2256 16.2042C14.2772 16.2317 14.3316 16.2531 14.3878 16.2681C14.3878 16.3267 14.3706 16.3835 14.3706 16.4457C14.3706 16.8847 14.4965 17.3138 14.7324 17.6789C14.9682 18.0439 15.3034 18.3284 15.6956 18.4964C16.0878 18.6644 16.5194 18.7084 16.9358 18.6227C17.3521 18.5371 17.7346 18.3257 18.0348 18.0152C18.3349 17.7048 18.5394 17.3093 18.6222 16.8787C18.705 16.4481 18.6625 16.0018 18.5 15.5962C18.3376 15.1906 18.0625 14.8439 17.7095 14.6C17.3565 14.3561 16.9415 14.226 16.517 14.226L16.5205 14.2215Z"
+                                      fill="#631488" />
+                                  </svg>
+                                </span>
+                                <span class="hidden dark:block">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="8" fill="#A052B0" fill-opacity="0.16" />
+                                    <path
+                                      d="M16.521 14.2215C16.0218 14.2237 15.5392 14.4073 15.1576 14.74C15.1177 14.6983 15.0737 14.6611 15.0262 14.6291L9.79762 11.7976C9.74498 11.7746 9.68995 11.7579 9.63363 11.7479C9.63964 11.6839 9.65252 11.6227 9.65252 11.5579C9.65252 11.5499 9.65252 11.5428 9.65252 11.5357C9.70904 11.5296 9.76483 11.5177 9.81908 11.5002L14.8897 9.24937C14.94 9.2212 14.9872 9.18757 15.0305 9.14904C15.387 9.50478 15.8515 9.72204 16.3452 9.76399C16.8389 9.80594 17.3314 9.66999 17.7393 9.37919C18.1471 9.0884 18.4451 8.66067 18.5828 8.16854C18.7204 7.67642 18.6893 7.1502 18.4945 6.67915C18.2998 6.20809 17.9535 5.8212 17.5143 5.58409C17.0752 5.34698 16.5703 5.27426 16.0852 5.37825C15.6002 5.48224 15.1648 5.75654 14.853 6.15463C14.5412 6.55273 14.3722 7.0501 14.3746 7.5624C14.3741 7.56979 14.3741 7.5772 14.3746 7.58459C14.318 7.59099 14.2622 7.60319 14.208 7.621L9.13739 9.87089C9.08726 9.89928 9.04008 9.93289 8.99658 9.97122C8.69989 9.6685 8.32456 9.46142 7.9162 9.37514C7.50785 9.28886 7.08405 9.3271 6.69631 9.4852C6.30858 9.64331 5.97359 9.91448 5.73207 10.2658C5.49054 10.617 5.35287 11.0333 5.33579 11.464C5.31871 11.8946 5.42296 12.3211 5.63585 12.6917C5.84875 13.0623 6.16114 13.3609 6.53505 13.5513C6.90897 13.7417 7.32831 13.8157 7.74213 13.7643C8.15594 13.7129 8.54641 13.5383 8.86608 13.2617C8.90592 13.3034 8.94996 13.3406 8.99744 13.3727L14.226 16.2042C14.2777 16.2317 14.3321 16.2531 14.3883 16.2681C14.3883 16.3267 14.3711 16.3835 14.3711 16.4457C14.3711 16.8847 14.497 17.3138 14.7329 17.6789C14.9687 18.0439 15.3039 18.3284 15.6961 18.4964C16.0883 18.6644 16.5199 18.7084 16.9363 18.6227C17.3526 18.5371 17.7351 18.3257 18.0352 18.0152C18.3354 17.7048 18.5398 17.3093 18.6227 16.8787C18.7055 16.4481 18.663 16.0018 18.5005 15.5962C18.3381 15.1906 18.063 14.8439 17.71 14.6C17.357 14.3561 16.942 14.226 16.5175 14.226L16.521 14.2215Z"
+                                      fill="#A052B0" />
+                                  </svg>
+                                </span>
+                                <p class="text-[14px] font-medium text-[#2B2B2B] dark:text-[#F5F9FF]">
+                                  Demo Motors
+                                </p>
+                              </div>
+                            </td>
+                            <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
+                              Label
+                            </td>
+                            <td class="p-4 text-center">
+                              <span
+                                class="bg-success-100 text-success-700 dark:bg-[#1C3F43] dark:text-[#8AE9A0] font-normal py-[5px] px-[10px] rounded-full text-[16px]">
+                                Active
+                              </span>
+                            </td>
+                            <td class="max-h-[120px] p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
+                              An organization that is comprised of many dealerships and business units and is
+                              responsible for the planning and
+                              operations of these auto dealerships and business units
+                            </td>
+                          </tr>
+                          <tr class="persona-list-block border-b dark:border-b-[#5B6776] h-[100px]">
+                            <td class="p-4">
+                              <input
+                                class="relative mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 dark:border-[#8593A3] before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                                type="radio" name="persona-list-checkbox" />
+                            </td>
+                            <td class="p-4">
+                              <div class="flex items-center gap-2">
+                                <span class="dark:hidden">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="8" fill="#E0ECDF" />
+                                    <path
+                                      d="M12.0002 5.33203C10.6816 5.33203 9.39269 5.72302 8.29636 6.45557C7.20004 7.18811 6.34555 8.2293 5.84097 9.44747C5.33638 10.6656 5.20436 12.0061 5.4616 13.2993C5.71883 14.5925 6.35377 15.7804 7.28612 16.7127C8.21847 17.6451 9.40636 18.28 10.6996 18.5373C11.9928 18.7945 13.3332 18.6625 14.5514 18.1579C15.7696 17.6533 16.8108 16.7988 17.5433 15.7025C18.2758 14.6062 18.6668 13.3172 18.6668 11.9987C18.6668 11.1232 18.4944 10.2563 18.1594 9.44747C17.8243 8.63864 17.3333 7.90371 16.7142 7.28465C16.0952 6.6656 15.3602 6.17453 14.5514 5.8395C13.7426 5.50447 12.8756 5.33203 12.0002 5.33203ZM10.8595 17.194C10.1324 17.0279 9.44835 16.711 8.85155 16.2638C8.25475 15.8165 7.75853 15.2489 7.39503 14.5977C7.03152 13.9465 6.80884 13.2262 6.7414 12.4834C6.67395 11.7407 6.76324 10.9921 7.0035 10.286L7.1715 10.2994C7.5269 10.4689 7.84148 10.7132 8.0937 11.0156C8.34592 11.318 8.52982 11.6713 8.63283 12.0514C8.74363 12.4903 8.95649 12.8969 9.25409 13.2381C9.5517 13.5793 9.92564 13.8453 10.3455 14.0147C11.1508 14.386 11.3195 15.4274 10.8595 17.194ZM13.3862 10.9987C13.3861 10.9454 13.3796 10.8924 13.3668 10.8407C13.2462 10.2941 13.007 9.78072 12.6661 9.33675C12.3252 8.89278 11.891 8.52909 11.3942 8.27136C10.8108 7.90136 10.4488 7.67136 10.3515 6.94403C11.3894 6.59433 12.5099 6.57312 13.5603 6.88329C14.6108 7.19347 15.54 7.81994 16.2215 8.67736C15.2482 8.82336 14.7195 10.2474 14.7195 10.998C14.6483 11.1081 14.5489 11.1971 14.4317 11.2557C14.3144 11.3143 14.1836 11.3405 14.0528 11.3314C13.9221 11.3405 13.7913 11.3145 13.6741 11.256C13.5569 11.1975 13.4574 11.1086 13.3862 10.9987ZM14.5275 16.6474L14.0562 15.2347C14.0789 14.9137 14.217 14.6118 14.4449 14.3847C14.6728 14.1575 14.9751 14.0204 15.2962 13.9987L16.7222 14.4327C16.2293 15.3743 15.4646 16.146 14.5275 16.6474Z"
+                                      fill="#389164" />
+                                  </svg>
+                                </span>
+                                <span class="hidden dark:block">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="8" fill="#2D7A35" fill-opacity="0.15" />
+                                    <path
+                                      d="M12.0007 5.33203C10.6821 5.33203 9.39318 5.72302 8.29685 6.45557C7.20052 7.18811 6.34604 8.2293 5.84146 9.44747C5.33687 10.6656 5.20485 12.0061 5.46209 13.2993C5.71932 14.5925 6.35426 15.7804 7.28661 16.7127C8.21896 17.6451 9.40685 18.28 10.7001 18.5373C11.9933 18.7945 13.3337 18.6625 14.5519 18.1579C15.7701 17.6533 16.8112 16.7988 17.5438 15.7025C18.2763 14.6062 18.6673 13.3172 18.6673 11.9987C18.6673 11.1232 18.4949 10.2563 18.1598 9.44747C17.8248 8.63864 17.3338 7.90371 16.7147 7.28465C16.0956 6.6656 15.3607 6.17453 14.5519 5.8395C13.743 5.50447 12.8761 5.33203 12.0007 5.33203ZM10.86 17.194C10.1329 17.0279 9.44884 16.711 8.85204 16.2638C8.25523 15.8165 7.75902 15.2489 7.39551 14.5977C7.03201 13.9465 6.80933 13.2262 6.74188 12.4834C6.67444 11.7407 6.76373 10.9921 7.00399 10.286L7.17199 10.2994C7.52739 10.4689 7.84197 10.7132 8.09419 11.0156C8.34641 11.318 8.53031 11.6713 8.63332 12.0514C8.74412 12.4903 8.95698 12.8969 9.25458 13.2381C9.55219 13.5793 9.92613 13.8453 10.346 14.0147C11.1513 14.386 11.32 15.4274 10.86 17.194ZM13.3867 10.9987C13.3866 10.9454 13.3801 10.8924 13.3673 10.8407C13.2467 10.2941 13.0075 9.78072 12.6666 9.33675C12.3257 8.89278 11.8915 8.52909 11.3947 8.27136C10.8113 7.90136 10.4493 7.67136 10.352 6.94403C11.3899 6.59433 12.5104 6.57312 13.5608 6.88329C14.6113 7.19347 15.5405 7.81994 16.222 8.67736C15.2487 8.82336 14.72 10.2474 14.72 10.998C14.6488 11.1081 14.5494 11.1971 14.4322 11.2557C14.3149 11.3143 14.1841 11.3405 14.0533 11.3314C13.9226 11.3405 13.7918 11.3145 13.6746 11.256C13.5573 11.1975 13.4579 11.1086 13.3867 10.9987ZM14.528 16.6474L14.0567 15.2347C14.0794 14.9137 14.2175 14.6118 14.4454 14.3847C14.6733 14.1575 14.9756 14.0204 15.2967 13.9987L16.7227 14.4327C16.2298 15.3743 15.4651 16.146 14.528 16.6474Z"
+                                      fill="#389164" />
+                                  </svg>
+                                </span>
+                                <p class="text-[14px] font-medium text-[#2B2B2B] dark:text-[#F5F9FF]">
+                                  Franchise Owned
+                                </p>
+                              </div>
+                            </td>
+                            <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
+                              Label
+                            </td>
+                            <td class="p-4 text-center">
+                              <span
+                                class="bg-danger-100 dark:bg-[#e8351d2c] dark:text-[#FF4949] text-danger-700 font-normal py-[5px] px-[10px] rounded-full text-[16px] ">
+                                Inactive
+                              </span>
+                            </td>
+                            <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
+                              An organization that is comprised of many dealerships and business units.
+                            </td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="flex items-center justify-center md:justify-end">
+            <div class="flex items-center justify-end">
               <button id="persona-continue" type="button"
-                class="ml-4 min-w-[120px] h-[40px] text-white bg-[#0437A7] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-[14px] px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                class="min-w-[120px] h-[40px] text-white bg-[#0437A7] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-[14px] px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                 Continue
               </button>
             </div>

@@ -2200,10 +2200,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100vw;
 }
 
-.w-\[78px\] {
-  width: 78px;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -2232,6 +2228,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 110px;
 }
 
+.min-w-\[112px\] {
+  min-width: 112px;
+}
+
 .min-w-\[120px\] {
   min-width: 120px;
 }
@@ -2256,6 +2256,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 135px;
 }
 
+.min-w-\[139px\] {
+  min-width: 139px;
+}
+
 .min-w-\[140px\] {
   min-width: 140px;
 }
@@ -2276,8 +2280,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 151px;
 }
 
+.min-w-\[152px\] {
+  min-width: 152px;
+}
+
 .min-w-\[160px\] {
   min-width: 160px;
+}
+
+.min-w-\[174px\] {
+  min-width: 174px;
 }
 
 .min-w-\[180px\] {
@@ -2306,6 +2318,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-w-\[194px\] {
   min-width: 194px;
+}
+
+.min-w-\[195px\] {
+  min-width: 195px;
 }
 
 .min-w-\[200px\] {
@@ -2378,6 +2394,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-w-\[310px\] {
   min-width: 310px;
+}
+
+.min-w-\[315px\] {
+  min-width: 315px;
 }
 
 .min-w-\[316px\] {
@@ -2458,10 +2478,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: max-content;
 }
 
-.min-w-\[195px\] {
-  min-width: 195px;
-}
-
 .max-w-\[106px\] {
   max-width: 106px;
 }
@@ -2492,6 +2508,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-\[200px\] {
   max-width: 200px;
+}
+
+.max-w-\[210px\] {
+  max-width: 210px;
 }
 
 .max-w-\[220px\] {
@@ -6388,6 +6408,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(34 73 150 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#7fc5f148\]:hover {
+  background-color: #7fc5f148;
+}
+
 .hover\:bg-\[\#E5E7EB\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -8151,6 +8175,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:bg-zinc-800) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-\[\#FBF0DA\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 240 218 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:fill-\[\#9CA3AF\]) {

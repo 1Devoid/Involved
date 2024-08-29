@@ -73,6 +73,7 @@ arrowRotateInput('#dropdownButton-status', '#dropdown-status');
 arrowRotateInput('#dropdownButton-entitlement', '#dropdown-entitlement');
 arrowRotateInput('#dropdownButton-deatailsAction', '#dropdown-deatailsAction');
 arrowRotateInput('#dropdownButton-node', '#dropdown-node');
+arrowRotateInput('#dropdownButton-level', '#dropdown-level');
 arrowRotateInput('#dropdownButton-node2', '#dropdown-node2');
 arrowRotateInput('#dropdownButton-node-access', '#dropdown-node-access');
 arrowRotateInput('#dropdownButton-appRole', '#dropdown-appRole');

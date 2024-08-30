@@ -2280,10 +2280,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 151px;
 }
 
-.min-w-\[152px\] {
-  min-width: 152px;
-}
-
 .min-w-\[160px\] {
   min-width: 160px;
 }
@@ -2476,6 +2472,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
 }
 
 .max-w-\[106px\] {
@@ -3430,6 +3430,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   overflow: visible;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -3843,6 +3847,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
 .border-b-\[\#E5E7EB\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -3889,6 +3898,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .border-t-transparent {
   border-top-color: transparent;
+}
+
+.border-t-gray-100 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .\!bg-\[\#858585\] {
@@ -7913,6 +7927,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-top-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:border-t-gray-600) {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:\!bg-neutral-600) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(82 82 82 / var(--tw-bg-opacity)) !important;
@@ -8175,11 +8194,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 :is(.dark .dark\:bg-zinc-800) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-\[\#FBF0DA\]) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 240 218 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:fill-\[\#9CA3AF\]) {
@@ -9240,6 +9254,11 @@ input[type="range"]:active::-webkit-slider-thumb {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .lg\:flex-nowrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .lg\:items-start {

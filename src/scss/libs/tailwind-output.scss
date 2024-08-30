@@ -1543,6 +1543,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 1px;
 }
 
+.mr-\[25px\] {
+  margin-right: 25px;
+}
+
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2478,34 +2482,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: max-content;
 }
 
-.min-w-\[1384px\] {
-  min-width: 1384px;
-}
-
-.min-w-\[1408px\] {
-  min-width: 1408px;
-}
-
-.min-w-\[1450px\] {
-  min-width: 1450px;
-}
-
-.min-w-\[380px\] {
-  min-width: 380px;
-}
-
-.min-w-\[1380px\] {
-  min-width: 1380px;
-}
-
-.min-w-\[1300px\] {
-  min-width: 1300px;
-}
-
-.min-w-\[1400px\] {
-  min-width: 1400px;
-}
-
 .max-w-\[106px\] {
   max-width: 106px;
 }
@@ -2624,22 +2600,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-\[1200px\] {
-  max-width: 1200px;
-}
-
-.max-w-\[1380px\] {
-  max-width: 1380px;
-}
-
-.max-w-\[90vw\] {
-  max-width: 90vw;
-}
-
-.max-w-\[80vw\] {
-  max-width: 80vw;
 }
 
 .flex-1 {
@@ -3472,10 +3432,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .overflow-visible {
   overflow: visible;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .overflow-y-auto {
@@ -4996,6 +4952,14 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
+}
+
+.pl-\[25px\] {
+  padding-left: 25px;
+}
+
+.pr-\[25px\] {
+  padding-right: 25px;
 }
 
 .text-left {
@@ -9268,20 +9232,20 @@ input[type="range"]:active::-webkit-slider-thumb {
     min-width: 100%;
   }
 
-  .lg\:min-w-\[1400px\] {
-    min-width: 1400px;
-  }
-
   .lg\:max-w-\[402px\] {
     max-width: 402px;
   }
 
-  .lg\:max-w-\[80vw\] {
-    max-width: 80vw;
-  }
-
   .lg\:max-w-\[78vw\] {
     max-width: 78vw;
+  }
+
+  .lg\:max-w-\[90vw\] {
+    max-width: 90vw;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:translate-x-0 {
@@ -9398,10 +9362,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .xl\:min-w-\[250px\] {
     min-width: 250px;
-  }
-
-  .xl\:max-w-\[80vw\] {
-    max-width: 80vw;
   }
 
   .xl\:flex-row {

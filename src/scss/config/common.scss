@@ -648,3 +648,9 @@ textarea:focus {
     stroke: #1c64f2;
   }
 }
+
+@media (min-width: 1024px) {
+  .max-content {
+    max-width: calc(90vw - 10%);
+  }
+}

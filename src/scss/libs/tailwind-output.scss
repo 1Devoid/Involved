@@ -1543,10 +1543,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 1px;
 }
 
-.mr-\[25px\] {
-  margin-right: 25px;
-}
-
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4952,14 +4948,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
-}
-
-.pl-\[25px\] {
-  padding-left: 25px;
-}
-
-.pr-\[25px\] {
-  padding-right: 25px;
 }
 
 .text-left {
@@ -9234,18 +9222,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:max-w-\[402px\] {
     max-width: 402px;
-  }
-
-  .lg\:max-w-\[78vw\] {
-    max-width: 78vw;
-  }
-
-  .lg\:max-w-\[90vw\] {
-    max-width: 90vw;
-  }
-
-  .lg\:max-w-full {
-    max-width: 100%;
   }
 
   .lg\:translate-x-0 {

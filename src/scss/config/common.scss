@@ -218,39 +218,39 @@ header {
   }
 }
 
-.notification-decor {
-  @media (min-width: 1024px) {
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -10px;
-      right: 47px;
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #f2f2f2;
-    }
-  }
-}
+// .notification-decor {
+//   @media (min-width: 1024px) {
+//     &::before {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       top: -10px;
+//       right: 47px;
+//       width: 0;
+//       height: 0;
+//       border-left: 10px solid transparent;
+//       border-right: 10px solid transparent;
+//       border-bottom: 10px solid #f2f2f2;
+//     }
+//   }
+// }
 
-:is(.dark .notification-decor) {
-  @media (min-width: 1024px) {
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -10px;
-      right: 47px;
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #323d4b;
-    }
-  }
-}
+// :is(.dark .notification-decor) {
+//   @media (min-width: 1024px) {
+//     &::before {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       top: -10px;
+//       right: 47px;
+//       width: 0;
+//       height: 0;
+//       border-left: 10px solid transparent;
+//       border-right: 10px solid transparent;
+//       border-bottom: 10px solid #323d4b;
+//     }
+//   }
+// }
 
 .info-popup__wrap {
   @media (max-height: 390px) {

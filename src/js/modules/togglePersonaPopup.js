@@ -11,6 +11,12 @@ function togglePersonaPopup() {
       .addEventListener('click', function () {
         document.getElementById('persona-popup').classList.add('hidden');
       });
+
+    document
+      .getElementById('persona-logout')
+      .addEventListener('click', function () {
+        document.getElementById('persona-popup').classList.add('hidden');
+      });
   }
 }
 

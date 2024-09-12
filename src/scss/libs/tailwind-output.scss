@@ -3345,6 +3345,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   gap: 10px;
 }
 
+.gap-\[16px\] {
+  gap: 16px;
+}
+
 .gap-\[20px\] {
   gap: 20px;
 }
@@ -3359,10 +3363,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .gap-\[6px\] {
   gap: 6px;
-}
-
-.gap-\[16px\] {
-  gap: 16px;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {

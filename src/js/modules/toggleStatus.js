@@ -1,12 +1,12 @@
-function toggleStatus() {
-  const statusToggler = document.getElementById('status-toggler');
+function toggleStatus(toggler, statusActive, statusInactive, string) {
+  const statusToggler = document.getElementById(toggler);
 
   if (statusToggler) {
     statusToggler.addEventListener('change', function () {
       let isChecked = this.checked;
-      let activeElement = document.getElementById('status-active');
-      let inactiveElement = document.getElementById('status-inactive');
-      let statusString = document.getElementById('status-string');
+      let activeElement = document.getElementById(statusActive);
+      let inactiveElement = document.getElementById(statusInactive);
+      let statusString = document.getElementById(string);
 
       if (isChecked) {
         activeElement.classList.remove('hidden');

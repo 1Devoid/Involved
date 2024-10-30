@@ -47,6 +47,11 @@ import setupActivityHandlers2 from './modules/setupActivityHandlers2.js';
 import addTabPersonaListeners from './modules/addTabPersonaListeners.js';
 import togglePersonaPopup from './modules/togglePersonaPopup.js';
 import addTabDashboardListeners from './modules/addTabDashboardListeners.js';
+import toggleInviteButton from './modules/toggleInviteButton.js';
+import checkInputsAndToggleButton from './modules/checkInputsAndToggleButton.js';
+import toggleAccessRolePopup from './modules/toggleAccessRolePopup.js';
+import toggleExternalRolePopup from './modules/toggleExternalRolePopup.js';
+import toggleEditsRolePopups from './modules/toggleEditsRolePopups.js';
 import {
   activateCheckedRadio,
   activateCheckedRadioList,
@@ -85,6 +90,8 @@ arrowRotateInput('#dropdownButton-profileNode', '#dropdown-profileNode');
 arrowRotateInput('#dropdownButton-select-popup', '#dropdown-select-popup');
 arrowRotateInput('#dropdownColorButton-2', '#dropdown-color-2');
 arrowRotateInput('#dropdownColorButton-3', '#dropdown-color-3');
+arrowRotateInput('#dropdownColorButton-4', '#dropdown-color-4');
+arrowRotateInput('#dropdownColorButton-5', '#dropdown-color-5');
 arrowRotateInput('#dropdownButton-select-role', '#dropdown-select-role');
 arrowRotateInput('#dropdownButton-add-node-popup', '#dropdown-add-node-popup');
 arrowRotateInput('#dropdownButton-roles-type', '#dropdown-roles-type');
@@ -112,6 +119,10 @@ arrowRotateInput('#dropdownButton-nodes-tab-4', '#dropdown-nodes-tab-4');
 arrowRotateInput('#dropdownButton-nodes-tab-5', '#dropdown-nodes-tab-5');
 arrowRotateInput('#dropdownButton-status-tab', '#dropdown-status-tab');
 arrowRotateInput('#actionsButton-rolesTab', '#dropdown-actionsButton');
+arrowRotateInput('#dropdownButton-icon', '#dropdown-icon');
+arrowRotateInput('#dropdownButton-icon-2', '#dropdown-icon-2');
+arrowRotateInput('#dropdownButton-icon-3', '#dropdown-icon-3');
+-2;
 
 trimString('[data-trim16]', 16);
 trimString('[data-trim20]', 20);
@@ -320,7 +331,18 @@ assignRolesFlow();
 hideResetRoles();
 toggleInputsDisabled();
 toggleCursorPointerOnSearchInputs();
-toggleStatus();
+toggleStatus(
+  'status-toggler',
+  'status-active',
+  'status-inactive',
+  'status-string'
+);
+toggleStatus(
+  'status-toggler-2',
+  'status-active-2',
+  'status-inactive-2',
+  'status-string-2'
+);
 addTabClickListeners();
 setupApplicationPopup();
 editApplicationPopup();
@@ -332,3 +354,22 @@ activateCheckedRadio();
 activateCheckedRadioList();
 togglePersonaPopup();
 addTabDashboardListeners();
+toggleInviteButton();
+checkInputsAndToggleButton('access-role-add', '_req-fill');
+checkInputsAndToggleButton('external-role-add', '_req-external');
+checkInputsAndToggleButton('edit-external-role-add', '_req-edit-external');
+checkInputsAndToggleButton('edit-access-role-add', '_req-edit-access');
+toggleAccessRolePopup();
+toggleExternalRolePopup();
+toggleEditsRolePopups(
+  '#edit-access-role-popup',
+  '.edit-access-trigger',
+  '#edit-access-role-cancel',
+  '#edit-access-role-add'
+);
+toggleEditsRolePopups(
+  '#edit-external-role-popup',
+  '.edit-external-trigger',
+  '#edit-external-role-cancel',
+  '#edit-external-role-add'
+);

@@ -1213,6 +1213,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin: auto;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -1519,6 +1523,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 0.15rem;
 }
 
+.mt-\[0\] {
+  margin-top: 0;
+}
+
 .mt-\[10px\] {
   margin-top: 10px;
 }
@@ -1541,6 +1549,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mt-px {
   margin-top: 1px;
+}
+
+.mr-\[12px\] {
+  margin-right: 12px;
 }
 
 .box-border {
@@ -1996,6 +2008,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 0.9375rem;
 }
 
+.w-\[0\] {
+  width: 0;
+}
+
 .w-\[1\.125rem\] {
   width: 1.125rem;
 }
@@ -2276,6 +2292,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-width: 147px;
 }
 
+.min-w-\[150px\] {
+  min-width: 150px;
+}
+
 .min-w-\[151px\] {
   min-width: 151px;
 }
@@ -2542,6 +2562,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-width: 454px;
 }
 
+.max-w-\[565px\] {
+  max-width: 565px;
+}
+
 .max-w-\[566px\] {
   max-width: 566px;
 }
@@ -2596,6 +2620,14 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
+.max-w-\[697px\] {
+  max-width: 697px;
 }
 
 .flex-1 {
@@ -4432,6 +4464,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   fill: #424242;
 }
 
+.fill-\[\#4B5563\] {
+  fill: #4B5563;
+}
+
 .fill-\[\#6B7280\] {
   fill: #6B7280;
 }
@@ -4454,10 +4490,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .fill-current {
   fill: currentColor;
-}
-
-.fill-\[\#4B5563\] {
-  fill: #4B5563;
 }
 
 .stroke-\[\#111928\] {
@@ -5137,6 +5169,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   line-height: 10%;
 }
 
+.leading-\[100\%\] {
+  line-height: 100%;
+}
+
 .leading-\[120\%\] {
   line-height: 120%;
 }
@@ -5634,6 +5670,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .opacity-\[\.53\] {
@@ -8965,6 +9005,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-top: 167px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -9034,6 +9078,11 @@ input[type="range"]:active::-webkit-slider-thumb {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .md\:flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .md\:flex-nowrap {

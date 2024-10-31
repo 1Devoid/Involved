@@ -1980,16 +1980,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-height: 40px;
 }
 
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
 .min-h-\[77px\] {
   min-height: 77px;
 }
 
 .min-h-\[auto\] {
   min-height: auto;
-}
-
-.min-h-\[600px\] {
-  min-height: 600px;
 }
 
 .\!w-px {
@@ -9684,10 +9684,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:min-h-\[600px\] {
-    min-height: 600px;
   }
 
   .xl\:min-w-\[208px\] {

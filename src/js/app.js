@@ -396,4 +396,6 @@ function hideLoginErrorMessage() {
 
 hideLoginErrorMessage();
 
-initImageSlider();
+document.addEventListener('DOMContentLoaded', () => {
+  initImageSlider();
+});

@@ -53,6 +53,7 @@ import toggleAccessRolePopup from './modules/toggleAccessRolePopup.js';
 import toggleExternalRolePopup from './modules/toggleExternalRolePopup.js';
 import toggleEditsRolePopups from './modules/toggleEditsRolePopups.js';
 import addErrorClassToElements from './modules/addErrorClassToElements.js';
+import initImageSlider from './modules/initImageSlider.js';
 import showPassword from './modules/showPassword.js';
 import {
   activateCheckedRadio,
@@ -377,7 +378,8 @@ toggleEditsRolePopups(
 );
 
 addErrorClassToElements();
-showPassword();
+showPassword('#password-login', '#password-login-show');
+showPassword('#confirm-password-login', '#confirm-password-login-show');
 
 // Function for testing error msg on Login error page
 function hideLoginErrorMessage() {
@@ -393,3 +395,5 @@ function hideLoginErrorMessage() {
 }
 
 hideLoginErrorMessage();
+
+initImageSlider();

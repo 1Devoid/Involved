@@ -1,8 +1,8 @@
-function showPassword() {
-  const passwordInput = document.querySelector('#password-login');
+function showPassword(password, passwordBtn) {
+  const passwordInput = document.querySelector(password);
 
   if (passwordInput) {
-    const showPasswordButton = document.querySelector('#password-login-show');
+    const showPasswordButton = document.querySelector(passwordBtn);
 
     showPasswordButton.addEventListener('click', () => {
       if (passwordInput.type === 'password') {

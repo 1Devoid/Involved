@@ -201,6 +201,9 @@ a.active {
 :is(.dark a.active) {
   color: rgb(255 255 255);
   background-color: rgb(55 65 81);
+  svg {
+    color: rgb(255 255 255);
+  }
 }
 
 header {
@@ -653,4 +656,17 @@ textarea:focus {
   .max-content {
     max-width: calc(90vw - 10%);
   }
+}
+
+.login-img {
+  opacity: 0;
+  transition: opacity 1s ease; /* плавна зміна прозорості за 1 секунду */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login-img.active {
+  opacity: 1;
+  position: relative;
 }

@@ -52,6 +52,8 @@ import checkInputsAndToggleButton from './modules/checkInputsAndToggleButton.js'
 import toggleAccessRolePopup from './modules/toggleAccessRolePopup.js';
 import toggleExternalRolePopup from './modules/toggleExternalRolePopup.js';
 import toggleEditsRolePopups from './modules/toggleEditsRolePopups.js';
+import addErrorClassToElements from './modules/addErrorClassToElements.js';
+import showPassword from './modules/showPassword.js';
 import {
   activateCheckedRadio,
   activateCheckedRadioList,
@@ -373,3 +375,21 @@ toggleEditsRolePopups(
   '#edit-external-role-cancel',
   '#edit-external-role-add'
 );
+
+addErrorClassToElements();
+showPassword();
+
+// Function for testing error msg on Login error page
+function hideLoginErrorMessage() {
+  const closeButton = document.getElementById('error-message-close');
+  if (closeButton) {
+    closeButton.addEventListener('click', function () {
+      const errorMsg = document.getElementById('login-error-msg');
+      if (errorMsg) {
+        errorMsg.classList.add('hidden');
+      }
+    });
+  }
+}
+
+hideLoginErrorMessage();

@@ -38,7 +38,7 @@
           </li>
           <li>
             <a href="audit.html"
-              class="active flex items-center flex-col p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              class="flex items-center flex-col p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
               <svg
                 class="dark:hidden w-6 h-6 text-[#717171] transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -503,7 +503,7 @@
           </li>
           <li>
             <a href="audit.html"
-              class="active flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              class="flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
               <svg
                 class="dark:hidden w-6 h-6 text-[#717171] transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -530,7 +530,7 @@
           </li>
           <li>
             <a href="users.html"
-              class="flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              class=" flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
               <svg
                 class="dark:hidden w-6 h-6 text-[#717171] transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -997,7 +997,7 @@
         </li>
         <li>
           <a href="audit.html"
-            class="active flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            class="flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <svg
               class="dark:hidden w-6 h-6 text-[#717171] transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
               width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1023,7 +1023,7 @@
         </li>
         <li>
           <a href="users.html"
-            class="flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            class=" flex items-center p-2 text-base font-normal text-[#717171] hover:text-[#0F0F0F] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <svg
               class="dark:hidden w-6 h-6 text-[#717171] transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
               width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1434,863 +1434,107 @@
   </aside>
 
   <div class="wrapper dark:bg-[#1F2A37]">
-    @@include('html/header.html', { 'header': 'Audit - Demo Motors' })
+    @@include('html/header-login.html', { 'header': 'Login error' })
 
     <main
       class="main bg-[#F2F2F2] dark:bg-[#5B6776] lg:rounded-l-lg py-6 lg:py-4 mt-[155px] md:mt-[167px] lg:mt-[80px]">
       <section class="content">
         <div class="container-custom">
           <div>
-            <div class="content__wrapper pt-6 px-6 bg-white dark:bg-[#1F2A37] rounded-[8px] max-content">
-              <!-- Top row -->
-              <div
-                class="flex items-center justify-between flex-col md:flex-row border-b border-[#E5E7EB] dark:border-[#707E8D] pb-3 mb-3">
-                <div class="flex items-center flex-col md:flex-row mb-4 md:mb-0">
-                  <button id="dropdownButton-csv" data-dropdown-toggle="dropdown-csv"
-                    class="mb-4 md:mb-0 h-[40px] min-w-[190px] rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
-                    type="button">CSV
-                    <span class="dark:hidden mr-2  ml-[41px] w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <span class="hidden dark:block mr-2  ml-[41px] w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdown-csv"
-                    class="min-w-[234px] md:min-w-[unset] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="min-w-[183px] text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="dropdownButton-csv">
-                      <div class="py-4 px-4 text-[16px] text-[#4F4F4F] dark:text-[#F5F9FF]">Text</div>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="checkbox" value="" id="checkboxDefault" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkboxDefault">
-                            Option
-                          </label>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="checkbox" value="" id="checkbox-2" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-2">
-                            Option
-                          </label>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="checkbox" value="" id="checkbox-3" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="checkbox-3">
-                            Option
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
+            <div class="content__wrapper py-6 px-6 bg-white dark:bg-[#1F2A37] rounded-[8px]">
+              <div class="grid xl:grid-cols-2 items-center justify-items-center gap-[32px]">
+                <div class="w-full max-w-[468px] flex flex-col items-center xl:items-start">
+                  <div class="font-bold dark:text-white leading-[125%] text-[20px] text-[#111928] mb-[20px]">
+                    Welcome back
                   </div>
-                  <button type="button"
-                    class="h-[40px] min-w-[190px] md:min-w-[120px] ml-0 md:ml-[12px] rounded-lg border dark:border-[#5590DC] border-[#1A56DB] flex items-center justify-center dark:hover:bg-[#5a687d66] dark:bg-[#1F2A37] whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#1A56DB] dark:text-[#5590DC]  transition duration-150 ease-in-out hover:bg-primary-accent-100 hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none">
-                    Export
-                    <span class="dark:hidden ml-2">
-                      <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M8.05806 1.05806C8.30214 0.813981 8.69787 0.813981 8.94194 1.05806L12.6919 4.80806C12.936 5.05214 12.936 5.44786 12.6919 5.69194C12.4479 5.93602 12.0521 5.93602 11.8081 5.69194L9.125 3.00888L9.125 12.75C9.125 13.0952 8.84518 13.375 8.5 13.375C8.15482 13.375 7.875 13.0952 7.875 12.75L7.875 3.00888L5.19194 5.69194C4.94786 5.93602 4.55214 5.93602 4.30806 5.69194C4.06398 5.44786 4.06398 5.05214 4.30806 4.80806L8.05806 1.05806ZM1 12.125C1.34518 12.125 1.625 12.4048 1.625 12.75V14.625C1.625 15.3154 2.18464 15.875 2.875 15.875H14.125C14.8154 15.875 15.375 15.3154 15.375 14.625V12.75C15.375 12.4048 15.6548 12.125 16 12.125C16.3452 12.125 16.625 12.4048 16.625 12.75V14.625C16.625 16.0057 15.5057 17.125 14.125 17.125H2.875C1.49429 17.125 0.375 16.0057 0.375 14.625V12.75C0.375 12.4048 0.654822 12.125 1 12.125Z"
-                          fill="#1A56DB" stroke="#1A56DB" stroke-width="0.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <span class="hidden dark:block ml-2">
-                      <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M8.05806 1.05806C8.30214 0.813981 8.69787 0.813981 8.94194 1.05806L12.6919 4.80806C12.936 5.05214 12.936 5.44786 12.6919 5.69194C12.4479 5.93602 12.0521 5.93602 11.8081 5.69194L9.125 3.00888L9.125 12.75C9.125 13.0952 8.84518 13.375 8.5 13.375C8.15482 13.375 7.875 13.0952 7.875 12.75L7.875 3.00888L5.19194 5.69194C4.94786 5.93602 4.55214 5.93602 4.30806 5.69194C4.06398 5.44786 4.06398 5.05214 4.30806 4.80806L8.05806 1.05806ZM1 12.125C1.34518 12.125 1.625 12.4048 1.625 12.75V14.625C1.625 15.3154 2.18464 15.875 2.875 15.875H14.125C14.8154 15.875 15.375 15.3154 15.375 14.625V12.75C15.375 12.4048 15.6548 12.125 16 12.125C16.3452 12.125 16.625 12.4048 16.625 12.75V14.625C16.625 16.0057 15.5057 17.125 14.125 17.125H2.875C1.49429 17.125 0.375 16.0057 0.375 14.625V12.75C0.375 12.4048 0.654822 12.125 1 12.125Z"
-                          fill="#5590DC" stroke="#5590DC" stroke-width="0.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <!-- Bottom row -->
-              <div class="flex justify-between xl:items-center flex-col xl:flex-row">
-                <div class="flex items-center flex-col md:flex-row mb-4 md:mb-2 xl:mb-0 flex-wrap xl:gap-y-3">
-                  <div class="relative mb-4 xl:mb-0 md:mr-2">
-                    <input type="search"
-                      class="hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] h-[40px] w-[190px] md:w-[290px] rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-4 py-[10px] pl-[42px] text-[14px] placeholder:font-medium leading-normal placeholder:text-[#6B7280] dark:placeholder:text-[#9CA3AF] text-[#2B2B2B] transition duration-150 ease-in-out  focus:outline-none focus:ring-0 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1f2a375e] dark:text-[#ffffff]"
-                      placeholder="Search by type, modification or..." />
-                    <svg class="absolute top-[12px] left-4 pointer-events-none" width="16" height="17"
-                      viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <mask id="path-1-inside-1_1466_30837" fill="white">
-                        <path
-                          d="M6.40008 13.3762C5.13426 13.3762 3.89687 13.0008 2.84439 12.2976C1.7919 11.5943 0.971586 10.5948 0.48718 9.42534C0.00277303 8.2559 -0.12397 6.96907 0.122979 5.72759C0.369927 4.48612 0.979475 3.34575 1.87454 2.45069C2.76961 1.55563 3.90999 0.946094 5.15148 0.699149C6.39298 0.452204 7.67982 0.578945 8.84928 1.06335C10.0187 1.54775 11.0183 2.36805 11.7215 3.42052C12.4248 4.473 12.8002 5.71037 12.8002 6.97617C12.7982 8.67297 12.1233 10.2997 10.9235 11.4995C9.72367 12.6994 8.0969 13.3743 6.40008 13.3762ZM6.40008 2.17617C5.45072 2.17617 4.52267 2.45769 3.73331 2.98512C2.94394 3.51255 2.32871 4.26221 1.9654 5.13929C1.6021 6.01638 1.50704 6.9815 1.69225 7.9126C1.87746 8.84371 2.33463 9.69899 3.00593 10.3703C3.67723 11.0416 4.53251 11.4987 5.46363 11.6839C6.39475 11.8691 7.35988 11.7741 8.23698 11.4108C9.11407 11.0475 9.86374 10.4323 10.3912 9.64291C10.9186 8.85355 11.2001 7.92552 11.2001 6.97617C11.1989 5.70352 10.6927 4.48336 9.79283 3.58346C8.89292 2.68357 7.67274 2.17744 6.40008 2.17617Z" />
-                        <path
-                          d="M15.2002 16.5762C14.988 16.5761 14.7846 16.4918 14.6346 16.3418L11.4345 13.1418C11.2888 12.9909 11.2082 12.7888 11.21 12.5791C11.2118 12.3693 11.2959 12.1686 11.4443 12.0203C11.5926 11.872 11.7932 11.7879 12.003 11.786C12.2128 11.7842 12.4148 11.8648 12.5657 12.0106L15.7658 15.2106C15.8776 15.3225 15.9538 15.465 15.9846 15.6201C16.0155 15.7753 15.9996 15.9361 15.9391 16.0823C15.8786 16.2285 15.7761 16.3534 15.6445 16.4413C15.513 16.5292 15.3584 16.5761 15.2002 16.5762Z" />
-                      </mask>
-                      <path
-                        d="M6.40008 13.3762C5.13426 13.3762 3.89687 13.0008 2.84439 12.2976C1.7919 11.5943 0.971586 10.5948 0.48718 9.42534C0.00277303 8.2559 -0.12397 6.96907 0.122979 5.72759C0.369927 4.48612 0.979475 3.34575 1.87454 2.45069C2.76961 1.55563 3.90999 0.946094 5.15148 0.699149C6.39298 0.452204 7.67982 0.578945 8.84928 1.06335C10.0187 1.54775 11.0183 2.36805 11.7215 3.42052C12.4248 4.473 12.8002 5.71037 12.8002 6.97617C12.7982 8.67297 12.1233 10.2997 10.9235 11.4995C9.72367 12.6994 8.0969 13.3743 6.40008 13.3762ZM6.40008 2.17617C5.45072 2.17617 4.52267 2.45769 3.73331 2.98512C2.94394 3.51255 2.32871 4.26221 1.9654 5.13929C1.6021 6.01638 1.50704 6.9815 1.69225 7.9126C1.87746 8.84371 2.33463 9.69899 3.00593 10.3703C3.67723 11.0416 4.53251 11.4987 5.46363 11.6839C6.39475 11.8691 7.35988 11.7741 8.23698 11.4108C9.11407 11.0475 9.86374 10.4323 10.3912 9.64291C10.9186 8.85355 11.2001 7.92552 11.2001 6.97617C11.1989 5.70352 10.6927 4.48336 9.79283 3.58346C8.89292 2.68357 7.67274 2.17744 6.40008 2.17617Z"
-                        fill="#6B7280" />
-                      <path
-                        d="M15.2002 16.5762C14.988 16.5761 14.7846 16.4918 14.6346 16.3418L11.4345 13.1418C11.2888 12.9909 11.2082 12.7888 11.21 12.5791C11.2118 12.3693 11.2959 12.1686 11.4443 12.0203C11.5926 11.872 11.7932 11.7879 12.003 11.786C12.2128 11.7842 12.4148 11.8648 12.5657 12.0106L15.7658 15.2106C15.8776 15.3225 15.9538 15.465 15.9846 15.6201C16.0155 15.7753 15.9996 15.9361 15.9391 16.0823C15.8786 16.2285 15.7761 16.3534 15.6445 16.4413C15.513 16.5292 15.3584 16.5761 15.2002 16.5762Z"
-                        fill="#6B7280" />
-                      <path
-                        d="M6.40008 13.3762V14.3762L6.4012 14.3762L6.40008 13.3762ZM12.8002 6.97617L13.8002 6.97729V6.97617H12.8002ZM6.40008 2.17617L6.40108 1.17617H6.40008V2.17617ZM11.2001 6.97617H12.2001L12.2001 6.97517L11.2001 6.97617ZM15.2002 16.5762L15.1999 17.5762H15.2004L15.2002 16.5762ZM14.6346 16.3418L15.3418 15.6348L15.3417 15.6347L14.6346 16.3418ZM11.4345 13.1418L10.7152 13.8365L10.7213 13.8427L10.7274 13.8489L11.4345 13.1418ZM12.5657 12.0106L13.2728 11.3035L13.2667 11.2973L13.2604 11.2913L12.5657 12.0106ZM15.7658 15.2106L16.473 14.5036L16.4729 14.5035L15.7658 15.2106ZM6.40008 12.3762C5.33204 12.3762 4.28799 12.0595 3.39995 11.4661L2.28882 13.129C3.50576 13.9422 4.93648 14.3762 6.40008 14.3762V12.3762ZM3.39995 11.4661C2.51191 10.8727 1.81977 10.0294 1.41106 9.04266L-0.436698 9.80803C0.123397 11.1602 1.07189 12.3159 2.28882 13.129L3.39995 11.4661ZM1.41106 9.04266C1.00234 8.05594 0.895401 6.97018 1.10376 5.92269L-0.857806 5.5325C-1.14334 6.96796 -0.996794 8.45586 -0.436698 9.80803L1.41106 9.04266ZM1.10376 5.92269C1.31213 4.87519 1.82643 3.91301 2.58164 3.1578L1.16744 1.74358C0.132519 2.77849 -0.572272 4.09704 -0.857806 5.5325L1.10376 5.92269ZM2.58164 3.1578C3.33686 2.4026 4.29906 1.8883 5.34657 1.67993L4.9564 -0.281637C3.52093 0.00389272 2.20236 0.708672 1.16744 1.74358L2.58164 3.1578ZM5.34657 1.67993C6.39409 1.47157 7.47986 1.57851 8.4666 1.98723L9.23196 0.139464C7.87977 -0.420622 6.39187 -0.567166 4.9564 -0.281637L5.34657 1.67993ZM8.4666 1.98723C9.45334 2.39594 10.2967 3.08807 10.8901 3.9761L12.553 2.86495C11.7399 1.64803 10.5841 0.699551 9.23196 0.139464L8.4666 1.98723ZM10.8901 3.9761C11.4834 4.86412 11.8002 5.90816 11.8002 6.97617H13.8002C13.8002 5.51259 13.3661 4.08187 12.553 2.86495L10.8901 3.9761ZM11.8002 6.97505C11.7985 8.40702 11.229 9.77988 10.2164 10.7924L11.6306 12.2067C13.0177 10.8196 13.7979 8.93892 13.8002 6.97729L11.8002 6.97505ZM10.2164 10.7924C9.20383 11.805 7.83095 12.3746 6.39895 12.3762L6.4012 14.3762C8.36284 14.374 10.2435 13.5937 11.6306 12.2067L10.2164 10.7924ZM6.40008 1.17617C5.25294 1.17617 4.13156 1.51634 3.17774 2.15365L4.28888 3.81659C4.91379 3.39904 5.64849 3.17617 6.40008 3.17617V1.17617ZM3.17774 2.15365C2.22393 2.79096 1.48052 3.69679 1.04153 4.7566L2.88928 5.52198C3.1769 4.82762 3.66396 4.23414 4.28888 3.81659L3.17774 2.15365ZM1.04153 4.7566C0.602532 5.81642 0.487671 6.9826 0.711468 8.1077L2.67304 7.71751C2.52641 6.98039 2.60167 6.21634 2.88928 5.52198L1.04153 4.7566ZM0.711468 8.1077C0.935266 9.23279 1.48767 10.2662 2.29882 11.0774L3.71303 9.66317C3.18158 9.13173 2.81966 8.45464 2.67304 7.71751L0.711468 8.1077ZM2.29882 11.0774C3.10998 11.8885 4.14345 12.4409 5.26855 12.6647L5.65872 10.7032C4.92158 10.5565 4.24447 10.1946 3.71303 9.66317L2.29882 11.0774ZM5.26855 12.6647C6.39364 12.8885 7.55984 12.7737 8.61966 12.3347L7.8543 10.4869C7.15993 10.7745 6.39586 10.8498 5.65872 10.7032L5.26855 12.6647ZM8.61966 12.3347C9.67948 11.8957 10.5853 11.1523 11.2226 10.1985L9.55971 9.08733C9.14216 9.71224 8.54867 10.1993 7.8543 10.4869L8.61966 12.3347ZM11.2226 10.1985C11.86 9.24468 12.2001 8.12331 12.2001 6.97617H10.2001C10.2001 7.72774 9.97727 8.46243 9.55971 9.08733L11.2226 10.1985ZM12.2001 6.97517C12.1986 5.43765 11.5871 3.96354 10.4999 2.87635L9.08572 4.29058C9.79834 5.00318 10.1991 5.9694 10.2001 6.97717L12.2001 6.97517ZM10.4999 2.87635C9.41273 1.78916 7.93861 1.17771 6.40108 1.17617L6.39908 3.17617C7.40688 3.17718 8.37311 3.57797 9.08572 4.29058L10.4999 2.87635ZM15.2004 15.5762C15.2534 15.5762 15.3043 15.5973 15.3418 15.6348L13.9273 17.0488C14.2648 17.3864 14.7226 17.5761 15.1999 17.5762L15.2004 15.5762ZM15.3417 15.6347L12.1416 12.4347L10.7274 13.8489L13.9275 17.0489L15.3417 15.6347ZM12.1538 12.4471C12.1902 12.4848 12.2104 12.5353 12.2099 12.5877L10.21 12.5704C10.2059 13.0423 10.3873 13.497 10.7152 13.8365L12.1538 12.4471ZM12.2099 12.5877C12.2095 12.6402 12.1884 12.6904 12.1514 12.7274L10.7372 11.3132C10.4034 11.6469 10.2141 12.0984 10.21 12.5704L12.2099 12.5877ZM12.1514 12.7274C12.1143 12.7645 12.0641 12.7855 12.0117 12.786L11.9943 10.7861C11.5224 10.7902 11.0709 10.9795 10.7372 11.3132L12.1514 12.7274ZM12.0117 12.786C11.9593 12.7865 11.9087 12.7663 11.871 12.7299L13.2604 11.2913C12.921 10.9634 12.4663 10.782 11.9943 10.7861L12.0117 12.786ZM11.8586 12.7177L15.0587 15.9177L16.4729 14.5035L13.2728 11.3035L11.8586 12.7177ZM15.0586 15.9176C15.0306 15.8896 15.0116 15.854 15.0038 15.8152L16.9654 15.4251C16.896 15.076 16.7246 14.7553 16.473 14.5036L15.0586 15.9176ZM15.0038 15.8152C14.9961 15.7764 15.0001 15.7362 15.0152 15.6996L16.863 16.465C16.9992 16.1361 17.0349 15.7742 16.9654 15.4251L15.0038 15.8152ZM15.0152 15.6996C15.0304 15.6631 15.056 15.6319 15.0889 15.6099L16.2002 17.2727C16.4961 17.0749 16.7268 16.7938 16.863 16.465L15.0152 15.6996ZM15.0889 15.6099C15.1217 15.5879 15.1604 15.5762 15.1999 15.5762L15.2004 17.5762C15.5563 17.5761 15.9043 17.4705 16.2002 17.2727L15.0889 15.6099Z"
-                        fill="#6B7280" mask="url(#path-1-inside-1_1466_30837)" />
-                    </svg>
-                  </div>
+                  <div class="w-[100%] mb-[20px]">
+                    <div class="relative w-[100%] mb-[20px]" data-te-input-wrapper-init="">
+                      <input type="text"
+                        class="block bg-transparent border-0 dark:peer-focus:text-primary dark:placeholder:text-neutral-200 data-[te-input-state-active]:placeholder:opacity-100 duration-200 ease-linear focus:placeholder:opacity-100 leading-[1.6] min-h-[auto] motion-reduce:transition-none outline-none peer peer-focus:text-primary px-3 py-[0.32rem] rounded transition-all pr-[40px] dark:text-[#BECCDD]  text-[#00000099] w-full"
+                        id="email">
+                      <label for="email"
+                        class="absolute dark:peer-focus:text-primary duration-200 ease-out leading-[1.6] left-3 max-w-[90%] mb-0 motion-reduce:transition-none origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary pointer-events-none pt-[0.37rem] top-0 transition-all truncate font-normal name-label dark:text-[#99A7B7] text-[#0000008b]">
+                        Email
+                      </label>
+                    </div>
+                    <div class="relative w-[100%]" data-te-input-wrapper-init="">
+                      <input type="password"
+                        class="block bg-transparent border-0 dark:peer-focus:text-primary dark:placeholder:text-neutral-200 data-[te-input-state-active]:placeholder:opacity-100 duration-200 ease-linear focus:placeholder:opacity-100 leading-[1.6] min-h-[auto] motion-reduce:transition-none outline-none peer peer-focus:text-primary px-3 py-[0.32rem] rounded transition-all pr-[40px] dark:text-[#BECCDD]  text-[#00000099] w-full"
+                        id="password-login">
+                      <label for="password-login"
+                        class="absolute dark:peer-focus:text-primary duration-200 ease-out leading-[1.6] left-3 max-w-[90%] mb-0 motion-reduce:transition-none origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary pointer-events-none pt-[0.37rem] top-0 transition-all truncate font-normal name-label dark:text-[#99A7B7] text-[#0000008b]">
+                        Password
+                      </label>
+                      <span id="password-login-show"
+                        class="absolute right-[12px] tooltip-icon top-[10px] cursor-pointer">
+                        <svg class="dark:hidden" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2.91667 9.80361L4.69875 7.991C4.68243 7.88645 4.67172 7.78108 4.66667 7.67535C4.66759 6.88884 4.97518 6.13481 5.52196 5.57866C6.06874 5.02252 6.81007 4.70966 7.58333 4.70872C7.68727 4.71366 7.79087 4.72436 7.89367 4.74076L8.911 3.706C8.47802 3.58708 8.03181 3.52526 7.58333 3.52207C4.44033 3.52207 1.75 6.68805 1.75 7.67535C1.90214 8.49452 2.31153 9.24134 2.91667 9.80361Z"
+                            fill="#1F2A37" />
+                          <path
+                            d="M9.15833 6.91233L12.6624 3.34822C12.7181 3.29349 12.7626 3.22802 12.7931 3.15563C12.8237 3.08324 12.8398 3.00539 12.8405 2.92661C12.8412 2.84782 12.8264 2.7697 12.7971 2.69678C12.7677 2.62386 12.7244 2.55762 12.6696 2.50191C12.6149 2.4462 12.5497 2.40214 12.4781 2.37231C12.4064 2.34247 12.3296 2.32746 12.2521 2.32815C12.1746 2.32883 12.0981 2.3452 12.0269 2.3763C11.9558 2.40739 11.8914 2.45259 11.8376 2.50926L8.3335 6.07337C8.22377 6.01973 8.10881 5.97797 7.9905 5.94877L7.97008 5.94224C7.68182 5.87333 7.38102 5.88043 7.0962 5.96288C6.81139 6.04532 6.55199 6.20038 6.3426 6.41336C6.13321 6.62634 5.98076 6.89018 5.8997 7.17987C5.81864 7.46957 5.81166 7.77552 5.87942 8.06872C5.87942 8.07584 5.88408 8.08178 5.88525 8.0883C5.91397 8.2091 5.95523 8.32644 6.00833 8.43836L2.50425 12.0025C2.44854 12.0572 2.4041 12.1227 2.37352 12.1951C2.34295 12.2675 2.32686 12.3453 2.32619 12.4241C2.32551 12.5029 2.34027 12.581 2.3696 12.6539C2.39893 12.7268 2.44225 12.7931 2.49702 12.8488C2.55179 12.9045 2.61692 12.9486 2.68861 12.9784C2.7603 13.0082 2.83711 13.0232 2.91457 13.0225C2.99202 13.0219 3.06857 13.0055 3.13974 12.9744C3.2109 12.9433 3.27527 12.8981 3.32908 12.8414L6.83317 9.27733C6.9432 9.33134 7.05857 9.37331 7.17733 9.40252C7.18375 9.40252 7.18958 9.40667 7.19658 9.40845C7.48485 9.47737 7.78565 9.47027 8.07046 9.38782C8.35528 9.30537 8.61467 9.15031 8.82407 8.93733C9.03346 8.72435 9.18591 8.46051 9.26697 8.17082C9.34802 7.88113 9.35501 7.57518 9.28725 7.28197C9.28725 7.27485 9.28258 7.26833 9.28083 7.26121C9.25212 7.14087 9.21107 7.02394 9.15833 6.91233Z"
+                            fill="#1F2A37" />
+                          <path
+                            d="M12.1456 5.65389L10.479 7.34902C10.532 7.79157 10.4852 8.24058 10.3423 8.66203C10.1994 9.08349 9.96402 9.46633 9.65409 9.78157C9.34416 10.0968 8.96776 10.3362 8.5534 10.4816C8.13905 10.6269 7.6976 10.6745 7.2625 10.6206L6.22125 11.6797C6.66889 11.7778 7.12543 11.8277 7.58333 11.8286C11.3476 11.8286 13.4167 8.70892 13.4167 7.67535C13.4167 6.98353 12.4618 5.97013 12.1456 5.65389Z"
+                            fill="#1F2A37" />
+                        </svg>
+                        <svg class="hidden dark:block mt-[2px]" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.91667 7.80361L3.69875 5.991C3.68243 5.88645 3.67172 5.78108 3.66667 5.67535C3.66759 4.88884 3.97518 4.13481 4.52196 3.57866C5.06874 3.02252 5.81007 2.70966 6.58333 2.70872C6.68727 2.71366 6.79087 2.72436 6.89367 2.74076L7.911 1.706C7.47802 1.58708 7.03181 1.52526 6.58333 1.52207C3.44033 1.52207 0.75 4.68805 0.75 5.67535C0.902137 6.49452 1.31153 7.24134 1.91667 7.80361Z"
+                            fill="#BABCBB" fill-opacity="0.803922" />
+                          <path
+                            d="M8.15833 4.91233L11.6624 1.34822C11.7181 1.29349 11.7626 1.22802 11.7931 1.15563C11.8237 1.08324 11.8398 1.00539 11.8405 0.926606C11.8412 0.847825 11.8264 0.769696 11.7971 0.696778C11.7677 0.623861 11.7244 0.557615 11.6696 0.501906C11.6149 0.446197 11.5497 0.402141 11.4781 0.372308C11.4064 0.342475 11.3296 0.327463 11.2521 0.328147C11.1746 0.328832 11.0981 0.3452 11.0269 0.376295C10.9558 0.407391 10.8914 0.452592 10.8376 0.50926L7.3335 4.07337C7.22377 4.01973 7.10881 3.97797 6.9905 3.94877L6.97008 3.94224C6.68182 3.87333 6.38102 3.88043 6.0962 3.96288C5.81139 4.04532 5.55199 4.20038 5.3426 4.41336C5.13321 4.62634 4.98076 4.89018 4.8997 5.17987C4.81864 5.46957 4.81166 5.77552 4.87942 6.06872C4.87942 6.07584 4.88408 6.08178 4.88525 6.0883C4.91397 6.20909 4.95523 6.32644 5.00833 6.43836L1.50425 10.0025C1.44854 10.0572 1.4041 10.1227 1.37352 10.1951C1.34295 10.2675 1.32686 10.3453 1.32619 10.4241C1.32551 10.5029 1.34027 10.581 1.3696 10.6539C1.39893 10.7268 1.44225 10.7931 1.49702 10.8488C1.55179 10.9045 1.61692 10.9486 1.68861 10.9784C1.7603 11.0082 1.83711 11.0232 1.91457 11.0225C1.99202 11.0219 2.06857 11.0055 2.13974 10.9744C2.2109 10.9433 2.27527 10.8981 2.32908 10.8414L5.83317 7.27733C5.9432 7.33134 6.05857 7.37331 6.17733 7.40252C6.18375 7.40252 6.18958 7.40667 6.19658 7.40845C6.48485 7.47737 6.78565 7.47027 7.07046 7.38782C7.35528 7.30537 7.61467 7.15031 7.82407 6.93733C8.03346 6.72435 8.18591 6.46051 8.26697 6.17082C8.34802 5.88113 8.35501 5.57518 8.28725 5.28197C8.28725 5.27485 8.28258 5.26833 8.28083 5.26121C8.25212 5.14087 8.21107 5.02394 8.15833 4.91233Z"
+                            fill="#BABCBB" fill-opacity="0.803922" />
+                          <path
+                            d="M11.1456 3.65389L9.479 5.34902C9.53196 5.79157 9.4852 6.24058 9.34228 6.66203C9.19936 7.08349 8.96402 7.46633 8.65409 7.78157C8.34416 8.09682 7.96776 8.33619 7.5534 8.48155C7.13905 8.62692 6.6976 8.67448 6.2625 8.62062L5.22125 9.6797C5.66889 9.77779 6.12543 9.8277 6.58333 9.82863C10.3476 9.82863 12.4167 6.70892 12.4167 5.67535C12.4167 4.98353 11.4618 3.97013 11.1456 3.65389Z"
+                            fill="#BABCBB" fill-opacity="0.803922" />
+                        </svg>
 
-                  <button id="dropdownButton-roles-tab" data-dropdown-toggle="dropdown-roles-tab"
-                    class="relative h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
-                    type="button">Event Type
-                    <span class="dark:hidden mr-2 ml-2 w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <span class="hidden dark:block mr-2 ml-2 w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <div data-checkbox="roles-tab-label"
-                      class="text-[#1A56DB] dark:text-[#111928] absolute top-[-10px] right-[-7px] bg-[#C8DFF5] dark:bg-[#F3F4F6] w-[20px] h-[20px] rounded-[50%]">
-                      0 </div>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdown-roles-tab"
-                    class="min-w-[210px] z-10 hidden bg-white dark:bg-[#323D4B] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="min-w-[210px] py-2 text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="dropdownButton-roles-tab">
-                      <div class="flex justify-between items-center px-4 mb-2">
-                        <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-[16px] leading-[160%]">Event Type</div>
-                        <button id="resetButton-7" class="text-[#1A56DB] dark:text-[#3F83F8] text-[14px] font-medium"
-                          type="button">
-                          Clear all
-                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="w-full flex items-center justify-between gap-2 mb-[20px]">
+                    <div class="block min-h-[1.5rem] pl-[1.5rem]">
+                      <input
+                        class="relative -ml-[1.5rem] appearance-none before:absolute before:bg-transparent before:content-[''] before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] border-neutral-300 border-solid checked:after:absolute checked:after:content-[''] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-[#8593A3] dark:border-neutral-600 dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer before:h-[0.875rem] before:w-[0.875rem] border-[0.125rem] checked:after:-mt-px checked:after:bg-transparent checked:after:block checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-solid checked:after:border-t-0 checked:after:border-white checked:after:h-[0.8125rem] checked:after:ml-[0.25rem] checked:after:rotate-45 checked:after:w-[0.375rem] checked:bg-primary checked:focus:after:-mt-px checked:focus:after:bg-transparent checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-t-0 checked:focus:after:border-white checked:focus:after:h-[0.8125rem] checked:focus:after:ml-[0.25rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:w-[0.375rem] dark:checked:bg-primary focus:after:absolute focus:after:block focus:after:content-[''] focus:after:h-[0.875rem] focus:after:rounded-[0.125rem] focus:after:w-[0.875rem] focus:after:z-[1] focus:transition-[border-color_0.2s] h-[1.125rem] mr-[6px] mt-[0.15rem] outline-none rounded-[0.25rem] w-[1.125rem] "
+                        type="checkbox" value="" id="checkboxDefault">
+                      <label
+                        class="text-[14px] text-[#6B7280] font-medium dark:text-[#D9E5F6] inline-block pl-[0.15rem] leading-[150%] hover:cursor-pointer"
+                        for="checkboxDefault">
+                        Remember me
+                      </label>
+                    </div>
+                    <a href="#" class="text-[14px] leading-[150%] text-[#1C64F2]">Forgot password?</a>
+                  </div>
+                  <a href="#"
+                    class="mb-[20px] w-full flex items-center rounded-lg transition font-medium text-[14px] border duration-150 ease-in-out focus:outline-none focus:ring-0 leading-normal motion-reduce:transition-none whitespace-nowrap lg:min-w-[120px] h-[40px] justify-center min-w-[110px] px-3 py-[10px] bg-[#1A56DB] border-[#1A56DB] dd-animation hover:bg-[#224996] text-white">
+                    Login
+                  </a>
+                  <div class="text-[14px] leading-[150%] dark:text-[#E5E7EB] text-[#111928]">
+                    Don’t have an account yet?
+                    <a href="#" class="text-[#1C64F2]">Create an account</a>
+                  </div>
+                </div>
+                <div class="relative">
+                  <img class="" src="images/login-image.jpg" alt="Login">
+                  <div class="backdrop-blur-xl bg-white/20 absolute z-[1] p-3 left-3 right-3 bottom-3 rounded-[8px]">
+                    <div class="font-extrabold leading-[36px] text-[36px] text-[#FFFFFF] mb-[12px]">
+                      Mission Statement
+                    </div>
+                    <div class="text-[16px] leading-[150%] text-[#F9FAFB] mb-[32px]">
+                      At Evolved Identity, we are committed to providing excellence to improve the quality of living and
+                      to drive
+                      sustainability.
+                    </div>
+                    <div class="flex items-center">
+                      <img class="" src="images/avatar-group.png" alt="Avatars">
+                      <div class="h-[30px] w-[1px] bg-[#3F83F8] ml-[15px] mr-[24px]"></div>
+                      <div class="text-[14px] leading-[150%] text-[#FFFFFF]">
+                        Rated Best Over <span class="font-medium">8k</span> Reviews
                       </div>
-                      <input type="search"
-                        class="hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] h-[40px] w-[190px] ml-2 mb-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[16px] font-normal leading-normal placeholder:text-[#717171] dark:placeholder:text-[#ffffff] dark:text-[#ffffff] text-[#717171] transition duration-150 ease-in-out  focus:outline-none focus:ring-0 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1f2a375e] dark:text-[#9CA3AF]"
-                        placeholder="Search by event type" />
-                      <li class="py-[7px] px-4 flex items-center">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-1" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-1">
-                            User
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-2" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-2">
-                            Roles
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-3" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-3">
-                            Manager
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-4" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-4">
-                            Nodes
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-5" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-5">
-                            Node Type
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <button id="dropdownButton-roles-tab-2" data-dropdown-toggle="dropdown-roles-tab-2"
-                    class="relative h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
-                    type="button">Node
-                    <span class="dark:hidden mr-2 ml-2 w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <span class="hidden dark:block mr-2 ml-2 w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <div data-checkbox="roles-tab-2-label"
-                      class="text-[#1A56DB] dark:text-[#111928] absolute top-[-10px] right-[-7px] bg-[#C8DFF5] dark:bg-[#F3F4F6] w-[20px] h-[20px] rounded-[50%]">
-                      0 </div>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdown-roles-tab-2"
-                    class="min-w-[210px] z-10 hidden bg-white dark:bg-[#323D4B] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="min-w-[210px] py-2 text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="dropdownButton-roles-tab-2">
-                      <div class="flex justify-between items-center px-4 mb-2">
-                        <div class="text-[#4F4F4F] dark:text-[#F5F9FF] text-[16px] leading-[160%]">Node</div>
-                        <button id="resetButton-8" class="text-[#1A56DB] dark:text-[#3F83F8] text-[14px] font-medium"
-                          type="button">
-                          Clear all
-                        </button>
-                      </div>
-                      <input type="search"
-                        class="hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] h-[40px] w-[184px] ml-2 mb-2 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[16px] font-normal leading-normal placeholder:text-[#717171] dark:placeholder:text-[#ffffff] dark:text-[#ffffff] text-[#717171] transition duration-150 ease-in-out  focus:outline-none focus:ring-0 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1f2a375e] dark:text-[#9CA3AF]"
-                        placeholder="Search by node" />
-                      <li class="py-[7px] px-4 flex items-center">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-2-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-2-1" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-2-1">
-                            Demo Motors
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-2-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-2-2" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-2-2">
-                            Operations
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-2-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-2-3" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-2-3">
-                            Demo-Test
-                          </label>
-                        </div>
-                      </li>
-                      <li
-                        class="py-[7px] px-4 flex items-center transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-gray-500">
-                        <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
-                          <input data-checkbox="roles-tab-2-type"
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 dark:border-[#8593A3] outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] "
-                            type="checkbox" value="" id="roles-tab-2-4" />
-                          <label class="text-[14px] dark:text-[#F5F9FF] inline-block pl-[0.15rem] hover:cursor-pointer"
-                            for="roles-tab-2-4">
-                            Marketing
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <button id="dropdownButton-level" data-dropdown-toggle="dropdown-level"
-                    class="h-[40px] min-w-[190px] md:min-w-[151px] mb-4 xl:mb-0 md:mr-3 rounded-lg border border-[#E5E7EB] flex items-center justify-between  whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#717171] transition duration-150 ease-in-out hover:bg-primary-accent-100 dark:hover:bg-[#5a687d66] focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:border-[#4B5563] dark:bg-[#1F2A37] dark:text-[#9CA3AF]"
-                    type="button">Level
-                    <span class="mr-2 dark:hidden ml-2 w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                    <span class="mr-2  hidden dark:block ml-2 w-2">
-                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdown-level"
-                    class="min-w-[234px] md:min-w-[unset] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="min-w-[183px] text-sm text-gray-700 dark:text-gray-200"
-                      aria-labelledby="dropdownButton-level">
-                      <div class="py-4 px-4 text-[16px] text-[#4F4F4F] dark:text-[#F5F9FF]">Level</div>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 dark:border-[#8593A3] before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="radio" name="flexRadioDefault" id="radioDefault01" checked />
-                          <div class="dark:text-[#F5F9FF] mt-px inline-block pl-[0.15rem] hover:cursor-pointer">
-                            All
-                          </div>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 dark:border-[#8593A3] before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="radio" name="flexRadioDefault" id="radioDefault01" />
-                          <div class="dark:text-[#F5F9FF] mt-px inline-block pl-[0.15rem] hover:cursor-pointer">
-                            Info
-                          </div>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 dark:border-[#8593A3] before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0  focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="radio" name="flexRadioDefault" id="radioDefault02" />
-                          <div class="dark:text-[#F5F9FF] mt-px inline-block pl-[0.15rem] hover:cursor-pointer">
-                            Warning
-                          </div>
-                        </div>
-                      </li>
-                      <li class="py-1 px-4">
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                          <input
-                            class="relative float-left -ml-[1.5rem] mr-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 dark:border-[#8593A3] before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                            type="radio" name="flexRadioDefault" id="radioDefault03" />
-                          <div class="dark:text-[#F5F9FF] mt-px inline-block pl-[0.15rem] hover:cursor-pointer">
-                            Error
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <button type="button" id="resetButton"
-                    class="min-w-[190px] mb-4 xl:mb-0 h-[40px] md:min-w-[100px] md:mr-[12px] rounded-lg border border-[#E5E7EB] flex items-center justify-center dark:border-[#FFFFFF] dark:hover:bg-[#5a687d66] dark:bg-[#1F2A37] whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#1F2A37] dark:text-[#F5F9FF] transition duration-150 ease-in-out hover:bg-primary-accent-100 hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none">
-                    <span class="dark:hidden mr-2">
-                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M4.79279 4.79259C4.98031 4.60512 5.23462 4.49981 5.49979 4.49981C5.76495 4.49981 6.01926 4.60512 6.20679 4.79259L10.4998 9.08559L14.7928 4.79259C14.885 4.69708 14.9954 4.6209 15.1174 4.56849C15.2394 4.51608 15.3706 4.4885 15.5034 4.48734C15.6362 4.48619 15.7678 4.51149 15.8907 4.56177C16.0136 4.61205 16.1253 4.68631 16.2192 4.7802C16.3131 4.87409 16.3873 4.98574 16.4376 5.10864C16.4879 5.23154 16.5132 5.36321 16.512 5.49599C16.5109 5.62877 16.4833 5.75999 16.4309 5.882C16.3785 6.004 16.3023 6.11435 16.2068 6.20659L11.9138 10.4996L16.2068 14.7926C16.3889 14.9812 16.4897 15.2338 16.4875 15.496C16.4852 15.7582 16.38 16.009 16.1946 16.1944C16.0092 16.3798 15.7584 16.485 15.4962 16.4873C15.234 16.4895 14.9814 16.3888 14.7928 16.2066L10.4998 11.9136L6.20679 16.2066C6.01818 16.3888 5.76558 16.4895 5.50339 16.4873C5.24119 16.485 4.99038 16.3798 4.80497 16.1944C4.61956 16.009 4.51439 15.7582 4.51211 15.496C4.50983 15.2338 4.61063 14.9812 4.79279 14.7926L9.08579 10.4996L4.79279 6.20659C4.60532 6.01907 4.5 5.76476 4.5 5.49959C4.5 5.23443 4.60532 4.98012 4.79279 4.79259Z"
-                          fill="#1F2A37" />
-                      </svg>
-                    </span>
-                    <span class="hidden dark:block mr-2">
-                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M4.79279 4.79259C4.98031 4.60512 5.23462 4.49981 5.49979 4.49981C5.76495 4.49981 6.01926 4.60512 6.20679 4.79259L10.4998 9.08559L14.7928 4.79259C14.885 4.69708 14.9954 4.6209 15.1174 4.56849C15.2394 4.51608 15.3706 4.4885 15.5034 4.48734C15.6362 4.48619 15.7678 4.51149 15.8907 4.56177C16.0136 4.61205 16.1253 4.68631 16.2192 4.7802C16.3131 4.87409 16.3873 4.98574 16.4376 5.10864C16.4879 5.23154 16.5132 5.36321 16.512 5.49599C16.5109 5.62877 16.4833 5.75999 16.4309 5.882C16.3785 6.004 16.3023 6.11435 16.2068 6.20659L11.9138 10.4996L16.2068 14.7926C16.3889 14.9812 16.4897 15.2338 16.4875 15.496C16.4852 15.7582 16.38 16.009 16.1946 16.1944C16.0092 16.3798 15.7584 16.485 15.4962 16.4873C15.234 16.4895 14.9814 16.3888 14.7928 16.2066L10.4998 11.9136L6.20679 16.2066C6.01818 16.3888 5.76558 16.4895 5.50339 16.4873C5.24119 16.485 4.99038 16.3798 4.80497 16.1944C4.61956 16.009 4.51439 15.7582 4.51211 15.496C4.50983 15.2338 4.61063 14.9812 4.79279 14.7926L9.08579 10.4996L4.79279 6.20659C4.60532 6.01907 4.5 5.76476 4.5 5.49959C4.5 5.23443 4.60532 4.98012 4.79279 4.79259Z"
-                          fill="#FFFFFF" />
-                      </svg>
-                    </span>
-                    Reset
-                  </button>
-
-                  <button type="button"
-                    class="h-[40px] min-w-[190px] md:min-w-[110px] lg:min-w-[120px] mb-4 xl:mb-0 rounded-lg border border-[#E5E7EB] dark:border-[#FFFFFF] dark:hover:bg-[#5a687d66] dark:text-[#F5F9FF] dark:bg-[#1F2A37] flex items-center justify-center whitespace-nowrap bg-[#ffffff] px-3 py-[10px] text-[14px] font-medium leading-normal text-[#1F2A37] transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none">
-                    <span class="dark:hidden mr-2">
-                      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M4 2.5C4.26522 2.5 4.51957 2.60536 4.70711 2.79289C4.89464 2.98043 5 3.23478 5 3.5V5.601C5.83204 4.75227 6.86643 4.12931 8.00574 3.79078C9.14506 3.45226 10.3518 3.40932 11.5123 3.66601C12.6728 3.92269 13.7488 4.47056 14.6391 5.258C15.5294 6.04544 16.2045 7.04654 16.601 8.167C16.6491 8.29176 16.6717 8.42489 16.6674 8.55854C16.6632 8.69218 16.6322 8.82361 16.5763 8.94506C16.5203 9.06651 16.4406 9.17551 16.3418 9.26561C16.243 9.35571 16.1272 9.42508 16.0011 9.46963C15.875 9.51417 15.7413 9.53298 15.6078 9.52494C15.4744 9.5169 15.3439 9.48217 15.224 9.42282C15.1042 9.36346 14.9975 9.28068 14.9103 9.17937C14.823 9.07806 14.7569 8.96029 14.716 8.833C14.4141 7.97982 13.8865 7.22451 13.1892 6.64758C12.4919 6.07064 11.6512 5.69369 10.7566 5.55688C9.86195 5.42008 8.94698 5.52855 8.10916 5.87074C7.27133 6.21293 6.54204 6.77602 5.999 7.5H9C9.26522 7.5 9.51957 7.60536 9.70711 7.79289C9.89464 7.98043 10 8.23478 10 8.5C10 8.76522 9.89464 9.01957 9.70711 9.20711C9.51957 9.39464 9.26522 9.5 9 9.5H4C3.73478 9.5 3.48043 9.39464 3.29289 9.20711C3.10536 9.01957 3 8.76522 3 8.5V3.5C3 3.23478 3.10536 2.98043 3.29289 2.79289C3.48043 2.60536 3.73478 2.5 4 2.5ZM4.008 11.557C4.13184 11.5133 4.26308 11.4943 4.39422 11.5013C4.52537 11.5083 4.65386 11.5411 4.77235 11.5977C4.89084 11.6544 4.99701 11.7338 5.0848 11.8315C5.17259 11.9291 5.24028 12.0432 5.284 12.167C5.58586 13.0202 6.11355 13.7755 6.81082 14.3524C7.50809 14.9294 8.34883 15.3063 9.24344 15.4431C10.138 15.5799 11.053 15.4714 11.8908 15.1293C12.7287 14.7871 13.458 14.224 14.001 13.5H11C10.7348 13.5 10.4804 13.3946 10.2929 13.2071C10.1054 13.0196 10 12.7652 10 12.5C10 12.2348 10.1054 11.9804 10.2929 11.7929C10.4804 11.6054 10.7348 11.5 11 11.5H16C16.2652 11.5 16.5196 11.6054 16.7071 11.7929C16.8946 11.9804 17 12.2348 17 12.5V17.5C17 17.7652 16.8946 18.0196 16.7071 18.2071C16.5196 18.3946 16.2652 18.5 16 18.5C15.7348 18.5 15.4804 18.3946 15.2929 18.2071C15.1054 18.0196 15 17.7652 15 17.5V15.399C14.168 16.2477 13.1336 16.8707 11.9943 17.2092C10.8549 17.5477 9.64821 17.5907 8.48772 17.334C7.32723 17.0773 6.25117 16.5294 5.36091 15.742C4.47065 14.9546 3.79548 13.9535 3.399 12.833C3.35526 12.7092 3.33634 12.5779 3.34333 12.4468C3.35031 12.3156 3.38306 12.1871 3.43971 12.0687C3.49635 11.9502 3.57578 11.844 3.67346 11.7562C3.77114 11.6684 3.88516 11.6007 4.009 11.557H4.008Z"
-                          fill="#1F2A37" />
-                      </svg>
-                    </span>
-                    <span class="hidden dark:inline-block mr-2">
-                      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M4 2.5C4.26522 2.5 4.51957 2.60536 4.70711 2.79289C4.89464 2.98043 5 3.23478 5 3.5V5.601C5.83204 4.75227 6.86643 4.12931 8.00574 3.79078C9.14506 3.45226 10.3518 3.40932 11.5123 3.66601C12.6728 3.92269 13.7488 4.47056 14.6391 5.258C15.5294 6.04544 16.2045 7.04654 16.601 8.167C16.6491 8.29176 16.6717 8.42489 16.6674 8.55854C16.6632 8.69218 16.6322 8.82361 16.5763 8.94506C16.5203 9.06651 16.4406 9.17551 16.3418 9.26561C16.243 9.35571 16.1272 9.42508 16.0011 9.46963C15.875 9.51417 15.7413 9.53298 15.6078 9.52494C15.4744 9.5169 15.3439 9.48217 15.224 9.42282C15.1042 9.36346 14.9975 9.28068 14.9103 9.17937C14.823 9.07806 14.7569 8.96029 14.716 8.833C14.4141 7.97982 13.8865 7.22451 13.1892 6.64758C12.4919 6.07064 11.6512 5.69369 10.7566 5.55688C9.86195 5.42008 8.94698 5.52855 8.10916 5.87074C7.27133 6.21293 6.54204 6.77602 5.999 7.5H9C9.26522 7.5 9.51957 7.60536 9.70711 7.79289C9.89464 7.98043 10 8.23478 10 8.5C10 8.76522 9.89464 9.01957 9.70711 9.20711C9.51957 9.39464 9.26522 9.5 9 9.5H4C3.73478 9.5 3.48043 9.39464 3.29289 9.20711C3.10536 9.01957 3 8.76522 3 8.5V3.5C3 3.23478 3.10536 2.98043 3.29289 2.79289C3.48043 2.60536 3.73478 2.5 4 2.5ZM4.008 11.557C4.13184 11.5133 4.26308 11.4943 4.39422 11.5013C4.52537 11.5083 4.65386 11.5411 4.77235 11.5977C4.89084 11.6544 4.99701 11.7338 5.0848 11.8315C5.17259 11.9291 5.24028 12.0432 5.284 12.167C5.58586 13.0202 6.11355 13.7755 6.81082 14.3524C7.50809 14.9294 8.34883 15.3063 9.24344 15.4431C10.138 15.5799 11.053 15.4714 11.8908 15.1293C12.7287 14.7871 13.458 14.224 14.001 13.5H11C10.7348 13.5 10.4804 13.3946 10.2929 13.2071C10.1054 13.0196 10 12.7652 10 12.5C10 12.2348 10.1054 11.9804 10.2929 11.7929C10.4804 11.6054 10.7348 11.5 11 11.5H16C16.2652 11.5 16.5196 11.6054 16.7071 11.7929C16.8946 11.9804 17 12.2348 17 12.5V17.5C17 17.7652 16.8946 18.0196 16.7071 18.2071C16.5196 18.3946 16.2652 18.5 16 18.5C15.7348 18.5 15.4804 18.3946 15.2929 18.2071C15.1054 18.0196 15 17.7652 15 17.5V15.399C14.168 16.2477 13.1336 16.8707 11.9943 17.2092C10.8549 17.5477 9.64821 17.5907 8.48772 17.334C7.32723 17.0773 6.25117 16.5294 5.36091 15.742C4.47065 14.9546 3.79548 13.9535 3.399 12.833C3.35526 12.7092 3.33634 12.5779 3.34333 12.4468C3.35031 12.3156 3.38306 12.1871 3.43971 12.0687C3.49635 11.9502 3.57578 11.844 3.67346 11.7562C3.77114 11.6684 3.88516 11.6007 4.009 11.557H4.008Z"
-                          fill="#FFFFFF" />
-                      </svg>
-                    </span>
-                    Refresh
-                  </button>
-                </div>
-
-              </div>
-              <div class="mx-auto mt-8 lg:mt-[10px] max-h-[617px] overflow-auto">
-                <table class="min-w-[900px] lg:min-w-full bg-white dark:bg-[#1F2A37]">
-                  <thead>
-                    <tr class="border-b">
-                      <th class="w-[40px] p-4">
-                        <input data-checkbox="masterRoles"
-                          class="relative float-left mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                          type="checkbox" value="" />
-                      </th>
-                      <th
-                        class="min-w-[120px] p-4 text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        <div class="flex items-center gap-2">
-                          <svg class="cursor-pointer dark:stroke-[#ADBBCC] stroke-[#4F4F4F]" width="12" height="17"
-                            viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M1.83594 10.9987L6.0026 15.1654L10.1693 10.9987M1.83594 5.9987L6.0026 1.83203L10.1693 5.9987"
-                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                          <label class="leading-relaxed hover:cursor-pointer inline-block">
-                            Date
-                          </label>
-                        </div>
-                      </th>
-                      <th
-                        class="min-w-[120px] p-4 text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Event Type
-                      </th>
-                      <th
-                        class="min-w-[112px] text-center p-4 text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Level
-                      </th>
-                      <th
-                        class="min-w-[139px] p-4 text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Entity
-                      </th>
-                      <th
-                        class="min-w-[174px] p-4 text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Node
-                      </th>
-                      <th
-                        class="min-w-[315px] p-4 text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Modification
-                      </th>
-                      <th
-                        class="min-w-[210px] p-4 text-left text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Delegate
-                      </th>
-                      <th
-                        class="min-w-[80px] p-4 text-center text-[14px] text-[#717171] dark:text-[#99A7B7] font-medium">
-                        Action
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Content below with your data -->
-                    <tr class="border-b dark:border-b-[#5B6776]">
-                      <td class="w-[40px] p-4">
-                        <input data-checkbox="subRoles"
-                          class="relative float-left mt-[10px] xl:mt-[0] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                          type="checkbox" value="" />
-                      </td>
-                      <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        20.08.2024
-                      </td>
-                      <td class="p-4 text-[14px] text-[#2B2B2B] dark:text-[#D9E5F6] font-medium">
-                        EVT-XXX
-                      </td>
-                      <td class="p-4 text-center">
-                        <span
-                          class="bg-success-100 text-success-700 dark:bg-[#1C3F43] dark:text-[#8AE9A0] font-normal py-[5px] px-[10px] rounded-full text-[16px] whitespace-nowrap">
-                          Info
-                        </span>
-                      </td>
-                      <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        User
-                      </td>
-                      <td class="p-4">
-                        <div class="flex items-center gap-2">
-                          <span class="dark:hidden"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <rect width="24" height="24" rx="8" fill="#E0ECDF"></rect>
-                              <path
-                                d="M12.0002 5.33203C10.6816 5.33203 9.39269 5.72302 8.29636 6.45557C7.20004 7.18811 6.34555 8.2293 5.84097 9.44747C5.33638 10.6656 5.20436 12.0061 5.4616 13.2993C5.71883 14.5925 6.35377 15.7804 7.28612 16.7127C8.21847 17.6451 9.40636 18.28 10.6996 18.5373C11.9928 18.7945 13.3332 18.6625 14.5514 18.1579C15.7696 17.6533 16.8108 16.7988 17.5433 15.7025C18.2758 14.6062 18.6668 13.3172 18.6668 11.9987C18.6668 11.1232 18.4944 10.2563 18.1594 9.44747C17.8243 8.63864 17.3333 7.90371 16.7142 7.28465C16.0952 6.6656 15.3602 6.17453 14.5514 5.8395C13.7426 5.50447 12.8756 5.33203 12.0002 5.33203ZM10.8595 17.194C10.1324 17.0279 9.44835 16.711 8.85155 16.2638C8.25475 15.8165 7.75853 15.2489 7.39503 14.5977C7.03152 13.9465 6.80884 13.2262 6.7414 12.4834C6.67395 11.7407 6.76324 10.9921 7.0035 10.286L7.1715 10.2994C7.5269 10.4689 7.84148 10.7132 8.0937 11.0156C8.34592 11.318 8.52982 11.6713 8.63283 12.0514C8.74363 12.4903 8.95649 12.8969 9.25409 13.2381C9.5517 13.5793 9.92564 13.8453 10.3455 14.0147C11.1508 14.386 11.3195 15.4274 10.8595 17.194ZM13.3862 10.9987C13.3861 10.9454 13.3796 10.8924 13.3668 10.8407C13.2462 10.2941 13.007 9.78072 12.6661 9.33675C12.3252 8.89278 11.891 8.52909 11.3942 8.27136C10.8108 7.90136 10.4488 7.67136 10.3515 6.94403C11.3894 6.59433 12.5099 6.57312 13.5603 6.88329C14.6108 7.19347 15.54 7.81994 16.2215 8.67736C15.2482 8.82336 14.7195 10.2474 14.7195 10.998C14.6483 11.1081 14.5489 11.1971 14.4317 11.2557C14.3144 11.3143 14.1836 11.3405 14.0528 11.3314C13.9221 11.3405 13.7913 11.3145 13.6741 11.256C13.5569 11.1975 13.4574 11.1086 13.3862 10.9987ZM14.5275 16.6474L14.0562 15.2347C14.0789 14.9137 14.217 14.6118 14.4449 14.3847C14.6728 14.1575 14.9751 14.0204 15.2962 13.9987L16.7222 14.4327C16.2293 15.3743 15.4646 16.146 14.5275 16.6474Z"
-                                fill="#389164"></path>
-                            </svg>
-                          </span>
-                          <span class="hidden dark:block">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <rect width="24" height="24" rx="8" fill="#2D7A35" fill-opacity="0.15"></rect>
-                              <path
-                                d="M12.0007 5.33203C10.6821 5.33203 9.39318 5.72302 8.29685 6.45557C7.20052 7.18811 6.34604 8.2293 5.84146 9.44747C5.33687 10.6656 5.20485 12.0061 5.46209 13.2993C5.71932 14.5925 6.35426 15.7804 7.28661 16.7127C8.21896 17.6451 9.40685 18.28 10.7001 18.5373C11.9933 18.7945 13.3337 18.6625 14.5519 18.1579C15.7701 17.6533 16.8112 16.7988 17.5438 15.7025C18.2763 14.6062 18.6673 13.3172 18.6673 11.9987C18.6673 11.1232 18.4949 10.2563 18.1598 9.44747C17.8248 8.63864 17.3338 7.90371 16.7147 7.28465C16.0956 6.6656 15.3607 6.17453 14.5519 5.8395C13.743 5.50447 12.8761 5.33203 12.0007 5.33203ZM10.86 17.194C10.1329 17.0279 9.44884 16.711 8.85204 16.2638C8.25523 15.8165 7.75902 15.2489 7.39551 14.5977C7.03201 13.9465 6.80933 13.2262 6.74188 12.4834C6.67444 11.7407 6.76373 10.9921 7.00399 10.286L7.17199 10.2994C7.52739 10.4689 7.84197 10.7132 8.09419 11.0156C8.34641 11.318 8.53031 11.6713 8.63332 12.0514C8.74412 12.4903 8.95698 12.8969 9.25458 13.2381C9.55219 13.5793 9.92613 13.8453 10.346 14.0147C11.1513 14.386 11.32 15.4274 10.86 17.194ZM13.3867 10.9987C13.3866 10.9454 13.3801 10.8924 13.3673 10.8407C13.2467 10.2941 13.0075 9.78072 12.6666 9.33675C12.3257 8.89278 11.8915 8.52909 11.3947 8.27136C10.8113 7.90136 10.4493 7.67136 10.352 6.94403C11.3899 6.59433 12.5104 6.57312 13.5608 6.88329C14.6113 7.19347 15.5405 7.81994 16.222 8.67736C15.2487 8.82336 14.72 10.2474 14.72 10.998C14.6488 11.1081 14.5494 11.1971 14.4322 11.2557C14.3149 11.3143 14.1841 11.3405 14.0533 11.3314C13.9226 11.3405 13.7918 11.3145 13.6746 11.256C13.5573 11.1975 13.4579 11.1086 13.3867 10.9987ZM14.528 16.6474L14.0567 15.2347C14.0794 14.9137 14.2175 14.6118 14.4454 14.3847C14.6733 14.1575 14.9756 14.0204 15.2967 13.9987L16.7227 14.4327C16.2298 15.3743 15.4651 16.146 14.528 16.6474Z"
-                                fill="#389164"></path>
-                            </svg>
-                          </span>
-                          <p class="font-medium dark:text-white text-[14px] text-[#4F4F4F]">
-                            Franchise Owned
-                          </p>
-                        </div>
-                      </td>
-                      <td class="p-4 max-w-[325px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        Manager added access to roles for user joe@foo.com
-                      </td>
-                      <td class="p-4 max-w-[210px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        admin@foo.com
-                      </td>
-                      <td class="p-4">
-                        <button type="button" id="actionsButton-1" data-dropdown-toggle="actions-1"
-                          class="bg-transparent hover:bg-[#7fc5f148] py-[8px] px-[12px] text-[#111928] dark:text-[#ffffff] text-[12px] font-medium border-[#E5E7EB] dark:border-[#5B6776] border rounded-[8px] w-[64px]">
-                          Details
-                        </button>
-                        <!-- Dropdown menu -->
-                        <!-- <div id="actions-1"
-                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-1">
-                            <li>
-                              <a href="user-details.html"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
-                                Details</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
-                                Password</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
-                                Recovery Question</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Change Access
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Impersonate User
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
-                                User</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
-                                User</a>
-                            </li>
-                            <li>
-                              <button type="button"
-                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Remove from organization
-                              </button>
-                            </li>
-                          </ul>
-                        </div> -->
-                      </td>
-                    </tr>
-                    <tr class="border-b dark:border-b-[#5B6776]">
-                      <td class="w-[40px] p-4">
-                        <input data-checkbox="subRoles"
-                          class="relative float-left mt-[10px] xl:mt-[0] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                          type="checkbox" value="" />
-                      </td>
-                      <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        20.08.2024
-                      </td>
-                      <td class="p-4 text-[14px] text-[#2B2B2B] dark:text-[#D9E5F6] font-medium">
-                        EVT-XXX
-                      </td>
-                      <td class="p-4 text-center">
-                        <span
-                          class="bg-danger-100 dark:bg-[#e8351d2c] dark:text-[#FF4949] text-danger-700 font-normal py-[5px] px-[10px] rounded-full text-[16px] whitespace-nowrap">
-                          Error
-                        </span>
-                      </td>
-                      <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        Manager
-                      </td>
-                      <td class="p-4">
-                        <div class="flex items-center gap-2">
-                          <span class="dark:hidden">
-                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <rect x="0.5" width="24" height="24" rx="8" fill="#FEF6E8"></rect>
-                              <path
-                                d="M12.4999 5.33203C11.1814 5.33203 9.89245 5.72302 8.79612 6.45557C7.69979 7.18811 6.84531 8.2293 6.34072 9.44747C5.83614 10.6656 5.70412 12.0061 5.96135 13.2993C6.21859 14.5925 6.85353 15.7804 7.78588 16.7127C8.71823 17.6451 9.90611 18.28 11.1993 18.5373C12.4925 18.7945 13.833 18.6625 15.0511 18.1579C16.2693 17.6533 17.3105 16.7988 18.043 15.7025C18.7756 14.6062 19.1666 13.3172 19.1666 11.9987C19.1666 11.1232 18.9941 10.2563 18.6591 9.44747C18.3241 8.63864 17.833 7.90371 17.214 7.28465C16.5949 6.6656 15.86 6.17453 15.0511 5.8395C14.2423 5.50447 13.3754 5.33203 12.4999 5.33203ZM11.3593 17.194C10.6322 17.0279 9.94811 16.711 9.3513 16.2638C8.7545 15.8165 8.25828 15.2489 7.89478 14.5977C7.53128 13.9465 7.3086 13.2262 7.24115 12.4834C7.17371 11.7407 7.263 10.9921 7.50325 10.286L7.67125 10.2994C8.02666 10.4689 8.34123 10.7132 8.59345 11.0156C8.84567 11.318 9.02958 11.6713 9.13259 12.0514C9.24338 12.4903 9.45624 12.8969 9.75385 13.2381C10.0515 13.5793 10.4254 13.8453 10.8453 14.0147C11.6506 14.386 11.8193 15.4274 11.3593 17.194ZM13.8859 10.9987C13.8859 10.9454 13.8794 10.8924 13.8666 10.8407C13.7459 10.2941 13.5067 9.78072 13.1659 9.33675C12.825 8.89278 12.3908 8.52909 11.8939 8.27136C11.3106 7.90136 10.9486 7.67136 10.8513 6.94403C11.8892 6.59433 13.0097 6.57312 14.0601 6.88329C15.1105 7.19347 16.0398 7.81994 16.7213 8.67736C15.7479 8.82336 15.2193 10.2474 15.2193 10.998C15.1481 11.1081 15.0487 11.1971 14.9314 11.2557C14.8142 11.3143 14.6834 11.3405 14.5526 11.3314C14.4219 11.3405 14.2911 11.3145 14.1739 11.256C14.0566 11.1975 13.9572 11.1086 13.8859 10.9987ZM15.0273 16.6474L14.5559 15.2347C14.5787 14.9137 14.7167 14.6118 14.9446 14.3847C15.1725 14.1575 15.4749 14.0204 15.7959 13.9987L17.2219 14.4327C16.729 15.3743 15.9644 16.146 15.0273 16.6474Z"
-                                fill="#F4BE4C"></path>
-                            </svg>
-                          </span>
-                          <span class="hidden dark:block">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <rect width="24" height="24" rx="8" fill="#F49B16" fill-opacity="0.16"></rect>
-                              <path
-                                d="M12.0007 5.33203C10.6821 5.33203 9.39318 5.72302 8.29685 6.45557C7.20052 7.18811 6.34604 8.2293 5.84146 9.44747C5.33687 10.6656 5.20485 12.0061 5.46209 13.2993C5.71932 14.5925 6.35426 15.7804 7.28661 16.7127C8.21896 17.6451 9.40685 18.28 10.7001 18.5373C11.9933 18.7945 13.3337 18.6625 14.5519 18.1579C15.7701 17.6533 16.8112 16.7988 17.5438 15.7025C18.2763 14.6062 18.6673 13.3172 18.6673 11.9987C18.6673 11.1232 18.4949 10.2563 18.1598 9.44747C17.8248 8.63864 17.3338 7.90371 16.7147 7.28465C16.0956 6.6656 15.3607 6.17453 14.5519 5.8395C13.743 5.50447 12.8761 5.33203 12.0007 5.33203ZM10.86 17.194C10.1329 17.0279 9.44884 16.711 8.85204 16.2638C8.25523 15.8165 7.75902 15.2489 7.39551 14.5977C7.03201 13.9465 6.80933 13.2262 6.74188 12.4834C6.67444 11.7407 6.76373 10.9921 7.00399 10.286L7.17199 10.2994C7.52739 10.4689 7.84197 10.7132 8.09419 11.0156C8.34641 11.318 8.53031 11.6713 8.63332 12.0514C8.74412 12.4903 8.95698 12.8969 9.25458 13.2381C9.55219 13.5793 9.92613 13.8453 10.346 14.0147C11.1513 14.386 11.32 15.4274 10.86 17.194ZM13.3867 10.9987C13.3866 10.9454 13.3801 10.8924 13.3673 10.8407C13.2467 10.2941 13.0075 9.78072 12.6666 9.33675C12.3257 8.89278 11.8915 8.52909 11.3947 8.27136C10.8113 7.90136 10.4493 7.67136 10.352 6.94403C11.3899 6.59433 12.5104 6.57312 13.5608 6.88329C14.6113 7.19347 15.5405 7.81994 16.222 8.67736C15.2487 8.82336 14.72 10.2474 14.72 10.998C14.6488 11.1081 14.5494 11.1971 14.4322 11.2557C14.3149 11.3143 14.1841 11.3405 14.0533 11.3314C13.9226 11.3405 13.7918 11.3145 13.6746 11.256C13.5573 11.1975 13.4579 11.1086 13.3867 10.9987ZM14.528 16.6474L14.0567 15.2347C14.0794 14.9137 14.2175 14.6118 14.4454 14.3847C14.6733 14.1575 14.9756 14.0204 15.2967 13.9987L16.7227 14.4327C16.2298 15.3743 15.4651 16.146 14.528 16.6474Z"
-                                fill="#F4BE4C"></path>
-                            </svg>
-                          </span>
-                          <p class="font-medium dark:text-white text-[14px] text-[#4F4F4F]">
-                            Business Unit
-                          </p>
-                        </div>
-                      </td>
-                      <td class="p-4 max-w-[325px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        Manager
-                      </td>
-                      <td class="p-4 max-w-[210px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        dm_api_admin@icsynergy.info
-                      </td>
-                      <td class="p-4">
-                        <button type="button" id="actionsButton-1" data-dropdown-toggle="actions-1"
-                          class="bg-transparent hover:bg-[#7fc5f148] py-[8px] px-[12px] text-[#111928] dark:text-[#ffffff] text-[12px] font-medium border-[#E5E7EB] dark:border-[#5B6776] border rounded-[8px] w-[64px]">
-                          Details
-                        </button>
-                        <!-- Dropdown menu -->
-                        <!-- <div id="actions-1"
-                          class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                          <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-1">
-                            <li>
-                              <a href="user-details.html"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
-                                Details</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
-                                Password</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
-                                Recovery Question</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Change Access
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Impersonate User
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
-                                User</a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
-                                User</a>
-                            </li>
-                            <li>
-                              <button type="button"
-                                class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                Remove from organization
-                              </button>
-                            </li>
-                          </ul>
-                        </div> -->
-                      </td>
-                    </tr>
-                    <tr class="border-b dark:border-b-[#5B6776]">
-                      <td class="w-[40px] p-4">
-                        <input data-checkbox="subRoles"
-                          class="relative float-left mt-[10px] xl:mt-[0] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-['']  checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                          type="checkbox" value="" />
-                      </td>
-                      <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        20.08.2024
-                      </td>
-                      <td class="p-4 text-[14px] text-[#2B2B2B] dark:text-[#D9E5F6] font-medium">
-                        EVT-XXX
-                      </td>
-                      <td class="p-4 text-center">
-                        <span
-                          class="bg-[#FBF0DA] dark:bg-[#3E3439] dark:text-[#F16B46] text-[#F16B46] font-normal py-[5px] px-[10px] rounded-full text-[16px] whitespace-nowrap">
-                          Warning
-                        </span>
-                      </td>
-                      <td class="p-4 text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        Manager
-                      </td>
-                      <td class="p-4">
-                        <div class="flex items-center gap-2">
-                          <span class="dark:hidden">
-                            <span class="dark:hidden"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" rx="8" fill="#FAE5DC"></rect>
-                                <path
-                                  d="M12.0002 5.33203C10.6816 5.33203 9.39269 5.72302 8.29636 6.45557C7.20004 7.18811 6.34555 8.2293 5.84097 9.44747C5.33638 10.6656 5.20436 12.0061 5.4616 13.2993C5.71883 14.5925 6.35377 15.7804 7.28612 16.7127C8.21847 17.6451 9.40636 18.28 10.6996 18.5373C11.9928 18.7945 13.3332 18.6625 14.5514 18.1579C15.7696 17.6533 16.8108 16.7988 17.5433 15.7025C18.2758 14.6062 18.6668 13.3172 18.6668 11.9987C18.6668 11.1232 18.4944 10.2563 18.1594 9.44747C17.8243 8.63864 17.3333 7.90371 16.7142 7.28465C16.0952 6.6656 15.3602 6.17453 14.5514 5.8395C13.7426 5.50447 12.8756 5.33203 12.0002 5.33203ZM10.8595 17.194C10.1324 17.0279 9.44835 16.711 8.85155 16.2638C8.25475 15.8165 7.75853 15.2489 7.39503 14.5977C7.03152 13.9465 6.80884 13.2262 6.7414 12.4834C6.67395 11.7407 6.76324 10.9921 7.0035 10.286L7.1715 10.2994C7.5269 10.4689 7.84148 10.7132 8.0937 11.0156C8.34592 11.318 8.52982 11.6713 8.63283 12.0514C8.74363 12.4903 8.95649 12.8969 9.25409 13.2381C9.5517 13.5793 9.92564 13.8453 10.3455 14.0147C11.1508 14.386 11.3195 15.4274 10.8595 17.194ZM13.3862 10.9987C13.3861 10.9454 13.3796 10.8924 13.3668 10.8407C13.2462 10.2941 13.007 9.78072 12.6661 9.33675C12.3252 8.89278 11.891 8.52909 11.3942 8.27136C10.8108 7.90136 10.4488 7.67136 10.3515 6.94403C11.3894 6.59433 12.5099 6.57312 13.5603 6.88329C14.6108 7.19347 15.54 7.81994 16.2215 8.67736C15.2482 8.82336 14.7195 10.2474 14.7195 10.998C14.6483 11.1081 14.5489 11.1971 14.4317 11.2557C14.3144 11.3143 14.1836 11.3405 14.0528 11.3314C13.9221 11.3405 13.7913 11.3145 13.6741 11.256C13.5569 11.1975 13.4574 11.1086 13.3862 10.9987ZM14.5275 16.6474L14.0562 15.2347C14.0789 14.9137 14.217 14.6118 14.4449 14.3847C14.6728 14.1575 14.9751 14.0204 15.2962 13.9987L16.7222 14.4327C16.2293 15.3743 15.4646 16.146 14.5275 16.6474Z"
-                                  fill="#F16B46"></path>
-                              </svg> </span>
-                          </span>
-                          <span class="hidden dark:block">
-                            <span class="hidden dark:block">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" rx="8" fill="#E35C23" fill-opacity="0.16"></rect>
-                                <path
-                                  d="M12.0007 5.33203C10.6821 5.33203 9.39318 5.72302 8.29685 6.45557C7.20052 7.18811 6.34604 8.2293 5.84146 9.44747C5.33687 10.6656 5.20485 12.0061 5.46209 13.2993C5.71932 14.5925 6.35426 15.7804 7.28661 16.7127C8.21896 17.6451 9.40685 18.28 10.7001 18.5373C11.9933 18.7945 13.3337 18.6625 14.5519 18.1579C15.7701 17.6533 16.8112 16.7988 17.5438 15.7025C18.2763 14.6062 18.6673 13.3172 18.6673 11.9987C18.6673 11.1232 18.4949 10.2563 18.1598 9.44747C17.8248 8.63864 17.3338 7.90371 16.7147 7.28465C16.0956 6.6656 15.3607 6.17453 14.5519 5.8395C13.743 5.50447 12.8761 5.33203 12.0007 5.33203ZM10.86 17.194C10.1329 17.0279 9.44884 16.711 8.85204 16.2638C8.25523 15.8165 7.75902 15.2489 7.39551 14.5977C7.03201 13.9465 6.80933 13.2262 6.74188 12.4834C6.67444 11.7407 6.76373 10.9921 7.00399 10.286L7.17199 10.2994C7.52739 10.4689 7.84197 10.7132 8.09419 11.0156C8.34641 11.318 8.53031 11.6713 8.63332 12.0514C8.74412 12.4903 8.95698 12.8969 9.25458 13.2381C9.55219 13.5793 9.92613 13.8453 10.346 14.0147C11.1513 14.386 11.32 15.4274 10.86 17.194ZM13.3867 10.9987C13.3866 10.9454 13.3801 10.8924 13.3673 10.8407C13.2467 10.2941 13.0075 9.78072 12.6666 9.33675C12.3257 8.89278 11.8915 8.52909 11.3947 8.27136C10.8113 7.90136 10.4493 7.67136 10.352 6.94403C11.3899 6.59433 12.5104 6.57312 13.5608 6.88329C14.6113 7.19347 15.5405 7.81994 16.222 8.67736C15.2487 8.82336 14.72 10.2474 14.72 10.998C14.6488 11.1081 14.5494 11.1971 14.4322 11.2557C14.3149 11.3143 14.1841 11.3405 14.0533 11.3314C13.9226 11.3405 13.7918 11.3145 13.6746 11.256C13.5573 11.1975 13.4579 11.1086 13.3867 10.9987ZM14.528 16.6474L14.0567 15.2347C14.0794 14.9137 14.2175 14.6118 14.4454 14.3847C14.6733 14.1575 14.9756 14.0204 15.2967 13.9987L16.7227 14.4327C16.2298 15.3743 15.4651 16.146 14.528 16.6474Z"
-                                  fill="#F16B46"></path>
-                              </svg>
-                            </span>
-                          </span>
-                          <p class="font-medium dark:text-white text-[14px] text-[#4F4F4F]">
-                            Franchises
-                          </p>
-                        </div>
-                      </td>
-                      <td class="p-4 max-w-[325px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        Manager
-                      </td>
-                      <td class="p-4 max-w-[210px] text-[14px] text-[#424242] dark:text-[#D9E5F6] font-normal">
-                        dm_api_admin@icsynergy.info
-                      </td>
-                      <td class="p-4">
-                        <button type="button" id="actionsButton-1" data-dropdown-toggle="actions-1"
-                          class="bg-transparent hover:bg-[#7fc5f148] py-[8px] px-[12px] text-[#111928] dark:text-[#ffffff] text-[12px] font-medium border-[#E5E7EB] dark:border-[#5B6776] border rounded-[8px] w-[64px]">
-                          Details
-                        </button>
-                        <!-- Dropdown menu -->
-                        <!-- <div id="actions-1"
-                                              class="overflow-hidden min-w-[225px] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                              <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="actionsButton-1">
-                                                <li>
-                                                  <a href="user-details.html"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">View
-                                                    Details</a>
-                                                </li>
-                                                <li>
-                                                  <a href="#"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reset
-                                                    Password</a>
-                                                </li>
-                                                <li>
-                                                  <a href="#"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Change
-                                                    Recovery Question</a>
-                                                </li>
-                                                <li>
-                                                  <a href="#"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                                    Change Access
-                                                  </a>
-                                                </li>
-                                                <li>
-                                                  <a href="#"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                                    Impersonate User
-                                                  </a>
-                                                </li>
-                                                <li>
-                                                  <a href="#"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enable
-                                                    User</a>
-                                                </li>
-                                                <li>
-                                                  <a href="#"
-                                                    class="text-[#4F4F4F] dark:text-[#D9E5F6] text-sm block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Disable
-                                                    User</a>
-                                                </li>
-                                                <li>
-                                                  <button type="button"
-                                                    class="text-left text-[#E02424] dark:text-[#F05252] text-sm block px-4 py-3 border-t-[1px] border-[#E5E7EB] dark:border-[#5B6776] w-[100%] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                                    Remove from organization
-                                                  </button>
-                                                </li>
-                                              </ul>
-                                            </div> -->
-                      </td>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                  </tbody>
-                </table>
-              </div>
-              <div class="flex items-center justify-end py-2 flex-col md:flex-row mt-4 md:mt-0">
-                <div class="flex items-center mb-4 md:mb-0">
-                  <span class="inline-block mr-4 text-[14px] text-[#212529] font-light dark:text-[#F5F9FF]">Items
-                    per
-                    page:</span>
-                  <div class="relative" data-te-dropdown-ref>
-                    <button
-                      class="dark:text-[#F5F9FF] md:mr-4 flex items-center whitespace-nowrap rounded-md bg-transparent border border-[#E7E7E7] px-[12px] py-[5px] font-normal uppercase leading-normal text-[#212529] text-base transition duration-150 ease-in-out hover:bg-neutral-100 dark:hover:bg-gray-500 dark:focus:bg-gray-500 focus:outline-none focus:ring-0 active:bg-neutral-200 motion-reduce:transition-none"
-                      type="button" id="dropdownMenuButton9" data-te-dropdown-toggle-ref aria-expanded="false"
-                      data-te-ripple-init>
-                      10
-                      <svg class="dark:hidden ml-3" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M3.47228 4.45419C3.76389 4.74704 4.23746 4.74704 4.52907 4.45419L7.51514 1.45536C7.72976 1.23982 7.79275 0.91885 7.6761 0.637709C7.55946 0.356569 7.28885 0.173828 6.98557 0.173828L1.01344 0.176171C0.712501 0.176171 0.439556 0.358912 0.322912 0.640052C0.206269 0.921193 0.271589 1.24216 0.48388 1.4577L3.46995 4.45653L3.47228 4.45419Z"
-                          fill="#212529" />
-                      </svg>
-                      <svg class="hidden dark:block ml-3" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M3.47228 4.45419C3.76389 4.74704 4.23746 4.74704 4.52907 4.45419L7.51514 1.45536C7.72976 1.23982 7.79275 0.91885 7.6761 0.637709C7.55946 0.356569 7.28885 0.173828 6.98557 0.173828L1.01344 0.176171C0.712501 0.176171 0.439556 0.358912 0.322912 0.640052C0.206269 0.921193 0.271589 1.24216 0.48388 1.4577L3.46995 4.45653L3.47228 4.45419Z"
-                          fill="#F5F9FF" />
-                      </svg>
-                    </button>
-                    <ul
-                      class=" absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-[#323D4B] [&[data-te-dropdown-show]]:block"
-                      aria-labelledby="dropdownMenuButton9" data-te-dropdown-menu-ref>
-                      <li class="w-16 dark:text-[#F5F9FF] hover:bg-[#F2F2F2] dark:hover:bg-gray-500">
-                        <button class=" w-[100%] py-2 ">10</button>
-                      </li>
-                      <li class=" w-16 dark:text-[#F5F9FF] hover:bg-[#F2F2F2] dark:hover:bg-gray-500">
-                        <button class="w-[100%] py-2 ">15</button>
-                      </li>
-                      <li class="w-16 dark:text-[#F5F9FF] hover:bg-[#F2F2F2] dark:hover:bg-gray-500">
-                        <button class="w-[100%] py-2 ">20</button>
-                      </li>
-                      <li class="w-16 dark:text-[#F5F9FF] hover:bg-[#F2F2F2] dark:hover:bg-gray-500">
-                        <button class="w-[100%] py-2 ">25</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="flex items-center">
-                  <span class="text-[14px] text-[#212529] dark:text-[#F5F9FF] font-normal leading-[160%]">
-                    1 - 26 of 26
-                  </span>
-                  <div class="ml-6 md:ml-8">
-                    <!-- For adding status 'disabled' on the button we have to add class opacity-50 and attribute disabled -->
-                    <button class="p-4 rounded-md border border-transparent opacity-50" disabled>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        class="dark:hidden h-5 w-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#9E9E9E"
-                        class="hidden dark:block h-5 w-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                      </svg>
-                    </button>
-                    <button class="p-4 px-2 rounded-md border border-transparent">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        class="dark:hidden h-5 w-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#F5F9FF"
-                        class="hidden dark:block h-5 w-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2305,6 +1549,32 @@
         © 2023 Copyright: <span class="text-[#332D2D] dark:text-[#D9E5F6]">Envolved Identity Solutions</span>
       </div>
     </footer>
+
+    <!-- Error message-->
+    <div id="login-error-msg"
+      class="max-w-[320px] md:max-w-[600px] z-50 absolute top-[200px] lg:top-[90px] end-[20px] p-[16px] bg-[#FDF2F2] dark:bg-[#3D2C33] rounded-lg">
+      <div class="flex items-center gap-2 mb-[6px]">
+        <svg class="fill-[#9B1C1C] dark:fill-[#F98080]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346627 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C15.9977 5.87898 15.1541 3.8455 13.6543 2.34572C12.1545 0.845932 10.121 0.00232928 8 0V0ZM8 12C7.84178 12 7.68711 11.9531 7.55555 11.8652C7.42399 11.7773 7.32145 11.6523 7.2609 11.5061C7.20035 11.36 7.18451 11.1991 7.21537 11.0439C7.24624 10.8887 7.32244 10.7462 7.43432 10.6343C7.5462 10.5224 7.68875 10.4462 7.84393 10.4154C7.99911 10.3845 8.15997 10.4003 8.30615 10.4609C8.45233 10.5214 8.57727 10.624 8.66518 10.7555C8.75308 10.8871 8.8 11.0418 8.8 11.2C8.8 11.4122 8.71572 11.6157 8.56569 11.7657C8.41566 11.9157 8.21218 12 8 12ZM8.8 8.8C8.8 9.01217 8.71572 9.21565 8.56569 9.36568C8.41566 9.51571 8.21218 9.6 8 9.6C7.78783 9.6 7.58435 9.51571 7.43432 9.36568C7.28429 9.21565 7.2 9.01217 7.2 8.8V4.8C7.2 4.58783 7.28429 4.38434 7.43432 4.23431C7.58435 4.08428 7.78783 4 8 4C8.21218 4 8.41566 4.08428 8.56569 4.23431C8.71572 4.38434 8.8 4.58783 8.8 4.8V8.8Z"
+            fill="" />
+        </svg>
+        <div class="text-[#9B1C1C] dark:text-[#F98080] text-[16px] font-semibold leading-[150%]">
+          Incorrect username or password.
+        </div>
+        <svg id="error-message-close" class="ml-auto cursor-pointer fill-[#9B1C1C] dark:fill-[#F98080]" width="12"
+          height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.0885 6.49961L11.1645 2.42359C11.2381 2.35256 11.2967 2.26758 11.3371 2.17363C11.3774 2.07968 11.3987 1.97863 11.3996 1.87638C11.4005 1.77413 11.381 1.67272 11.3423 1.57808C11.3035 1.48344 11.2464 1.39746 11.1741 1.32516C11.1018 1.25285 11.0158 1.19567 10.9211 1.15695C10.8265 1.11823 10.7251 1.09875 10.6228 1.09964C10.5206 1.10053 10.4195 1.12177 10.3256 1.16213C10.2316 1.20249 10.1467 1.26115 10.0756 1.3347L5.99961 5.41072L1.92359 1.3347C1.77835 1.19443 1.58383 1.11681 1.38192 1.11856C1.18001 1.12032 0.986864 1.20131 0.844085 1.34409C0.701307 1.48686 0.620319 1.68001 0.618564 1.88192C0.616809 2.08383 0.694429 2.27835 0.834705 2.42359L4.91072 6.49961L0.834705 10.5756C0.761155 10.6467 0.702488 10.7316 0.662129 10.8256C0.621771 10.9195 0.600527 11.0206 0.599638 11.1228C0.59875 11.2251 0.618234 11.3265 0.656954 11.4211C0.695674 11.5158 0.752855 11.6018 0.825159 11.6741C0.897464 11.7464 0.983445 11.8035 1.07808 11.8423C1.17272 11.881 1.27413 11.9005 1.37638 11.8996C1.47863 11.8987 1.57968 11.8774 1.67363 11.8371C1.76758 11.7967 1.85256 11.7381 1.92359 11.6645L5.99961 7.5885L10.0756 11.6645C10.2209 11.8048 10.4154 11.8824 10.6173 11.8807C10.8192 11.8789 11.0124 11.7979 11.1551 11.6551C11.2979 11.5124 11.3789 11.3192 11.3807 11.1173C11.3824 10.9154 11.3048 10.7209 11.1645 10.5756L7.0885 6.49961Z" />
+        </svg>
+      </div>
+      <div class="text-[14px] leading-[150%] text-[#9B1C1C] dark:text-[#F98080]">
+        We couldn’t find an account matching the email and password you entered. Please check your email and password
+        and try
+        again.
+      </div>
+    </div>
 
     @@include('html/components/persona-popup.html')
   </div>

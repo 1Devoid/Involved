@@ -1948,6 +1948,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-height: 617px;
 }
 
+.max-h-\[780px\] {
+  max-height: 780px;
+}
+
 .max-h-\[890px\] {
   max-height: 890px;
 }
@@ -1990,6 +1994,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-h-\[auto\] {
   min-height: auto;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 
 .\!w-px {

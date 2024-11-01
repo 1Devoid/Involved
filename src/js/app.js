@@ -399,3 +399,19 @@ hideLoginErrorMessage();
 document.addEventListener('DOMContentLoaded', () => {
   initImageSlider();
 });
+
+function toggleActiveClass() {
+  const wrapper = document.querySelector('.create-node-wrapper');
+  if (!wrapper) return;
+
+  const nodes = wrapper.querySelectorAll('.create-node');
+
+  nodes.forEach((node) => {
+    node.addEventListener('click', () => {
+      nodes.forEach((n) => n.classList.remove('active'));
+      node.classList.add('active');
+    });
+  });
+}
+
+toggleActiveClass();

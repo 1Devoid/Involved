@@ -670,3 +670,14 @@ textarea:focus {
   opacity: 1;
   position: relative;
 }
+
+.create-node.active {
+  border-color: #1a56db;
+  color: #1a56db;
+  background: #ebf5ff;
+}
+:is(.dark .create-node.active) {
+  border-color: #1c64f2;
+  color: #1c64f2;
+  background: #21304f;
+}

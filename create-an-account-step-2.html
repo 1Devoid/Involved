@@ -17,7 +17,7 @@
 <body class="body">
   <div class="aside-nav">
     
-    <aside class="w-[100%] -translate-x-full fixed left-0 transition-transform z-40 aside-nav__menu sm:translate-x-0 top-[77px] aside-nav__collapsed max-w-[108px]" aria-label="Sidenav">
+    <aside class="fixed -translate-x-full left-0 transition-transform w-[100%] z-40 aside-nav__menu sm:translate-x-0 top-[77px] aside-nav__collapsed max-w-[108px]" aria-label="Sidenav">
       <div class="dark:border-gray-700 bg-white dark:bg-gray-800 h-full overflow-y-auto pb-[178px] pt-1 px-2">
         <ul class="space-y-2">
           <li>
@@ -97,8 +97,8 @@
       </div>
     </aside>
 
-    <aside class="w-[100%] -translate-x-full fixed left-0 transition-transform z-40 aside-nav__menu sm:translate-x-0 top-[77px] aside-nav__expandede max-w-[220px]" aria-label="Sidenav">
-      <div class="dark:border-gray-700 bg-white dark:bg-gray-800 h-full overflow-y-auto pb-[72px] px-3 py-1">
+    <aside class="fixed -translate-x-full left-0 transition-transform w-[100%] z-40 aside-nav__menu sm:translate-x-0 top-[77px] aside-nav__expandede max-w-[220px]" aria-label="Sidenav">
+      <div class="py-1 bg-white dark:bg-gray-800 dark:border-gray-700 h-full overflow-y-auto pb-[72px] px-3">
         <ul class="space-y-2">
           <li>
             <a href="login.html" class="items-center flex rounded-lg text-[#717171] dark:hover:bg-gray-700 dark:text-white font-normal group hover:bg-gray-100 hover:text-[#0F0F0F] p-2 text-base active">
@@ -181,7 +181,7 @@
   </div>
 
   <aside id="default-sidebar" class="dark:border-gray-700 -translate-x-full border-r border-s-indigo-500 fixed h-[100vh] left-0 lg:translate-x-0 max-w-[220px] transition-transform w-[100%] z-40 z-[60]" aria-label="Sidenav">
-    <div class="dark:border-gray-700 bg-white dark:bg-gray-800 h-full overflow-y-auto pb-[72px] px-3 py-1">
+    <div class="py-1 bg-white dark:bg-gray-800 dark:border-gray-700 h-full overflow-y-auto pb-[72px] px-3">
       <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="items-center dark:hover:bg-gray-700 hover:bg-gray-100 p-2 rounded-lg dark:focus:ring-gray-600 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 inline-flex lg:hidden text-gray-500 text-sm ml-[155px]">
         <span class="sr-only">Open sidebar</span>
         <svg class="dark:hidden w-6 h-6" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -284,7 +284,7 @@
   <div class="wrapper dark:bg-[#1F2A37]">
     <header class="items-center flex justify-between bg-[#ffffff] dark:bg-[#1F2A37] fixed flex-col lg:flex-row lg:shadow-[unset] md:px-6 md:py-5 min-h-[77px] mx-auto p-3 pb-4 shadow-lg z-100">
   <div class="items-center flex lg:flex-row flex-col lg:w-[unset] w-[100%]">
-    <div class="items-center flex justify-between flex-row lg:mb-0 mb-3 w-[100%]">
+    <div class="items-center flex justify-between w-[100%] flex-row lg:mb-0 mb-3">
       
       <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="items-center dark:hover:bg-gray-700 hover:bg-gray-100 p-2 rounded-lg dark:focus:ring-gray-600 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 inline-flex lg:hidden text-gray-500 text-sm mr-5">
         <span class="sr-only">Open sidebar</span>
@@ -307,8 +307,8 @@
           </svg>
         </span>
       </button>
-      <a class="inline-block lg:mr-8" href="index.html">
-        <img class="inline-block min-w-[160px]" src="images/svg/logo.svg" alt="Logo">
+      <a class="lg:mr-8 inline-block" href="index.html">
+        <img class="min-w-[160px] inline-block" src="images/svg/logo.svg" alt="Logo">
       </a>
     </div>
     <h1 class="dark:text-[#ffffff] font-bold lg:font-medium lg:mb-0 mb-4 text-[#4F4F4F] text-[22px] whitespace-nowrap xl:text-[28px]">
@@ -350,7 +350,7 @@
           </div>
         </button>
       </div>
-      <div class="hidden bg-white dark:bg-gray-700 list-none min-w-[224px] my-4 rounded-lg shadow text-base z-50" id="dropdown-user">
+      <div class="hidden bg-white dark:bg-gray-700 rounded-lg list-none min-w-[224px] my-4 shadow text-base z-50" id="dropdown-user">
         <div class="px-4 py-3" role="none">
           <p class="text-sm text-[#1F2A37] dark:text-white font-semibold mb-1" role="none">
             Martin Gue
@@ -396,22 +396,52 @@
   </div>
 </header>
 
-    <main class="bg-[#F2F2F2] dark:bg-[#5B6776] lg:mt-[80px] lg:py-4 lg:rounded-tl-lg main md:mt-[167px] mt-[155px] py-6">
+    <main class="py-6 bg-[#F2F2F2] dark:bg-[#5B6776] lg:mt-[80px] lg:py-4 lg:rounded-tl-lg main md:mt-[167px] mt-[155px]">
       <section class="content">
         <div class="container-custom">
           <div>
-            <div class="bg-white content__wrapper dark:bg-[#1F2A37] px-6 py-6 rounded-[8px]">
+            <div class="rounded-[8px] bg-white content__wrapper dark:bg-[#1F2A37] px-6 py-6">
               <div class="items-center gap-[32px] grid justify-items-center xl:grid-cols-2">
-                <div class="items-start flex flex-col max-w-[468px] w-full">
-                  <div class="font-bold dark:text-white leading-[125%] mb-[4px] text-[#111928] text-[20px]">
-                    Set new password
+                <div class="max-w-[468px] w-full flex flex-col items-start">
+                  <div class="leading-[125%] dark:text-white text-[#111928] font-bold mb-[20px] text-[20px]">
+                    Create an account
                   </div>
-                  <div class="leading-[150%] text-[16px] dark:text-[#E5E7EB] mb-[24px] text-[#6B7280]">
-                    Your new password must be different to previously used passwords.
+                  <div class="h-[6px] rounded-[2px] w-full bg-[#E5E7EB] dark:bg-[#374151] mb-[20px]">
+                    <div class="h-[6px] rounded-[2px] w-full bg-[#1A56DB]"></div>
                   </div>
-                  <div class="w-[100%] relative mb-[8px]" data-te-input-wrapper-init="">
-                    <input type="password" class="dark:peer-focus:text-primary duration-200 leading-[1.6] motion-reduce:transition-none peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="password-login">
-                    <label for="password-login" class="absolute left-3 dark:peer-focus:text-primary dark:text-[#99A7B7] duration-200 ease-out font-normal leading-[1.6] max-w-[90%] mb-0 motion-reduce:transition-none name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 transition-all truncate">
+                  <div class="mb-[12px] dark:text-white font-semibold leading-[125%] text-[#111928] text-[18px]">
+                    Provide your contact information
+                  </div>
+                  <div class="relative w-full mb-[12px]" data-te-input-wrapper-init="">
+                    <input type="text" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="first-name">
+                    <label for="first-name" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
+                      First name
+                    </label>
+                  </div>
+                  <div class="relative w-full mb-[16px]" data-te-input-wrapper-init="">
+                    <input type="text" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="last-name">
+                    <label for="last-name" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
+                      Last name
+                    </label>
+                  </div>
+                  <div class="mb-[12px] dark:text-white font-semibold leading-[125%] text-[#111928] text-[18px]">
+                    Create sign-in credentials
+                  </div>
+                  <div class="relative w-full mb-[16px]" data-te-input-wrapper-init="">
+                    <input type="text" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="username">
+                    <label for="username" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
+                      Username
+                    </label>
+                  </div>
+                  <div class="relative w-full mb-[12px]" data-te-input-wrapper-init="">
+                    <input type="text" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="email">
+                    <label for="email" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
+                      Email
+                    </label>
+                  </div>
+                  <div class="relative w-full mb-[8px]" data-te-input-wrapper-init="">
+                    <input type="password" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="password-login">
+                    <label for="password-login" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
                       Password
                     </label>
                     <span id="password-login-show" class="absolute cursor-pointer right-[12px] tooltip-icon top-[10px]">
@@ -427,13 +457,13 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="leading-[150%] text-[16px] dark:text-[#E5E7EB] mb-[24px] text-[#6B7280]">
+                  <div class="leading-[150%] text-[14px] dark:text-[#E5E7EB] mb-[12px] text-[#757575]">
                     Password must have at least 1 uppercase & lowercase letter, 1 number and be over 6 characters in
                     length. 
                   </div>
-                  <div class="w-[100%] relative mb-[24px]" data-te-input-wrapper-init="">
-                    <input type="password" class="dark:peer-focus:text-primary duration-200 leading-[1.6] motion-reduce:transition-none peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="confirm-password-login">
-                    <label for="confirm-password-login" class="absolute left-3 dark:peer-focus:text-primary dark:text-[#99A7B7] duration-200 ease-out font-normal leading-[1.6] max-w-[90%] mb-0 motion-reduce:transition-none name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 transition-all truncate">
+                  <div class="relative w-full mb-[16px]" data-te-input-wrapper-init="">
+                    <input type="password" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="confirm-password-login">
+                    <label for="confirm-password-login" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
                       Confirm Password
                     </label>
                     <span id="confirm-password-login-show" class="absolute cursor-pointer right-[12px] tooltip-icon top-[10px]">
@@ -449,23 +479,110 @@
                       </svg>
                     </span>
                   </div>
-                  <a href="forgot-password-step-4.html" class="items-center flex rounded-lg transition w-full justify-center border duration-150 ease-in-out focus:outline-none focus:ring-0 font-medium leading-normal motion-reduce:transition-none px-3 py-[10px] text-[14px] whitespace-nowrap bg-[#1A56DB] border-[#1A56DB] dd-animation h-[40px] hover:bg-[#224996] lg:min-w-[120px] mb-[16px] min-w-[110px] text-white">
-                    Reset password
+                  <div class="mb-[12px] dark:text-white font-semibold leading-[125%] text-[#111928] text-[18px]">
+                    Hint Question and Answer
+                  </div>
+                  <div class="w-full mb-[16px]">
+                    <button id="dropdownButton-select-popup" data-dropdown-toggle="dropdown-select-popup" class="items-center flex rounded-lg text-[#717171] transition dark:bg-transparent active:bg-primary-accent-200 bg-[#ffffff] border border-[#E5E7EB] dark:border-[#4B5563] dark:hover:bg-[#5a687d66] dark:text-[#9CA3AF] duration-150 ease-in-out focus:bg-primary-accent-100 focus:outline-none focus:ring-0 font-medium h-[36px] hover:bg-primary-accent-100 justify-between leading-normal motion-reduce:transition-none p-4 relative text-[14px] w-[100%] whitespace-nowrap" type="button">Recovery Question
+                      <span class="mr-2 dark:hidden ml-[41px] pointer-events-none w-2">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span class="hidden dark:block mr-2 ml-[41px] pointer-events-none w-2">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6663 6.5L7.99967 11.1667L3.33301 6.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </button>
+                    
+                    <div id="dropdown-select-popup" class="hidden py-2 bg-white dark:bg-gray-700 divide-gray-100 divide-y max-w-[468px] rounded-lg shadow-xl w-full z-10">
+                      <ul class="text-sm dark:text-gray-200 max-h-[250px] max-w-[468px] overflow-y-auto text-gray-700 w-full" aria-labelledby="dropdownButton-select-popup">
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-01" checked="checked">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-01">
+                              What is the food you least liked as a child?
+                            </label>
+                          </div>
+                        </li>
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-02">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-02">
+                              What is the name of your first stuffed animal?
+                            </label>
+                          </div>
+                        </li>
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-03">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-03">
+                              What did you earn your first medal or award for?
+                            </label>
+                          </div>
+                        </li>
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-04">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-04">
+                              What is your favorite security question4
+                            </label>
+                          </div>
+                        </li>
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-05">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-05">
+                              What is the toy/stuffed animal you liked the most as a kid?
+                            </label>
+                          </div>
+                        </li>
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-06">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-06">
+                              What was the first computer game you played?
+                            </label>
+                          </div>
+                        </li>
+                        <li class="px-4 py-1">
+                          <div class="items-center flex mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem]">
+                            <input class="relative focus:outline-none focus:ring-0 -ml-[1.5rem] after:absolute after:block after:content-[''] after:h-4 after:rounded-full after:w-4 after:z-[1] appearance-none before:absolute before:bg-transparent before:content-[''] before:h-4 before:opacity-0 before:pointer-events-none before:rounded-full before:scale-0 before:shadow-[0px_0px_0px_13px_transparent] before:w-4 border-2 border-neutral-300 border-solid checked:after:[transform:translate(-50%,-50%)] checked:after:absolute checked:after:bg-primary checked:after:border-primary checked:after:content-[''] checked:after:h-[0.625rem] checked:after:left-1/2 checked:after:rounded-full checked:after:top-1/2 checked:after:w-[0.625rem] checked:before:opacity-[0.16] checked:border-primary checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary dark:border-[#8593A3] dark:border-neutral-600 dark:checked:after:bg-primary dark:checked:after:border-primary dark:checked:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] dark:checked:focus:border-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] float-left focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:shadow-none h-5 hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] hover:cursor-pointer mr-4 mt-0.5 rounded-full w-5" type="radio" name="question" id="question-07">
+                            <label class="hover:cursor-pointer dark:text-[#F5F9FF] inline-block leading-[150%] pl-[0.15rem] text-[14px]" for="question-07">
+                              What is your favorite movie quote?
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="relative w-full mb-[16px]" data-te-input-wrapper-init="">
+                    <input type="text" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all bg-transparent block border-0 dark:placeholder:text-neutral-200 dark:text-[#BECCDD] data-[te-input-state-active]:placeholder:opacity-100 ease-linear focus:placeholder:opacity-100 min-h-[auto] outline-none peer pr-[40px] px-3 py-[0.32rem] rounded text-[#00000099] w-full" id="recovery-answer">
+                    <label for="recovery-answer" class="motion-reduce:transition-none dark:peer-focus:text-primary duration-200 leading-[1.6] peer-focus:text-primary transition-all absolute dark:text-[#99A7B7] ease-out font-normal left-3 max-w-[90%] mb-0 name-label origin-[0_0] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] pointer-events-none pt-[0.37rem] text-[#0000008b] top-0 truncate">
+                      Recovery Answer
+                    </label>
+                  </div>
+                  <a href="login.html" class="items-center flex rounded-lg transition w-full justify-center border duration-150 ease-in-out focus:outline-none focus:ring-0 font-medium leading-normal mb-[16px] motion-reduce:transition-none px-3 py-[10px] text-[14px] whitespace-nowrap bg-[#1A56DB] border-[#1A56DB] dd-animation h-[40px] hover:bg-[#224996] lg:min-w-[120px] min-w-[110px] text-white">
+                    Create account
                   </a>
-                  <a href="login.html" class="items-center flex rounded-lg transition w-full justify-center border duration-150 ease-in-out focus:outline-none focus:ring-0 font-medium leading-normal motion-reduce:transition-none px-3 py-[10px] text-[14px] whitespace-nowrap active:bg-primary-accent-200 bg-[#ffffff] border-[#E5E7EB] dark:bg-[#1F2A37] dark:border-[#FFFFFF] dark:hover:bg-[#5a687d66] dark:text-[#F5F9FF] focus:bg-primary-accent-100 hover:bg-primary-accent-100 text-[#1F2A37]">
-                    Back to login
+                  <a href="create-an-account-step-1.html" class="items-center flex rounded-lg transition w-full justify-center border duration-150 ease-in-out focus:outline-none focus:ring-0 font-medium leading-normal mb-[16px] motion-reduce:transition-none px-3 py-[10px] text-[14px] whitespace-nowrap active:bg-primary-accent-200 bg-[#ffffff] border-[#E5E7EB] dark:bg-[#1F2A37] dark:border-[#FFFFFF] dark:hover:bg-[#5a687d66] dark:text-[#F5F9FF] focus:bg-primary-accent-100 hover:bg-primary-accent-100 text-[#1F2A37]">
+                    Back
+                  </a>
+                  <a href="login.html" class="leading-[150%] text-[14px] font-medium text-[#1C64F2]">
+                    Already have an account?
                   </a>
                 </div>
-                <div class="rounded-[8px] min-h-[600px] overflow-hidden relative">
+                <div class="relative min-h-[600px] overflow-hidden rounded-[8px]">
                   <picture><source srcset="images/image1.webp" type="image/webp"><img class="active login-img" src="images/image1.png" alt="Login"></picture>
                   <picture><source srcset="images/image2.webp" type="image/webp"><img class="login-img" src="images/image2.png" alt="Login"></picture>
                   <picture><source srcset="images/image3.webp" type="image/webp"><img class="login-img" src="images/image3.png" alt="Login"></picture>
                   <picture><source srcset="images/image4.webp" type="image/webp"><img class="login-img" src="images/image4.png" alt="Login"></picture>
                   <div class="absolute left-3 backdrop-blur-xl bg-white/20 bottom-3 p-3 right-3 rounded-[8px] z-[1]">
-                    <div class="text-[#FFFFFF] font-extrabold leading-[36px] mb-[12px] text-[36px]">
+                    <div class="mb-[12px] font-extrabold leading-[36px] text-[#FFFFFF] text-[36px]">
                       Mission Statement
                     </div>
-                    <div class="leading-[150%] text-[16px] mb-[32px] text-[#F9FAFB]">
+                    <div class="leading-[150%] mb-[32px] text-[#F9FAFB] text-[16px]">
                       At Evolved Identity, we are committed to providing excellence to improve the quality of living and
                       to drive
                       sustainability.
@@ -473,7 +590,7 @@
                     <div class="items-center flex">
                       <picture><source srcset="images/avatar-group.webp" type="image/webp"><img class="" src="images/avatar-group.png" alt="Avatars"></picture>
                       <div class="bg-[#3F83F8] h-[30px] ml-[15px] mr-[24px] w-[1px]"></div>
-                      <div class="leading-[150%] text-[#FFFFFF] text-[14px]">
+                      <div class="leading-[150%] text-[14px] text-[#FFFFFF]">
                         Rated Best Over <span class="font-medium">8k</span> Reviews
                       </div>
                     </div>
@@ -487,7 +604,7 @@
     </main>
 
     <footer class="items-center flex justify-center dark:bg-[#1F2A37]">
-      <div class="dark:text-[#707E8D] font-normal md:text-base py-4 text-[#4F4F4F] text-[14px]">
+      <div class="text-[#4F4F4F] dark:text-[#707E8D] font-normal md:text-base py-4 text-[14px]">
         © 2023 Copyright: <span class="dark:text-[#D9E5F6] text-[#332D2D]">Envolved Identity Solutions</span>
       </div>
     </footer>

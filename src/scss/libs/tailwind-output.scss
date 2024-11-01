@@ -1599,6 +1599,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 10px;
 }
 
+.mt-\[128px\] {
+  margin-top: 128px;
+}
+
+.mt-\[140px\] {
+  margin-top: 140px;
+}
+
 .mt-\[155px\] {
   margin-top: 155px;
 }
@@ -1617,10 +1625,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mt-px {
   margin-top: 1px;
-}
-
-.mt-\[140px\] {
-  margin-top: 140px;
 }
 
 .box-border {
@@ -9349,6 +9353,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-\[140px\] {
+    margin-top: 140px;
   }
 
   .md\:mt-\[167px\] {

@@ -1619,6 +1619,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 1px;
 }
 
+.mt-\[140px\] {
+  margin-top: 140px;
+}
+
 .box-border {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1994,10 +1998,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-h-\[auto\] {
   min-height: auto;
-}
-
-.min-h-\[100vh\] {
-  min-height: 100vh;
 }
 
 .\!w-px {
@@ -3607,6 +3607,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
 }
 
 .overflow-visible {

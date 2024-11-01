@@ -17,6 +17,9 @@ main {
     }
   }
 }
+.main-404 {
+  flex: 1 0 auto;
+}
 
 footer {
   flex: 0 0 auto;
@@ -37,6 +40,21 @@ footer {
     display: grid;
     grid-template-columns: fit-content(220px) 10fr;
     grid-template-rows: 100%;
+  }
+}
+.body.body-404 {
+  font-family: $fontFamily !important;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.2;
+  color: $blackColor;
+  overflow-x: hidden;
+  height: 100%;
+  min-width: 20rem;
+  // font-variant-numeric: lining-nums;
+
+  @media (min-width: 1024px) {
+    display: block;
   }
 }
 

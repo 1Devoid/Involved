@@ -55,6 +55,7 @@ import toggleEditsRolePopups from './modules/toggleEditsRolePopups.js';
 import addErrorClassToElements from './modules/addErrorClassToElements.js';
 import initImageSlider from './modules/initImageSlider.js';
 import showPassword from './modules/showPassword.js';
+import toggleRolePopup from './modules/toggleRolePopup.js';
 import {
   activateCheckedRadio,
   activateCheckedRadioList,
@@ -84,9 +85,11 @@ arrowRotateInput('#dropdownButton-node', '#dropdown-node');
 arrowRotateInput('#dropdownButton-level', '#dropdown-level');
 arrowRotateInput('#dropdownButton-node2', '#dropdown-node2');
 arrowRotateInput('#dropdownButton-node-access', '#dropdown-node-access');
+arrowRotateInput('#dropdownButton-node-access2', '#dropdown-node-access2');
 arrowRotateInput('#dropdownButton-appRole', '#dropdown-appRole');
 arrowRotateInput('#dropdownButton-role-1', '#dropdown-role-1');
 arrowRotateInput('#dropdownButton-role-2', '#dropdown-role-2');
+arrowRotateInput('#dropdownButton-role-3', '#dropdown-role-3');
 arrowRotateInput('#dropdownButton-add-type', '#dropdown-add-type');
 arrowRotateInput('#dropdownButton-appRole-2', '#dropdown-appRole-2');
 arrowRotateInput('#dropdownButton-profileNode', '#dropdown-profileNode');
@@ -95,8 +98,13 @@ arrowRotateInput('#dropdownColorButton-2', '#dropdown-color-2');
 arrowRotateInput('#dropdownColorButton-3', '#dropdown-color-3');
 arrowRotateInput('#dropdownColorButton-4', '#dropdown-color-4');
 arrowRotateInput('#dropdownColorButton-5', '#dropdown-color-5');
+arrowRotateInput('#dropdownColorButton-6', '#dropdown-color-6');
 arrowRotateInput('#dropdownButton-select-role', '#dropdown-select-role');
 arrowRotateInput('#dropdownButton-add-node-popup', '#dropdown-add-node-popup');
+arrowRotateInput(
+  '#dropdownButton-add-node-popup-2',
+  '#dropdown-add-node-popup-2'
+);
 arrowRotateInput('#dropdownButton-roles-type', '#dropdown-roles-type');
 arrowRotateInput('#dropdownButton-add-delegate', '#dropdown-add-delegate');
 arrowRotateInput('#dropdownButton-delegates-role', '#dropdown-delegates-role');
@@ -415,3 +423,4 @@ function toggleActiveClass() {
 }
 
 toggleActiveClass();
+toggleRolePopup();
